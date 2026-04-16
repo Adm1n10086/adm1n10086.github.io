@@ -87,18 +87,5 @@
 ⌛ 文章top封面&lt;/p&gt;
  ]]></description>
         </item>
-        <item>
-            <guid isPermalink="true">https://adm1n10086.github.io/2024/04/24/first/</guid>
-            <title>第一篇文章</title>
-            <link>https://adm1n10086.github.io/2024/04/24/first/</link>
-            <category term="ShokaX" scheme="https://adm1n10086.github.io/tags/ShokaX/" />
-            <category term="Hexo" scheme="https://adm1n10086.github.io/tags/Hexo/" />
-            <category term="博客配置" scheme="https://adm1n10086.github.io/tags/%E5%8D%9A%E5%AE%A2%E9%85%8D%E7%BD%AE/" />
-            <category term="标签教程" scheme="https://adm1n10086.github.io/tags/%E6%A0%87%E7%AD%BE%E6%95%99%E7%A8%8B/" />
-            <pubDate>Wed, 24 Apr 2024 00:00:00 +0800</pubDate>
-            <description><![CDATA[ &lt;h1 id=&#34;第一篇文章&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#第一篇文章&#34;&gt;#&lt;/a&gt; 第一篇文章&lt;/h1&gt;
-&lt;p&gt;這是內容&lt;/p&gt;
- ]]></description>
-        </item>
     </channel>
 </rss>

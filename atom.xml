@@ -84,17 +84,4 @@
         <category term="ShokaX" scheme="https://adm1n10086.github.io/tags/ShokaX/" />
         <updated>2026-04-13T16:00:00.000Z</updated>
     </entry>
-    <entry>
-        <id>https://adm1n10086.github.io/2024/04/24/first/</id>
-        <title>第一篇文章</title>
-        <link rel="alternate" href="https://adm1n10086.github.io/2024/04/24/first/"/>
-        <content type="html">&lt;h1 id=&#34;第一篇文章&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#第一篇文章&#34;&gt;#&lt;/a&gt; 第一篇文章&lt;/h1&gt;
-&lt;p&gt;這是內容&lt;/p&gt;
-</content>
-        <category term="ShokaX" scheme="https://adm1n10086.github.io/tags/ShokaX/" />
-        <category term="Hexo" scheme="https://adm1n10086.github.io/tags/Hexo/" />
-        <category term="博客配置" scheme="https://adm1n10086.github.io/tags/%E5%8D%9A%E5%AE%A2%E9%85%8D%E7%BD%AE/" />
-        <category term="标签教程" scheme="https://adm1n10086.github.io/tags/%E6%A0%87%E7%AD%BE%E6%95%99%E7%A8%8B/" />
-        <updated>2024-04-23T16:00:00.000Z</updated>
-    </entry>
 </feed>
