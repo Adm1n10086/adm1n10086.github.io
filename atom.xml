@@ -59,7 +59,7 @@
 &lt;p&gt;ShokaX搭建主要参考了以下文档：&lt;br /&gt;
 &lt;a href=&#34;https://docs.shokax.kaitaku.xyz/getting-started/&#34;&gt;ShokaX安装&lt;/a&gt;&lt;/p&gt;
 &lt;h1 id=&#34;应用主题&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#应用主题&#34;&gt;#&lt;/a&gt; 应用主题&lt;/h1&gt;
-&lt;p&gt;应用主题采用了shokaX，把&lt;span class=&#34;red&#34;&gt;&amp;lt;root&amp;gt;/_config.yml&lt;/span&gt;里面的主题修改为&lt;span class=&#34;red&#34;&gt;shokax&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;应用主题采用了shokaX，把&lt;span class=&#34;kbd red&#34;&gt;&amp;lt;root&amp;gt;/_config.yml&lt;/span&gt;里面的主题修改为&lt;span class=&#34;kbd red&#34;&gt;shokax&lt;/span&gt;&lt;/p&gt;
 &lt;h1 id=&#34;更新日志&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#更新日志&#34;&gt;#&lt;/a&gt; 更新日志&lt;/h1&gt;
 &lt;p&gt;标签含义：&lt;br /&gt;
 ❗ 需要手动操作的更新信息&lt;br /&gt;
@@ -75,7 +75,7 @@
 🐛 采用hexo s搭建本地站点的时候会报错，上传到github也会显示页面不存在&lt;/p&gt;
 &lt;h2 id=&#34;01-02&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#01-02&#34;&gt;#&lt;/a&gt; 0.1 👉 0.2&lt;/h2&gt;
 &lt;p&gt;更新时间 &lt;span class=&#34;red&#34;&gt;2026/4/16&lt;/span&gt;&lt;br /&gt;
-✅ 修复站点报错BUG，需要在&lt;span&gt;&amp;lt;root&amp;gt;/themes/shokax/_images.yml&lt;/span&gt;[&lt;span class=&#34;red&#34;&gt;&amp;lt;root&amp;gt;/themes/shokax/_images.yml&lt;/span&gt;]{.kbd}写入6张图片路径，同时在路径下存入至少六张图片，注意文件默认路径是在&lt;span class=&#34;red&#34;&gt;&amp;lt;root&amp;gt;/themes/shokax/source&lt;/span&gt;&lt;br /&gt;
+✅ 修复站点报错BUG，需要在&lt;span class=&#34;kdb red&#34;&gt;&amp;lt;root&amp;gt;/themes/shokax/_images.yml&lt;/span&gt;写入6张图片路径，同时在路径下存入至少六张图片，注意文件默认路径是在&lt;span class=&#34;kdb red&#34;&gt;&amp;lt;root&amp;gt;/themes/shokax/source&lt;/span&gt;；&lt;br /&gt;
 ✅ 开启twikoo评论功能，具体步骤参考&lt;a href=&#34;https://twikoo.js.org/backend.html&#34;&gt;twikoo云函数部署&lt;/a&gt;,采用Netify部署,有充足的免费额度，中国大陆访问速度不错，注意不要采用&lt;span class=&#34;blue&#34;&gt;Hugging Face 部署&lt;/span&gt;方式，因为相关space会被Hugging Face标记为不安全导致不可使用&lt;br /&gt;
 ✅ 配置pagefind搜索功能，具体参考&lt;a href=&#34;https://docs.shokax.kaitaku.xyz/features/search/&#34;&gt;ShokaX搜索功能&lt;/a&gt;&lt;br /&gt;
 ⌛ 音乐播放功能&lt;br /&gt;
