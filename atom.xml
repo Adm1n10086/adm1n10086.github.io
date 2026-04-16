@@ -8,7 +8,21 @@
     <author>
       <name>ZhIE</name>
     </author>
-    <updated>2026-04-14T03:28:28.967Z</updated>
+    <updated>2026-04-15T16:00:00.000Z</updated>
+    <entry>
+        <id>https://adm1n10086.github.io/2026/04/16/markdown%E8%AF%AD%E6%B3%95/</id>
+        <title>ShokaX特殊语法及MarkDown语法</title>
+        <link rel="alternate" href="https://adm1n10086.github.io/2026/04/16/markdown%E8%AF%AD%E6%B3%95/"/>
+        <content type="html">&lt;h1 id=&#34;shokax特殊语法&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#shokax特殊语法&#34;&gt;#&lt;/a&gt; ShokaX特殊语法&lt;/h1&gt;
+&lt;h2 id=&#34;参考文献&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#参考文献&#34;&gt;#&lt;/a&gt; 参考文献&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&#34;https://koharu.cosine.ren/post/note/shoka-features&#34;&gt;Shoka 主题 Markdown 语法演示&lt;/a&gt;&lt;/p&gt;
+&lt;h1 id=&#34;markdown语法&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#markdown语法&#34;&gt;#&lt;/a&gt; MarkDown语法&lt;/h1&gt;
+&lt;h2 id=&#34;参考文献-2&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#参考文献-2&#34;&gt;#&lt;/a&gt; 参考文献&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&#34;https://markdown.com.cn/basic-syntax/&#34;&gt;Markdown教程&lt;/a&gt;&lt;/p&gt;
+</content>
+        <category term="ShokaX" scheme="https://adm1n10086.github.io/tags/ShokaX/" />
+        <updated>2026-04-15T16:00:00.000Z</updated>
+    </entry>
     <entry>
         <id>https://adm1n10086.github.io/2026/04/14/hello-world/</id>
         <title>Hello World</title>
@@ -31,6 +45,46 @@
         <updated>2026-04-14T03:28:28.967Z</updated>
     </entry>
     <entry>
+        <id>https://adm1n10086.github.io/2026/04/14/ShokaX%E6%90%AD%E5%BB%BA/</id>
+        <title>Hexo主题ShokaX搭建</title>
+        <link rel="alternate" href="https://adm1n10086.github.io/2026/04/14/ShokaX%E6%90%AD%E5%BB%BA/"/>
+        <content type="html">&lt;h1 id=&#34;设计原由&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#设计原由&#34;&gt;#&lt;/a&gt; 设计原由&lt;/h1&gt;
+&lt;p&gt;本来想着做一个博客网站，刚开始学习，利用Hexo+Github搭建了一个博客平台，看见评论区有人推荐主题，网友推荐的主题我一个一个看了看，选择了一款最喜欢的主题shoka，后面了解到原shoka已经停止更新了，现在使用的都是shokaX，于是便学习搭建ShokaX，相信这将来对我的学习和生活都会有莫大的帮助吧！&lt;/p&gt;
+&lt;h1 id=&#34;搭建过程&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#搭建过程&#34;&gt;#&lt;/a&gt; 搭建过程&lt;/h1&gt;
+&lt;h2 id=&#34;hexo搭建&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#hexo搭建&#34;&gt;#&lt;/a&gt; Hexo搭建&lt;/h2&gt;
+&lt;p&gt;Hexo搭建主要参考了这位博主的博客：&lt;br /&gt;
+&lt;a href=&#34;https://www.cnblogs.com/xango/p/18909673&#34;&gt;Hexo+GitHub pages搭建个人博客教程&lt;/a&gt;&lt;br /&gt;
+网上有很多教程，这里不再详细赘述&lt;/p&gt;
+&lt;h2 id=&#34;shokax搭建&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#shokax搭建&#34;&gt;#&lt;/a&gt; ShokaX搭建&lt;/h2&gt;
+&lt;p&gt;ShokaX搭建主要参考了以下文档：&lt;br /&gt;
+&lt;a href=&#34;https://docs.shokax.kaitaku.xyz/getting-started/&#34;&gt;ShokaX安装&lt;/a&gt;&lt;/p&gt;
+&lt;h1 id=&#34;应用主题&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#应用主题&#34;&gt;#&lt;/a&gt; 应用主题&lt;/h1&gt;
+&lt;p&gt;应用主题采用了shokaX，把&lt;span class=&#34;red&#34;&gt;&amp;lt;root&amp;gt;/_config.yml&lt;/span&gt;里面的主题修改为&lt;span class=&#34;red&#34;&gt;shokax&lt;/span&gt;&lt;/p&gt;
+&lt;h1 id=&#34;更新日志&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#更新日志&#34;&gt;#&lt;/a&gt; 更新日志&lt;/h1&gt;
+&lt;p&gt;标签含义：&lt;br /&gt;
+❗ 需要手动操作的更新信息&lt;br /&gt;
+⚠️ 需要注意的更新信息&lt;br /&gt;
+🔧 已修复的问题&lt;br /&gt;
+⌛ TODO&lt;br /&gt;
+✅ DONE&lt;br /&gt;
+🐛 BUG&lt;/p&gt;
+&lt;h2 id=&#34;01&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#01&#34;&gt;#&lt;/a&gt; 0.1&lt;/h2&gt;
+&lt;p&gt;更新时间 &lt;span class=&#34;red&#34;&gt;2026/4/16&lt;/span&gt;&lt;br /&gt;
+✅ Hexo和ShokaX搭建完成，搭建过程见上&lt;br /&gt;
+⌛ 评论系统&lt;br /&gt;
+🐛 采用hexo s搭建本地站点的时候会报错，上传到github也会显示页面不存在&lt;/p&gt;
+&lt;h2 id=&#34;01-02&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#01-02&#34;&gt;#&lt;/a&gt; 0.1 👉 0.2&lt;/h2&gt;
+&lt;p&gt;更新时间 &lt;span class=&#34;red&#34;&gt;2026/4/16&lt;/span&gt;&lt;br /&gt;
+✅ 修复站点报错BUG，需要在&lt;span&gt;&amp;lt;root&amp;gt;/themes/shokax/_images.yml&lt;/span&gt;[&lt;span class=&#34;red&#34;&gt;&amp;lt;root&amp;gt;/themes/shokax/_images.yml&lt;/span&gt;]{.kbd}写入6张图片路径，同时在路径下存入至少六张图片，注意文件默认路径是在&lt;span class=&#34;red&#34;&gt;&amp;lt;root&amp;gt;/themes/shokax/source&lt;/span&gt;&lt;br /&gt;
+✅ 开启twikoo评论功能，具体步骤参考&lt;a href=&#34;https://twikoo.js.org/backend.html&#34;&gt;twikoo云函数部署&lt;/a&gt;,采用Netify部署,有充足的免费额度，中国大陆访问速度不错，注意不要采用&lt;span class=&#34;blue&#34;&gt;Hugging Face 部署&lt;/span&gt;方式，因为相关space会被Hugging Face标记为不安全导致不可使用&lt;br /&gt;
+✅ 配置pagefind搜索功能，具体参考&lt;a href=&#34;https://docs.shokax.kaitaku.xyz/features/search/&#34;&gt;ShokaX搜索功能&lt;/a&gt;&lt;br /&gt;
+⌛ 音乐播放功能&lt;br /&gt;
+⌛ 文章top封面&lt;/p&gt;
+</content>
+        <category term="ShokaX" scheme="https://adm1n10086.github.io/tags/ShokaX/" />
+        <updated>2026-04-13T16:00:00.000Z</updated>
+    </entry>
+    <entry>
         <id>https://adm1n10086.github.io/2024/04/24/first/</id>
         <title>第一篇文章</title>
         <link rel="alternate" href="https://adm1n10086.github.io/2024/04/24/first/"/>
@@ -38,6 +92,9 @@
 &lt;p&gt;這是內容&lt;/p&gt;
 </content>
         <category term="ShokaX" scheme="https://adm1n10086.github.io/tags/ShokaX/" />
+        <category term="Hexo" scheme="https://adm1n10086.github.io/tags/Hexo/" />
+        <category term="博客配置" scheme="https://adm1n10086.github.io/tags/%E5%8D%9A%E5%AE%A2%E9%85%8D%E7%BD%AE/" />
+        <category term="标签教程" scheme="https://adm1n10086.github.io/tags/%E6%A0%87%E7%AD%BE%E6%95%99%E7%A8%8B/" />
         <updated>2024-04-23T16:00:00.000Z</updated>
     </entry>
 </feed>
