@@ -10,8 +10,219 @@
         </author>
         <description></description>
         <language>zh-CN</language>
-        <pubDate>Thu, 16 Apr 2026 00:00:00 +0800</pubDate>
-        <lastBuildDate>Thu, 16 Apr 2026 00:00:00 +0800</lastBuildDate>
+        <pubDate>Tue, 05 May 2026 00:00:00 +0800</pubDate>
+        <lastBuildDate>Tue, 05 May 2026 00:00:00 +0800</lastBuildDate>
+        <item>
+            <guid isPermalink="true">https://adm1n10086.github.io/2026/05/05/%E8%BD%AF%E7%94%B2%E5%AE%89%E5%85%A8%E7%90%86%E8%AE%BA%E8%AF%BE%E7%A8%8B%E5%A4%8D%E4%B9%A0/</guid>
+            <title>软甲安全理论课程复习</title>
+            <link>https://adm1n10086.github.io/2026/05/05/%E8%BD%AF%E7%94%B2%E5%AE%89%E5%85%A8%E7%90%86%E8%AE%BA%E8%AF%BE%E7%A8%8B%E5%A4%8D%E4%B9%A0/</link>
+            <category term="软件安全" scheme="https://adm1n10086.github.io/tags/%E8%BD%AF%E4%BB%B6%E5%AE%89%E5%85%A8/" />
+            <pubDate>Tue, 05 May 2026 00:00:00 +0800</pubDate>
+            <description><![CDATA[ &lt;h1 id=&#34;复习重点&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#复习重点&#34;&gt;#&lt;/a&gt; 复习重点&lt;/h1&gt;
+&lt;p&gt;&lt;span class=&#34;red kbd&#34;&gt;问卷内容&lt;/span&gt;&lt;br /&gt;
+&lt;span class=&#34;red kbd&#34;&gt;静态分析&lt;/span&gt;&lt;br /&gt;
+&lt;span class=&#34;red kbd&#34;&gt;动态分析&lt;/span&gt;&lt;br /&gt;
+&lt;span class=&#34;red kbd&#34;&gt;缓冲区溢出、栈的溢出&lt;/span&gt;&lt;br /&gt;
+&lt;span class=&#34;red kbd&#34;&gt;课本P73作业：内存错误，ABR（数组越界读取）例子&lt;/span&gt;&lt;br /&gt;
+&lt;span class=&#34;red kbd&#34;&gt;课本P152学习系统的安全需求,P152-157仔细阅读，核心安全需求可以采用什么方案&lt;/span&gt;&lt;br /&gt;
+&lt;span class=&#34;red kbd&#34;&gt;课本P116-119内容，图5-1，每一步需要做什么，微软安全开发模型&lt;/span&gt;&lt;br /&gt;
+&lt;span class=&#34;red kbd&#34;&gt;白加黑免杀思路&lt;/span&gt;&lt;br /&gt;
+&lt;span class=&#34;red kbd&#34;&gt;dll注入怎么实现&lt;/span&gt;&lt;br /&gt;
+&lt;span class=&#34;red kbd&#34;&gt;2个HOOK，IATHOOK更重要&lt;/span&gt;&lt;br /&gt;
+&lt;span class=&#34;red kbd&#34;&gt;shellcode框架kernel32基址获取（藏在代码节、data节怎么执行shellcode思路）&lt;/span&gt;&lt;br /&gt;
+&lt;span class=&#34;red kbd&#34;&gt;...&lt;/span&gt;&lt;/p&gt;
+&lt;h1 id=&#34;问卷内容&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#问卷内容&#34;&gt;#&lt;/a&gt; 问卷内容&lt;/h1&gt;
+&lt;h1 id=&#34;静态分析&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#静态分析&#34;&gt;#&lt;/a&gt; 静态分析&lt;/h1&gt;
+&lt;h2 id=&#34;静态分析方法&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#静态分析方法&#34;&gt;#&lt;/a&gt; 静态分析方法&lt;/h2&gt;
+&lt;p&gt;反病毒引擎扫描&lt;br /&gt;
+哈希值&lt;br /&gt;
+查找字符串&lt;br /&gt;
+当加壳的程序运行时，会首先&lt;span class=&#34;red&#34;&gt;运行一小段脱壳代码&lt;/span&gt;，来解压缩加壳的文件，然后再运行脱壳后的文件&amp;lt;注：经过加壳，静态分析无能为力，动态分析或脱壳&amp;gt;&lt;br /&gt;
+静态链接，运行时链接与动态链接&lt;br /&gt;
+使用ResourceHacker查看资源节&lt;/p&gt;
+&lt;p&gt;实验四内容：&lt;br /&gt;
+基础静态分析及使用工具&lt;br /&gt;
+文件标签：沙箱(全面的静态信息)；WinMD5（获取MD5值）&lt;br /&gt;
+E文件结构：Peditor(基础PE结构信息)、PEView(细致PE结构内容)、Resource Hacker(资源节)&lt;br /&gt;
+壳信息：PEiD（查壳与脱壳）、很多通用和专用脱壳机&lt;br /&gt;
+字符串：IDA（包含字符串窗口）、Strings（微软工具，结果很全）&lt;br /&gt;
+导入函数：IDA（包含导入函数窗口）、PEditor（导入函数信息）&lt;/p&gt;
+&lt;h1 id=&#34;动态分析&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#动态分析&#34;&gt;#&lt;/a&gt; 动态分析&lt;/h1&gt;
+&lt;h2 id=&#34;动态分析方法&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#动态分析方法&#34;&gt;#&lt;/a&gt; 动态分析方法&lt;/h2&gt;
+&lt;p&gt;进程与服务监控&lt;br /&gt;
+注册表&lt;br /&gt;
+文件监控&lt;br /&gt;
+网络行为监控&lt;br /&gt;
+定时任务监控&lt;br /&gt;
+使用工具：&lt;br /&gt;
+火绒剑、Procmon、ATools：比较全面的过滤与监控工具&lt;br /&gt;
+ProcExp、任务管理器：进程浏览工具&lt;br /&gt;
+regshot：注册表对比工具，可以更加细致的给出注册表的改变&lt;br /&gt;
+wirshark：网络监控工具，用于捕获与分析数据包&lt;br /&gt;
+Autoruns：服务监控、计划任务监控等&lt;/p&gt;
+&lt;p&gt;动态行为分析可以从以上介绍的进程、文件、注册表、服务、网络连接等方面入手，其中又可以根据分析场景&lt;br /&gt;
+分为下面两种类型：&lt;br /&gt;
+专一型分析：&lt;br /&gt;
+ 适用场景：分析者已经拿到恶意样本(远程恶意代码分析与处置）&lt;br /&gt;
+ 分析目标：获取该恶意样本在进行、文件、注册表、服务、计划任务、网络等方面的具体行为&lt;br /&gt;
+ 分析方法：通过监控工具过滤指定进程或者目录，专门监控该样本行为&lt;br /&gt;
+ 使用工具：火绒剑、ProcMonitor + ProcExp；其他专用工具。&lt;br /&gt;
+ 使用经验：我一般会使用火绒剑直接监控分析，火绒剑界面比较友好、支持单独监控和全系统监控。也&lt;br /&gt;
+会使用Autoruns、regshot等具体分析某一项。&lt;br /&gt;
+全面型分析:&lt;br /&gt;
+ 适用场景：分析者没有拿到具体样本，只有受害主机。（恶意代码取证与应急）&lt;br /&gt;
+ 分析目标：通过工具排查系统进程、文件、注册表、服务、网络连接等，找到可疑内容。&lt;br /&gt;
+ 分析方法：通过监控工具获取系统全方面信息，根据经验与辅助工具进行取证与应急处置&lt;br /&gt;
+ 使用工具：ATool、任务管理器；其他专用工具。&lt;br /&gt;
+ 使用经验：会先通过任务管理器简单查看，如各个硬件性能情况、占比较高的进程信息等；之后通过&lt;br /&gt;
+Atool进行更加具体的分析&lt;/p&gt;
+&lt;h1 id=&#34;缓冲区溢出-栈的溢出-堆的溢出&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#缓冲区溢出-栈的溢出-堆的溢出&#34;&gt;#&lt;/a&gt; 缓冲区溢出、栈的溢出、堆的溢出&lt;/h1&gt;
+&lt;h2 id=&#34;章节问题&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#章节问题&#34;&gt;#&lt;/a&gt; 章节问题&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;什么是缓冲区溢出漏洞？&lt;/li&gt;
+&lt;li&gt;什么是栈溢出？栈溢出漏洞如何利用？&lt;/li&gt;
+&lt;li&gt;什么是堆溢出？堆溢出漏洞如何利用？&lt;/li&gt;
+&lt;li&gt;什么是格式化字符串漏洞？该漏洞如何利用？&lt;/li&gt;
+&lt;li&gt;针对缓冲区溢出漏洞，Windows平台设置了哪些保护机制？&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;基本概念&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#基本概念&#34;&gt;#&lt;/a&gt; 基本概念&lt;/h2&gt;
+&lt;p&gt;缓冲区&lt;br /&gt;
+程序中所使用的缓冲区可以是堆区和栈区，也可以是存放静态变量的数据区。&lt;br /&gt;
+由于进程中各个区域都有自己的用途，根据缓冲区利用的方法和缓冲区在内存中所属区域，其可分为栈溢出和堆溢出。&lt;br /&gt;
+缓冲区溢出漏洞&lt;br /&gt;
+缓冲区溢出漏洞就是在向缓冲区写入数据时，由于没有做边界检查，导致写入缓冲区的数据超过预先分配的边界，从而使溢出数据覆盖在合法数据上而引起系统异常的一种现象。&lt;/p&gt;
+&lt;h2 id=&#34;攻击利用&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#攻击利用&#34;&gt;#&lt;/a&gt; 攻击利用&lt;/h2&gt;
+&lt;p&gt;将一个有效指令地址写入返回地址区域中，这样就可以让CPU跳转到我们希望执行的指令处，从而达到控制程序执行流程的目的。&lt;br /&gt;
+攻击者通过缓冲区溢出改写的目标往往不是某一个变量，而是栈帧高地址的EBP和函数的返回地址等值。通过覆盖程序中的函数返回地址和函数指针等值，攻击者可以直接将程序跳转到其预先设定或已经注入到目标程序的代码上去执行。&lt;br /&gt;
+在实际的漏洞利用中，由于动态链接库的装入和卸载等原因，Windows进程的函数栈帧可能发生移位，即Shellcode在内存中的地址是动态变化的，所以上述采用直接赋地址值的简单方式在以后的运行过程中会出现跳转异常。&lt;br /&gt;
+可以在覆盖返回地址的时候用系统动态链接库中某条处于高地址且位置固定的跳转指令所在的地址进行覆盖，然后再通过这条跳转指令指向动态变化的Shellcode地址。这样便能够确保程序执行流程在目标系统运行时可以被如期进行。&lt;/p&gt;
+&lt;p&gt;SEH覆盖方法&lt;br /&gt;
+SEH覆盖方法就是覆盖异常处理程序地址的一种攻击方式。由于SEH结构存放在栈中，因此攻击者可以利用栈溢出漏洞，设计特定的溢出数据，将SEH中异常函数的入口地址覆盖为Shellcode的起始地址或可以跳转到Shellcode的跳转指令地址，从而导致程序发生异常时，Windows异常处理机制执行的不是预设的异常处理函数，而是Shellcode。&lt;/p&gt;
+&lt;p&gt;堆溢出&lt;br /&gt;
+从链表上卸载（unlink）一个节点的时候会发生如下操作：&lt;br /&gt;
+node—&amp;gt;blink—&amp;gt;flink = node—&amp;gt;flink ;&lt;br /&gt;
+node—&amp;gt;flink—&amp;gt;blink = node—&amp;gt;blink ;&lt;/p&gt;
+&lt;p&gt;通过堆溢出覆写了一个空闲堆块的块首的前向指针flink和后向指针blink，构造一个地址和一个数据，当这个空闲堆块从链表里卸下的时候，就获得一次向内存构造的任意地址写入一个任意数据的机会-Arbitrary Dword Reset（又称Dword Shoot）&lt;/p&gt;
+&lt;h1 id=&#34;abr例子&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#abr例子&#34;&gt;#&lt;/a&gt; ABR例子&lt;/h1&gt;
+&lt;p&gt;1  #include &amp;lt;iostream&amp;gt;      // 引入输入输出库，让我们能用cout打印内容&lt;br /&gt;
+2  using namespace std;     // 用std命名空间，这样不用写std::cout，直接写cout就行&lt;br /&gt;
+3  int main() {             // 程序的入口，所有代码都要写在main里&lt;br /&gt;
+4    char * str1 = &amp;quot;four&amp;quot;;  // 定义一个字符串指针，指向常量区的&amp;quot;four&amp;quot;（长度4+1个&#39;\0&#39;结束符，共5字节）&lt;br /&gt;
+5    char * str2 = new char[4]; // 申请一块堆内存，大小为4个char（4字节），str2指向这块内存&lt;br /&gt;
+6    char * str3 = str2;    // 让str3也指向str2的那块堆内存（两个指针指向同一块内存）&lt;br /&gt;
+7    cout &amp;lt;&amp;lt; str2 &amp;lt;&amp;lt; endl;  // 打印str2指向的字符串&lt;br /&gt;
+8    strcpy(str2, str1);    // 把str1的&amp;quot;four&amp;quot;复制到str2指向的内存里&lt;br /&gt;
+9    cout &amp;lt;&amp;lt; str2 &amp;lt;&amp;lt; endl;  // 再次打印str2&lt;br /&gt;
+10   delete str2;           // 释放str2指向的堆内存&lt;br /&gt;
+11   str2[0] += 2;          // 访问并修改已经释放的内存里的第一个字符&lt;br /&gt;
+12   delete str3;           // 再次释放同一块内存（str3和str2指向同一块）&lt;br /&gt;
+13 }&lt;br /&gt;
+行号	注释缩写	含义	错误原因&lt;br /&gt;
+第 5 行	//not enough space	空间不足	new char[4]只申请了 4 字节，但 &amp;quot;four&amp;quot; 实际需要 5 字节（f o u r \0），会溢出&lt;br /&gt;
+第 7 行	//UMR	未初始化内存读取	str2刚申请，内存里是随机垃圾值，cout直接打印会读取垃圾，属于未定义行为&lt;br /&gt;
+第 8 行	//ABW	数组越界写入	strcpy会把str1的 5 个字符（包括\0）写入只有 4 字节的str2，超出了分配的内存空间，会破坏堆结构&lt;br /&gt;
+第 9 行	//ABR	数组越界读取	越界写入后，str2里的字符串虽然能打印，但已经破坏了相邻内存，读取时可能出现乱码或崩溃&lt;br /&gt;
+第 11 行	//FMR and FMW	释放后读取 / 写入	第 10 行已经delete str2释放了内存，第 11 行还去修改str2[0]，属于对已释放内存的非法读写&lt;br /&gt;
+第 12 行	//FFM	重复释放内存	str3和str2指向同一块内存，delete str3会再次释放已经释放过的内存，导致堆损坏&lt;/p&gt;
+&lt;h1 id=&#34;课本p152-157一个在线学习系统的安全需求分析&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#课本p152-157一个在线学习系统的安全需求分析&#34;&gt;#&lt;/a&gt; 课本P152-157：一个在线学习系统的安全需求分析&lt;/h1&gt;
+&lt;h2 id=&#34;安全需求分析&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#安全需求分析&#34;&gt;#&lt;/a&gt; 安全需求分析&lt;/h2&gt;
+&lt;p&gt;拟设计开发一个在线学习系统。&lt;br /&gt;
+试对该系统进行安全需求分析&lt;br /&gt;
+(1）在线学习系统的主要目标&lt;br /&gt;
+●确保在线教育内容和服务质量能够满足学习者的需求，并符合教育主管部门的要求。&lt;br /&gt;
+●良好的人机交互界面，操作简单。&lt;br /&gt;
+●向移动终端提供稳定、流畅的课程视频。&lt;br /&gt;
+提供学习者间的互动、学习者与教师之间的互动，以及学习者与在线学习系统之间的互动功能。&lt;br /&gt;
+●跟踪和分析学习者的学习行为，主动、精确地进行知识推荐，满足学习者的学习需求。&lt;br /&gt;
+(2）用户特点&lt;br /&gt;
+本系统的最终用户是有知识学习需求的学习者、提供学习资源的教师或相关人员（统称教师)，以及教育平台系统维护人员（简称管理员）。他们都具有基本的计算机基础知识和操作计算机的能力，是经常性用户。系统维护人员是计算机专业人员，熟悉操作系统和数据库，是间隔性用户。&lt;br /&gt;
+(3)需求概述&lt;br /&gt;
+在线学习系统中，学习者、教师和管理员之间的业务流程如图所示。&lt;br /&gt;
+&lt;img loading=&#34;lazy&#34; src=&#34;/images/%E8%BD%AF%E4%BB%B6%E5%AE%89%E5%85%A8%E5%A4%8D%E4%B9%A0/1.png&#34; alt=&#34;alt text&#34; /&gt;&lt;br /&gt;
+可以将本案例中在线学习系统的安全需求分为四大类：核心安全需求、通用安全需求、运维安全需求及其他安全需求，女如下图所示。&lt;br /&gt;
+&lt;img loading=&#34;lazy&#34; src=&#34;/images/%E8%BD%AF%E4%BB%B6%E5%AE%89%E5%85%A8%E5%A4%8D%E4%B9%A0/2.png&#34; alt=&#34;alt text&#34; /&gt;&lt;/p&gt;
+&lt;h2 id=&#34;核心安全需求&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#核心安全需求&#34;&gt;#&lt;/a&gt; 核心安全需求&lt;/h2&gt;
+&lt;h3 id=&#34;保密性&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#保密性&#34;&gt;#&lt;/a&gt; 保密性&lt;/h3&gt;
+&lt;p&gt;保密性需求&lt;br /&gt;
+确定哪些数据是必须得到保护的非公开数据，采用什么加密方法&lt;br /&gt;
+利用信息隐藏技术保护某些数据的存在性&lt;br /&gt;
+口令不能明文存储在后端系统，也不能用密钥类加密机制，而是需要采用散列函数进行加密存储。&lt;br /&gt;
+传送的用户账号信息等敏感数据，必须采用传输层安全协议(如TLS/SSL协议)，以防止中间人攻击。&lt;br /&gt;
+用户的敏感信息&lt;/p&gt;
+&lt;h3 id=&#34;完整性&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#完整性&#34;&gt;#&lt;/a&gt; 完整性&lt;/h3&gt;
+&lt;p&gt;目的：为了解决未授权的修改问题，确保系统或者软件按照预期功能工作&lt;br /&gt;
+完整性需求&lt;br /&gt;
+所有输入的表单和参数在被软件处理前，需要根据允许输入的数据集进行比较验证，如身份征的核实，不仅能确保数据完整性，还能一定程度上防止注入&lt;br /&gt;
+所有发行的系统功能都应该具备校验和以及散列函数的功能，以便验证该模块的准确性和完整性&lt;br /&gt;
+所有非人类行动者都要被识别和监控，以防其对系统数据进行操作，除非有明确授权&lt;/p&gt;
+&lt;h3 id=&#34;可用性&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#可用性&#34;&gt;#&lt;/a&gt; 可用性&lt;/h3&gt;
+&lt;p&gt;目的：主要用于防范DoS攻击；不安全的编码结构，如悬挂指针，内存分配不当与无限循环结构也会影响可用性&lt;br /&gt;
+可用性需求&lt;br /&gt;
+在服务水平协议（Service LevelAgreement,SLA)中定义“5个9（99.999%）的软件”以确保高可用性。&lt;br /&gt;
+确定在任何一个给定的时间点，使用该软件的用户数量的最大值。&lt;br /&gt;
+软件和数据应该能够跨数据中心进行复制，以提供负载均衡和冗余。&lt;br /&gt;
+确定软件的关键业务功能、关键基本功能及关键支持功能被中断后的恢复时间。&lt;br /&gt;
+&lt;img loading=&#34;lazy&#34; src=&#34;/images/%E8%BD%AF%E4%BB%B6%E5%AE%89%E5%85%A8%E5%A4%8D%E4%B9%A0/3.png&#34; alt=&#34;alt text&#34; /&gt;&lt;/p&gt;
+&lt;h3 id=&#34;可认证需求&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#可认证需求&#34;&gt;#&lt;/a&gt; 可认证需求&lt;/h3&gt;
+&lt;p&gt;目的：验证并确保那些提出认证申请的实体（人、过程或者设备）的合法性和有效性&lt;br /&gt;
+用户在系统中注册时需要实名认证，需要核实其手机号码等的真实性。&lt;br /&gt;
+用户在上传、更新或删除教学资料时应当对其进行身份认证。&lt;br /&gt;
+提供单点登录支持，并要求这些身份主体记录在预定义的用户认证列表中。&lt;br /&gt;
+对系统核心事物的处理模块，都需要双因素或多因素身份认证。&lt;/p&gt;
+ ]]></description>
+        </item>
+        <item>
+            <guid isPermalink="true">https://adm1n10086.github.io/2026/04/23/%E6%BC%8F%E6%B4%9E%E5%A4%8D%E7%8E%B0/</guid>
+            <title>Elasticsearch 未授权访问漏洞</title>
+            <link>https://adm1n10086.github.io/2026/04/23/%E6%BC%8F%E6%B4%9E%E5%A4%8D%E7%8E%B0/</link>
+            <category term="网络安全" scheme="https://adm1n10086.github.io/tags/%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8/" />
+            <category term="漏洞复现" scheme="https://adm1n10086.github.io/tags/%E6%BC%8F%E6%B4%9E%E5%A4%8D%E7%8E%B0/" />
+            <pubDate>Thu, 23 Apr 2026 00:00:00 +0800</pubDate>
+            <description><![CDATA[ &lt;h1 id=&#34;关键词&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#关键词&#34;&gt;#&lt;/a&gt; 关键词&lt;/h1&gt;
+&lt;p&gt;&lt;span class=&#34;red kbd&#34;&gt;A02:2025 - Security Misconfiguration&lt;/span&gt;&lt;br /&gt;
+&lt;span class=&#34;red kbd&#34;&gt;失控的访问控制&lt;/span&gt;&lt;br /&gt;
+&lt;span class=&#34;red kbd&#34;&gt;路径穿越&lt;/span&gt;&lt;/p&gt;
+&lt;h1 id=&#34;elasticsearch简介&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#elasticsearch简介&#34;&gt;#&lt;/a&gt; elasticsearch简介&lt;/h1&gt;
+&lt;p&gt;Elasticsearch 是基于 Apache Lucene &lt;span class=&#34;kbd&#34;&gt;一个高性能、可扩展的信息检索(IR)库&lt;/span&gt;构建的开源分布式实时搜索与数据分析引擎，也是 Elastic Stack&lt;span class=&#34;kbd&#34;&gt;Elastic 公司开发和维护的开源数据分析平台&lt;/span&gt;（ELK）的核心。它以近实时、高可用、水平扩展、全文检索、多类型数据支持、RESTful API为核心特性，广泛用于日志分析、业务搜索、监控、安全与向量检索等场景。&lt;/p&gt;
+&lt;h1 id=&#34;elasticsearch-未授权访问漏洞简介&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#elasticsearch-未授权访问漏洞简介&#34;&gt;#&lt;/a&gt; Elasticsearch 未授权访问漏洞简介&lt;/h1&gt;
+&lt;p&gt;Elasticsearch 早期版本默认无账号密码认证，9200 端口对所有访问者开放 REST API，而管理员未修改默认配置、未开启 Xpack 认证、未通过防火墙限制 9200 端口访问范围，直接暴露在公网 / 内网，攻击者无需账号密码，即可通过 HTTP 接口访问集群，获取集群信息、索引数据、节点状态等。&lt;/p&gt;
+&lt;h1 id=&#34;影响范围&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#影响范围&#34;&gt;#&lt;/a&gt; 影响范围&lt;/h1&gt;
+&lt;p&gt;Elasticsearch 1.x、2.x、5.x 等早期版本（默认无认证）；6.8+ 版本虽默认开启基础认证，但仍可能因管理员未启用而存在未授权风险。&lt;/p&gt;
+&lt;h1 id=&#34;漏洞复现&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#漏洞复现&#34;&gt;#&lt;/a&gt; 漏洞复现&lt;/h1&gt;
+&lt;p&gt;ubunto安装docker环境，启动包含Elasticsearch早期版本的容器，访问服务器9200端口：&lt;/p&gt;
+&lt;p&gt;XXXXXXXXXXXXXXXXXXXXXXXXXXXX&lt;/p&gt;
+&lt;h2 id=&#34;攻击方式1&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#攻击方式1&#34;&gt;#&lt;/a&gt; 攻击方式1：&lt;/h2&gt;
+&lt;p&gt;漏洞检测:&lt;br /&gt;
+&lt;a href=&#34;http://192.168.142.141:9200/_cat/indices/&#34;&gt;http://192.168.142.141:9200/_cat/indices/&lt;/a&gt;&lt;br /&gt;
+&lt;a href=&#34;http://192.168.142.141:9200/_plugin/head/&#34;&gt;http://192.168.142.141:9200/_plugin/head/&lt;/a&gt;&lt;br /&gt;
+&lt;a href=&#34;http://192.168.142.141:9200/_nodes/&#34;&gt;http://192.168.142.141:9200/_nodes/&lt;/a&gt;&lt;br /&gt;
+&lt;a href=&#34;http://192.168.142.141:9200/_status&#34;&gt;http://192.168.142.141:9200/_status&lt;/a&gt;&lt;br /&gt;
+&lt;a href=&#34;http://192.168.142.141:9200/_search?pretty&#34;&gt;http://192.168.142.141:9200/_search?pretty&lt;/a&gt;&lt;br /&gt;
+http://192.168.142.141:9200_mapping?pretty=true&lt;/p&gt;
+&lt;p&gt;/_cat/indices/作用：查看靶场集群中所有的index索引列表&lt;br /&gt;
+/_plugin/head/作用：访问 Elasticsearch Head 可视化管理插件。&lt;br /&gt;
+/_nodes/作用：获取靶场集群节点的详细信息，包括版本号、操作系统、Java 版本等。&lt;br /&gt;
+/_status作用：查看靶场集群的整体运行状态，靶场用途：快速判断目标是否为 1.x/2.x ，5.X+新版本已废弃&lt;br /&gt;
+/_search?pretty作用：在靶场集群中执行全局搜索，返回所有索引的数据。&lt;/p&gt;
+&lt;p&gt;XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX&lt;br /&gt;
+由于是靶场环境，所以是没有数据的&lt;/p&gt;
+&lt;h2 id=&#34;攻击方式2&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#攻击方式2&#34;&gt;#&lt;/a&gt; 攻击方式2：&lt;/h2&gt;
+&lt;p&gt;在kali中搭建ElasticHD,在浏览器 中远程连接就可以看到ES节点服务器可视化数据的全貌&lt;br /&gt;
+下载地址：&lt;br /&gt;
+&lt;a href=&#34;https://github.com/360EntSecGroup-Skylar/ElasticHD/releases/download/1.4/elasticHD_linux_amd64.zip&#34;&gt;https://github.com/360EntSecGroup-Skylar/ElasticHD/releases/download/1.4/elasticHD_linux_amd64.zip&lt;/a&gt;&lt;br /&gt;
+解压：&lt;/p&gt;
+&lt;pre class=&#34;shiki shiki-themes vitesse-light vitesse-dark&#34; style=&#34;background-color:#ffffff;--shiki-dark-bg:#121212;color:#393a34;--shiki-dark:#dbd7caee&#34; tabindex=&#34;0&#34;&gt;&lt;code class=&#34;language-text&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span&gt;unzip elasticHD_linux_amd64.zip&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;加权限：&lt;/p&gt;
+&lt;pre class=&#34;shiki shiki-themes vitesse-light vitesse-dark&#34; style=&#34;background-color:#ffffff;--shiki-dark-bg:#121212;color:#393a34;--shiki-dark:#dbd7caee&#34; tabindex=&#34;0&#34;&gt;&lt;code class=&#34;language-text&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span&gt;chmod 777 ElasticHD&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;运行ElasticHD&lt;/p&gt;
+&lt;pre class=&#34;shiki shiki-themes vitesse-light vitesse-dark&#34; style=&#34;background-color:#ffffff;--shiki-dark-bg:#121212;color:#393a34;--shiki-dark:#dbd7caee&#34; tabindex=&#34;0&#34;&gt;&lt;code class=&#34;language-text&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span&gt;exec ./ElasticHD -p 127.0.0.1:9801&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;打开浏览器访问&lt;a href=&#34;http://127.0.0.1:9801/&#34;&gt;http://127.0.0.1:9801/&lt;/a&gt;&lt;br /&gt;
+在浏览器中访问127.0.0.1:9801, 在下面输入需要探索的ip地址，然后点击connect就可以看到泄露的信息，点击模块Query还可以查看详细信息。&lt;/p&gt;
+&lt;h1 id=&#34;参考文献链接&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#参考文献链接&#34;&gt;#&lt;/a&gt; 参考文献链接&lt;/h1&gt;
+&lt;p&gt;&lt;a href=&#34;https://blog.csdn.net/HEAVEN569/article/details/114713345&#34;&gt;https://blog.csdn.net/HEAVEN569/article/details/114713345&lt;/a&gt;&lt;br /&gt;
+&lt;a href=&#34;https://www.cnblogs.com/zcg-cpdd/p/14586562.html&#34;&gt;https://www.cnblogs.com/zcg-cpdd/p/14586562.html&lt;/a&gt;&lt;/p&gt;
+ ]]></description>
+        </item>
         <item>
             <guid isPermalink="true">https://adm1n10086.github.io/2026/04/16/markdown%E8%AF%AD%E6%B3%95/</guid>
             <title>ShokaX特殊语法及MarkDown语法</title>
@@ -27,14 +238,16 @@
  ]]></description>
         </item>
         <item>
-            <guid isPermalink="true">https://adm1n10086.github.io/2026/04/16/%E6%BC%8F%E6%B4%9E%E5%A4%8D%E7%8E%B0/</guid>
+            <guid isPermalink="true">https://adm1n10086.github.io/2026/04/16/Apache%20Http%20Server%E8%B7%AF%E5%BE%84%E7%A9%BF%E8%B6%8A%E6%BC%8F%E6%B4%9E%EF%BC%88CVE-2021-41773%EF%BC%89/</guid>
             <title>Apache Http Server路径穿越漏洞（CVE-2021-41773）</title>
-            <link>https://adm1n10086.github.io/2026/04/16/%E6%BC%8F%E6%B4%9E%E5%A4%8D%E7%8E%B0/</link>
+            <link>https://adm1n10086.github.io/2026/04/16/Apache%20Http%20Server%E8%B7%AF%E5%BE%84%E7%A9%BF%E8%B6%8A%E6%BC%8F%E6%B4%9E%EF%BC%88CVE-2021-41773%EF%BC%89/</link>
             <category term="网络安全" scheme="https://adm1n10086.github.io/tags/%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8/" />
             <category term="漏洞复现" scheme="https://adm1n10086.github.io/tags/%E6%BC%8F%E6%B4%9E%E5%A4%8D%E7%8E%B0/" />
             <pubDate>Thu, 16 Apr 2026 00:00:00 +0800</pubDate>
             <description><![CDATA[ &lt;h1 id=&#34;关键词&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#关键词&#34;&gt;#&lt;/a&gt; 关键词&lt;/h1&gt;
-&lt;p&gt;&lt;span class=&#34;red kbd&#34;&gt;失控的访问控制&lt;/span&gt; &lt;span class=&#34;red kbd&#34;&gt;路径穿越&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;red kbd&#34;&gt;A01:2025 - Broken Access Control&lt;/span&gt;&lt;br /&gt;
+&lt;span class=&#34;red kbd&#34;&gt;失控的访问控制&lt;/span&gt;&lt;br /&gt;
+&lt;span class=&#34;red kbd&#34;&gt;路径穿越&lt;/span&gt;&lt;/p&gt;
 &lt;h1 id=&#34;apache简介&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#apache简介&#34;&gt;#&lt;/a&gt; Apache简介&lt;/h1&gt;
 &lt;p&gt;Apache Http Server（简称Apache）是 Apache 软件基金会的一个开放源码的网页服务器软件，可以在大多数电脑操作系统中运行。由于其跨平台和安全性，被广泛使用，是最流行的 Web 服务器软件之一。它快速、可靠并且可通过简单的 API 扩展，将 Perl／Python 等解释器编译到服务器中。&lt;/p&gt;
 &lt;p&gt;Httpd（即 HTTP Daemon ，超文本传输协议守护程序的简称）是一款运行于网页服务器后台，等待传入服务器请求的软件。HTTP 守护程序能自动回应服务器请求，并使用 HTTP 协议传送超文本及多媒体内容。&lt;/p&gt;
