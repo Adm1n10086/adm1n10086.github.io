@@ -1,0 +1,121 @@
+<!DOCTYPE html><html lang="zh-CN"><head><meta charset="UTF-8"/><meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=2"/><meta name="theme-color" content="#222"/><meta http-equiv="X-UA-COMPATIBLE" content="IE=edge,chrome=1"/><meta name="renderer" content="webkit"/><link rel="icon" type="image/ico" sizes="32x32" href="/assets/favicon.ico"/><link rel="apple-touch-icon" sizes="180x180" href="/assets/apple-touch-icon.png"/><link rel="alternate" href="/rss.xml" title="Study Blog" type="application/rss+xml"><link rel="alternate" href="/atom.xml" title="Study Blog" type="application/atom+xml"><link rel="alternate" type="application/json" title="Study Blog" href="https://adm1n10086.github.io/feed.json"/><link rel="preconnect" href="https://s4.zstatic.net"/><link rel="preconnect" href="https://at.alicdn.com"/><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Mulish:400,400italic,700,700italic%7CFredericka%20the%20Great:400,400italic,700,700italic%7CNoto%20Serif%20JP:400,400italic,700,700italic%7CNoto%20Serif%20SC:400,400italic,700,700italic%7CInconsolata:400,400italic,700,700italic&display=swap&subset=latin,latin-ext" media="none" onload="this.media&#x3D;&#39;all&#39;"><link rel="modulepreload" href="/js/siteInit.js"></link><link rel="modulepreload" href="/js/nyx-player-WKVVF5P2.js"></link><link rel="modulepreload" href="/js/copy-tex-YDVKQK3Z.js"></link><link rel="modulepreload" href="/js/post-XNAAAM6C.js"></link><link rel="modulepreload" href="/js/chunk-W7SREYOH.js"></link><link rel="modulepreload" href="/js/tcomments-BGVAVEXH.js"></link><link rel="modulepreload" href="/js/chunk-IBTLC5L2.js"></link><link rel="modulepreload" href="/js/pagefind-4BGHTDKP.js"></link><link rel="modulepreload" href="/js/index.esm-J5KACBZP.js"></link><link rel="modulepreload" href="/js/chunk-CYZQ4X5E.js"></link><link rel="modulepreload" href="/js/chunk-EDXZ76IA.js"></link><link rel="stylesheet" href="/css/siteInit.css" media="none" onload="this.media&#x3D;&#39;all&#39;"></link><link rel="preload" href="/images/cover.png" as="image" fetchpriority="high"><meta name="keywords" content="网络安全"/><link rel="canonical" href="https://adm1n10086.github.io/2026/05/13/%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8%E7%90%86%E8%AE%BA%E5%AD%A6%E4%B9%A0/"><link rel="stylesheet" href="/css/post.css?v=0.5.4"><link rel="stylesheet" href="/css/mermaid.css?v=0.5.4"><!-- 临时处理--><link rel="stylesheet" media="none" onload="this.media='all'" href="https://s4.zstatic.net/ajax/libs/KaTeX/0.16.9/katex.min.css"><title>网络安全理论学习</title><meta name="generator" content="Hexo 7.3.0"></head><body itemscope itemtype="http://schema.org/WebPage"><div id="loading"><div class="cat"><div class="body"></div><div class="head"><div class="face"></div></div><div class="foot"><div class="tummy-end"></div><div class="bottom"></div><div class="legs left"></div><div class="legs right"></div></div><div class="paw"><div class="hands left"></div><div class="hands right"></div></div></div></div><div id="pagefind_mount"></div><div id="container"><header id="header" itemscope itemtype="http://schema.org/WPHeader"><div class="inner"><div id="brand"><div class="pjax"><h1 itemprop="name headline">网络安全理论学习</h1><div class="meta"><span class="item" title="创建时间：2026-05-13 00:00:00"><span class="icon"><i class="ic i-calendar"></i></span><span class="text">发表于</span><time itemprop="dateCreated datePublished" datetime="2026-05-13T00:00:00+08:00">2026-05-13</time></span><span class="item" title="本文字数"><span class="icon"><i class="ic i-pen"></i></span><span class="text">本文字数</span><span>2.5k</span><span class="text">字</span></span><span class="item" title="阅读时长"><span class="icon"><i class="ic i-clock"></i></span><span class="text">阅读时长</span><span>2 分钟</span></span></div></div></div><nav id="nav"><div class="inner"><div class="toggle"><div class="lines" aria-label="切换导航栏"><span class="line"></span><span class="line"></span><span class="line"></span></div></div><ul class="menu"><li class="item title"><a href="/" rel="start">ZhIE BLOG</a></li></ul><ul class="right" id="rightNav"><li class="item theme"><i class="ic i-sun"></i></li><li class="item search"><i class="ic i-search"></i></li></ul></div></nav></div><div class="pjax" id="imgs"><img src="/images/cover.png" loading="eager" decoding="async" fetchpriority="high" alt="Study Blog"></div></header><div id="waves"><svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto"><defs><path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z"></path></defs><g class="parallax"><use xlink:href="#gentle-wave" x="48" y="0"></use><use xlink:href="#gentle-wave" x="48" y="3"></use><use xlink:href="#gentle-wave" x="48" y="5"></use><use xlink:href="#gentle-wave" x="48" y="7"></use></g></svg></div><main><div class="inner"><div class="pjax" id="main"><div class="article wrap"><div class="breadcrumb" itemListElement itemscope itemtype="https://schema.org/BreadcrumbList"><i class="ic i-home"></i><span><a href="/">首页</a></span></div><article class="post block" itemscope="itemscope" itemtype="http://schema.org/Article" data-pagefind-body="data-pagefind-body" lang="zh-CN"><link itemprop="mainEntityOfPage" href="https://adm1n10086.github.io/2026/05/13/%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8%E7%90%86%E8%AE%BA%E5%AD%A6%E4%B9%A0/"/><span hidden="hidden" itemprop="author" itemscope="itemscope" itemtype="http://schema.org/Person"><meta itemprop="image" content="/assets/avatar.jpg"/><meta itemprop="name" content="ZhIE"/><meta itemprop="description" content=", "/></span><span hidden="hidden" itemprop="publisher" itemscope="itemscope" itemtype="http://schema.org/Organization"><meta itemprop="name" content="Study Blog"/></span><div class="body md" itemprop="articleBody"><h1 id="工具的安装与使用"><a class="anchor" href="#工具的安装与使用">#</a> 工具的安装与使用</h1>
+<h2 id="fiddler下载"><a class="anchor" href="#fiddler下载">#</a> Fiddler下载</h2>
+<p>在以下网站下载，填写邮箱安装<br />
+<a target="_blank" rel="noopener" href="https://www.telerik.com/download/fiddler">https://www.telerik.com/download/fiddler</a></p>
+<h2 id="fiddler配置"><a class="anchor" href="#fiddler配置">#</a> Fiddler配置</h2>
+<p>勾选以下选项，其中遇见证书安装全选yes<br />
+<img loading="lazy" src="/images/%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8/1.png" alt="alt text" /><br />
+<img loading="lazy" src="/images/%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8/2.png" alt="alt text" /><br />
+过滤无用数据<br />
+<img loading="lazy" src="/images/%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8/3.png" alt="alt text" /><br />
+由于默认的证书不符合android和ios的证书要求，所以，需要下载certmaker插件，双击安装后，重启fiddler。注意这一步很重要，必须使用certmaker插件，不要使用默认的证书生成器，否则抓不到包。安装插件，fiddler certmaker，百度教程<br />
+<a target="_blank" rel="noopener" href="https://telerik-fiddler.s3.amazonaws.com/fiddler/addons/fiddlercertmaker.exe">https://telerik-fiddler.s3.amazonaws.com/fiddler/addons/fiddlercertmaker.exe</a></p>
+<p>出现的问题，可能出现页面无法访问，你的连接不是专用连接<br />
+需要action里面导出证书，然后浏览器管理证书导入证书，然后再在action中重设所有证书</p>
+<h2 id="fiddler操作"><a class="anchor" href="#fiddler操作">#</a> Fiddler操作</h2>
+<p>F2修改WebForms的数据，然后Replay重新发包<br />
+Delete删除数据包<br />
+这里箭头向上可以拦截数据包<br />
+<img loading="lazy" src="/images/%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8/4.png" alt="alt text" /><br />
+并发：什么是并发<br />
+数据包中第一条数据可能不是我们要的，点击Go，第二条数据才是我们需要的<br />
+<img loading="lazy" src="/images/%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8/5.png" alt="alt text" /><br />
+绿色放行，白色中断<br />
+<img loading="lazy" src="/images/%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8/6.png" alt="alt text" /><br />
+多点几次加入购物车，只留加入购入车的数据包<br />
+点Go的一瞬间，3条数据包可能同时发出，但一般购物车不允许同时有3个相同的订单，但是利用并发就可能有相同的订单<br />
+并发可能会绕过购物限制检测，有可能前端做校验了，但是通过发包等可以绕过<br />
+<img loading="lazy" src="/images/%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8/7.png" alt="alt text" /></p>
+<h1 id="关于数据"><a class="anchor" href="#关于数据">#</a> 关于数据</h1>
+<h2 id="int类型"><a class="anchor" href="#int类型">#</a> int类型</h2>
+<p>取值范围（假设 4 字节）<br />
+signed int：-2,147,483,648 到 2,147,483,647（-2^31 到 2^31-1）<br />
+unsigned int：0 到 4,294,967,295（0 到 232-1）<br />
+-2147483648-4294967295<br />
+有符号和无符号型：测试支付（如微信，支付宝（有校验））、数量 0-2147483647（2<span>2147483649=1</span>^31-1，是32位操作系统中最大的符号型整型常量，也是C++中int类型的上限。），2147483648=0，2147483649=？<br />
+<span class="red">2147483649=1</span><br />
+加入1个馒头2块钱，买1073741825个馒头，价格多少？<br />
+1073741825X2=2,147,483,650=2<br />
+有第三方支付工具的时候可以尝试这个漏洞</p>
+<h2 id="科学计数法"><a class="anchor" href="#科学计数法">#</a> 科学计数法</h2>
+<p><img loading="lazy" src="/images/%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8/8.png" alt="alt text" /></p>
+<p>1e-1 = 0.1<br />
+1e-2 = 0.01<br />
+有些程序员会校验，不让使用小数，这时候可以采用科学计数法来绕过检测</p>
+<h2 id="四舍五入"><a class="anchor" href="#四舍五入">#</a> 四舍五入</h2>
+<p>重置0.016=到账0.02<br />
+还有一种情况是充值0.014<br />
+支付时显示0.01，到账还是0.014<br />
+由于前端给后端发起的请求是0.014，但是第三方支付工具最小支付单位为分导致的</p>
+<p><span class="red">注：学习的是一个思路，不是说一个场景下你能干嘛就只能干嘛，要灵活多变</span></p>
+<h1 id="参数"><a class="anchor" href="#参数">#</a> 参数</h1>
+<h2 id="pirce"><a class="anchor" href="#pirce">#</a> Pirce</h2>
+<p>金额是比较常见的参数。<br />
+购买物品时经常会遇到<br />
+我们可以将金额改成-1,0.01,0.019这样的值<br />
+很少能遇到，因为金额参数最好不要前端来发送给后端,我买一瓶水，不可能是我告诉老板这瓶水多少钱，而是老板根据这瓶水来判断多少钱</p>
+<h2 id="num"><a class="anchor" href="#num">#</a> num</h2>
+<p>数量<br />
+这也是我们遇到最多的一个参数。<br />
+思考一下数量如何修改？</p>
+<h2 id="id"><a class="anchor" href="#id">#</a> id</h2>
+<p>id也是我们经常遇到的，只不过分为了很多种类，比如<br />
+product id（赠品是否可以直接购买，隐藏优惠券、会员等,可能是测试使用）<br />
+user id（越权）<br />
+address id（收货地址,下单一个别人的地址id，可能泄露别人用户地址）<br />
+为什么要修改这些id，目的是什么？<br />
+可以测试越权</p>
+<h1 id="最常见的三种漏洞"><a class="anchor" href="#最常见的三种漏洞">#</a> 最常见的三种漏洞</h1>
+<h2 id="越权"><a class="anchor" href="#越权">#</a> 越权</h2>
+<p>做到自己权限之外的事情<br />
+分为横向越权、纵向越权。<br />
+案例1<br />
+在登录账号时，我将UID改成了别人的UID，导致我登录上了别人的账号<br />
+案例2<br />
+别人填写的收货地址，我在查询我的收货地址时将地址ID改掉了，导致我查询到了别人的地址<br />
+案例3<br />
+我上传的身份证后，在查看我上传的信息时将查询该事件的id改成了别人的，导致我查询到了别人的身份证信息<br />
+案例4<br />
+我在直播间，使用用户身份抓包，修改直播间id进行了直播间禁言的操作<br />
+针对越权漏洞，我们要做的就是找到我们认为修改后可以越权的参数，例如最常见的id参数，比如userid、couponid、address.针对不同的业务要做不同的修改，比如我们现在的直播课程，如果大家打字抓包后带有roomid的参数，那么修改了roomid会怎么样。</p>
+<h2 id="并发"><a class="anchor" href="#并发">#</a> 并发</h2>
+<p>正常的购买逻辑<br />
+<img loading="lazy" src="/images/%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8/9.png" alt="alt text" /><br />
+并发的购买逻辑<br />
+<img loading="lazy" src="/images/%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8/10.png" alt="alt text" /><br />
+假如我们有1块钱，商品3个分别1块钱，由于并发并未扣除余额，三个查询余额都显示余额足够，导致可以购买，扣除玩余额之后还有-2元（有的时候会最低扣到0），相当于我们用1块钱买了3个商品<br />
+A用户像后端发起购买请求，后端收到请求后去数据库里面查询用户余额，然后后端认为用户余额够就下发商品。<br />
+但是A用户如果用并发的方式发起请求，后端同时向数据库发起多次请求，返回都成功但是还没到扣费那一步，导致了用户可以购买超出自身余额的商品<br />
+<img loading="lazy" src="/images/%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8/11.png" alt="alt text" /></p>
+<h2 id="支付"><a class="anchor" href="#支付">#</a> 支付</h2>
+<div class="tags"><a href="/tags/%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8/" rel="tag"><i class="ic i-tag"></i>网络安全</a></div></div><footer><div class="meta"><span class="item"><span class="icon"><i class="ic i-eye"></i></span><span class="text">总访问量：</span><span class="waline-pageview-count" id="twikoo_visitors" data-path="/2026/05/13/网络安全理论学习/">加载中...</span></span><span class="item"><span class="icon"><i class="ic i-calendar-check"></i></span><span class="text">更新于 </span><time title="修改时间：2026-05-13 16:59:49" itemprop="dateModified" datetime="2026-05-13T16:59:49+08:00">2026-05-13</time></span></div><div class="reward"><button><i class="ic i-heartbeat"></i>赞赏</button><p>请我喝[茶]~(￣▽￣)~*</p><div id="qr"><div><img loading="lazy" src="/assets/wechatpay.png" alt="ZhIE 微信支付"/><p>微信支付</p></div><div><img loading="lazy" src="/assets/alipay.png" alt="ZhIE 支付宝"/><p>支付宝</p></div></div></div><div id="copyright"><ul><li class="author"><strong>本文作者：</strong>ZhIE<i class="ic i-at"><em>@</em></i>Study Blog</li><li class="link"><strong>本文链接：</strong><a href="https://adm1n10086.github.io/2026/05/13/%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8%E7%90%86%E8%AE%BA%E5%AD%A6%E4%B9%A0/" title="网络安全理论学习">https://adm1n10086.github.io/2026/05/13/网络安全理论学习/</a></li><li class="license"><strong>版权声明：</strong>本站所有文章除特别声明外，均采用 <a target="_blank" rel="noopener" href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh"><i class="ic i-creative-commons"><em>(CC)</em></i>BY-NC-SA</a> 许可协议。转载请注明出处！</li></ul></div></footer></article></div><div class="post-nav"><div class="item left"><a href="/2026/05/05/%E8%BD%AF%E4%BB%B6%E5%AE%89%E5%85%A8%E7%90%86%E8%AE%BA%E8%AF%BE%E7%A8%8B%E5%A4%8D%E4%B9%A0/" rel="prev" itemprop="url" data-background-image="images&#x2F;6.jpg" title="软件安全理论课程复习"><span class="type">上一篇</span><h3>软件安全理论课程复习</h3></a></div><div class="item right"><a href="/2026/05/27/%E9%9A%90%E7%A7%81%E8%AE%A1%E7%AE%97%E8%AF%BE%E7%A8%8B%E5%A4%8D%E4%B9%A0/" rel="next" itemprop="url" data-background-image="images&#x2F;8.jpg" title="隐私计算课程复习"><span class="type">下一篇</span><h3>隐私计算课程复习</h3></a></div></div><div class="wrap" id="comments"></div></div><div id="sidebar"><div class="inner"><div class="panels"><div class="inner"><div class="contents panel pjax" data-title="文章目录"><ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#%E5%B7%A5%E5%85%B7%E7%9A%84%E5%AE%89%E8%A3%85%E4%B8%8E%E4%BD%BF%E7%94%A8"><span class="toc-number">1.</span> <span class="toc-text"> 工具的安装与使用</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#fiddler%E4%B8%8B%E8%BD%BD"><span class="toc-number">1.1.</span> <span class="toc-text"> Fiddler下载</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#fiddler%E9%85%8D%E7%BD%AE"><span class="toc-number">1.2.</span> <span class="toc-text"> Fiddler配置</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#fiddler%E6%93%8D%E4%BD%9C"><span class="toc-number">1.3.</span> <span class="toc-text"> Fiddler操作</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E5%85%B3%E4%BA%8E%E6%95%B0%E6%8D%AE"><span class="toc-number">2.</span> <span class="toc-text"> 关于数据</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#int%E7%B1%BB%E5%9E%8B"><span class="toc-number">2.1.</span> <span class="toc-text"> int类型</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%A7%91%E5%AD%A6%E8%AE%A1%E6%95%B0%E6%B3%95"><span class="toc-number">2.2.</span> <span class="toc-text"> 科学计数法</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%9B%9B%E8%88%8D%E4%BA%94%E5%85%A5"><span class="toc-number">2.3.</span> <span class="toc-text"> 四舍五入</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E5%8F%82%E6%95%B0"><span class="toc-number">3.</span> <span class="toc-text"> 参数</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#pirce"><span class="toc-number">3.1.</span> <span class="toc-text"> Pirce</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#num"><span class="toc-number">3.2.</span> <span class="toc-text"> num</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#id"><span class="toc-number">3.3.</span> <span class="toc-text"> id</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E6%9C%80%E5%B8%B8%E8%A7%81%E7%9A%84%E4%B8%89%E7%A7%8D%E6%BC%8F%E6%B4%9E"><span class="toc-number">4.</span> <span class="toc-text"> 最常见的三种漏洞</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E8%B6%8A%E6%9D%83"><span class="toc-number">4.1.</span> <span class="toc-text"> 越权</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%B9%B6%E5%8F%91"><span class="toc-number">4.2.</span> <span class="toc-text"> 并发</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%94%AF%E4%BB%98"><span class="toc-number">4.3.</span> <span class="toc-text"> 支付</span></a></li></ol></li></ol></div><div class="related panel pjax" data-title="系列文章"></div><div class="overview panel" data-title="站点概览"><div class="author" itemprop="author" itemscope="itemscope" itemtype="http://schema.org/Person"><img class="image" loading="lazy" decoding="async" itemprop="image" alt="ZhIE" src="/assets/avatar.jpg"/><p class="name" itemprop="name">ZhIE</p><div class="description" itemprop="description"></div></div><nav class="state"><div class="item posts"><a href="/archives/"><span class="count">8</span><span class="name">文章</span></a></div><div class="item tags"><a href="/tags/"><span class="count">5</span><span class="name">标签</span></a></div></nav><div class="social"><a target="_blank" rel="noopener" href="https://github.com/Adm1n10086" class="item github" title="https:&#x2F;&#x2F;github.com&#x2F;Adm1n10086"><i class="ic i-github"></i></a><a target="_blank" rel="noopener" href="https://music.163.com/#/user/home?id=128299268" class="item music" title="https:&#x2F;&#x2F;music.163.com&#x2F;#&#x2F;user&#x2F;home?id&#x3D;128299268"><i class="ic i-cloud-music"></i></a><a href="mailto:250278984@qq.com" class="item email" title="mailto:250278984@qq.com"><i class="ic i-envelope"></i></a><a target="_blank" rel="noopener" href="https://user.qzone.qq.com/250278984/infocenter?loginfrom=31" class="item qzone" title="https:&#x2F;&#x2F;user.qzone.qq.com&#x2F;250278984&#x2F;infocenter?loginfrom&#x3D;31"><i class="ic i-qq"></i></a></div><div class="menu"><li class="item"><a href="/" rel="section"><i class="ic i-home"></i>Home</a></li><li class="item dropdown"><a href="#" onclick="return false;"><i class="ic i-user"></i>关于</a><ul class="submenu"><li class="item"><a href="/about/" rel="section"><i class="ic i-user"></i>关于本站</a></li><li class="item"><a href="/admiration/" rel="section"><i class="ic i-coffee"></i>赞赏博主</a></li></ul></li><li class="item dropdown"><a href="#" onclick="return false;"><i class="ic i-feather"></i>文章</a><ul class="submenu"><li class="item"><a href="/archives/" rel="section"><i class="ic i-list-alt"></i>归档</a></li><li class="item"><a href="/categories/" rel="section"><i class="ic i-th"></i>分类</a></li><li class="item"><a href="/tags/" rel="section"><i class="ic i-tags"></i>标签</a></li></ul></li><li class="item"><a href="/friends/" rel="section"><i class="ic i-heart"></i>友链</a></li></div></div></div></div><ul id="quick"><li class="prev pjax"><a href="/2026/05/27/%E9%9A%90%E7%A7%81%E8%AE%A1%E7%AE%97%E8%AF%BE%E7%A8%8B%E5%A4%8D%E4%B9%A0/" rel="prev" title="上一篇"><i class="ic i-chevron-left"></i></a></li><li class="up"><i class="ic i-arrow-up"></i></li><li class="down"><i class="ic i-arrow-down"></i></li><li class="next pjax"><a href="/2026/05/05/%E8%BD%AF%E4%BB%B6%E5%AE%89%E5%85%A8%E7%90%86%E8%AE%BA%E8%AF%BE%E7%A8%8B%E5%A4%8D%E4%B9%A0/" rel="next" title="下一篇"><i class="ic i-chevron-right"></i></a></li><li class="percent"></li></ul></div></div><div class="dimmer"></div></div><div id="player"></div></main><footer id="footer"><div class="inner"><div class="widgets"><div class="rpost pjax"><h2>随机文章</h2><ul><li class="item"><div class="breadcrumb"></div><span><a href="/2026/04/23/%E6%BC%8F%E6%B4%9E%E5%A4%8D%E7%8E%B0/">Elasticsearch 未授权访问漏洞</a></span></li><li class="item"><div class="breadcrumb"></div><span><a href="/2026/05/27/%E9%9A%90%E7%A7%81%E8%AE%A1%E7%AE%97%E8%AF%BE%E7%A8%8B%E5%A4%8D%E4%B9%A0/">隐私计算课程复习</a></span></li><li class="item"><div class="breadcrumb"></div><span><a href="/2026/04/16/Apache%20Http%20Server%E8%B7%AF%E5%BE%84%E7%A9%BF%E8%B6%8A%E6%BC%8F%E6%B4%9E%EF%BC%88CVE-2021-41773%EF%BC%89/">Apache Http Server路径穿越漏洞（CVE-2021-41773）</a></span></li><li class="item"><div class="breadcrumb"></div><span><a href="/2026/04/14/hello-world/">Hello World</a></span></li><li class="item"><div class="breadcrumb"></div><span><a href="/2026/04/16/markdown%E8%AF%AD%E6%B3%95/">ShokaX特殊语法及MarkDown语法</a></span></li><li class="item"><div class="breadcrumb"></div><span><a href="/2026/04/14/ShokaX%E6%90%AD%E5%BB%BA/">Hexo主题ShokaX搭建</a></span></li><li class="item"><div class="breadcrumb"></div><span><a href="/2026/05/05/%E8%BD%AF%E4%BB%B6%E5%AE%89%E5%85%A8%E7%90%86%E8%AE%BA%E8%AF%BE%E7%A8%8B%E5%A4%8D%E4%B9%A0/">软件安全理论课程复习</a></span></li><li class="item"><div class="breadcrumb"></div><span><a href="/2026/05/13/%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8%E7%90%86%E8%AE%BA%E5%AD%A6%E4%B9%A0/">网络安全理论学习</a></span></li></ul></div><div class="rpost pjax"><h2>最新评论</h2><ul class="leancloud-recent-comment" id="new-comment"></ul></div></div><div class="status"><div class="copyright">&copy; 2025 -<span itemprop="copyrightYear">2026</span><span class="with-love"><i class="ic i-sakura rotate"></i></span><span class="author" itemprop="copyrightHolder">ZhIE @ ZhIE BLOG</span></div><div class="count"><span class="post-meta-item-icon"><i class="ic i-chart-area"></i></span><span title="站点总字数">25k 字</span><span class="post-meta-divider"> | </span><span class="post-meta-item-icon"><i class="ic i-coffee"></i></span><span title="站点阅读时长">23 分钟</span></div><div class="powered-by">基于 <a target="_blank" rel="noopener" href="https://hexo.io/">Hexo</a> & Theme.<a target="_blank" rel="noopener" href="https://github.com/theme-shoka-x/hexo-theme-shokaX/">ShokaX</a></div></div></div></footer></div><script data-config type="text/javascript">var LOCAL = {
+    ispost: true,
+    path: `2026/05/13/网络安全理论学习/`,
+    favicon: {
+        show: `（●´3｀●）やれやれだぜ`,
+        hide: `(´Д｀)大変だ！`
+    },
+    search: {
+        placeholder: "文章搜索",
+        empty: "关于 「 ${query} 」，什么也没搜到",
+        stats: "${time} ms 内找到 ${hits} 条结果"
+    },
+    nocopy: "false",
+    copyright: `复制成功，转载请遵守 <i class="ic i-creative-commons"></i>BY-NC-SA 协议。`,
+    copy_tex: false,
+    katex: false,
+    mermaid: false,
+    audio: undefined,
+    nocopy: false,
+    outime: true,
+    template: `<div class="note warning"><p><span class="label warning">文章时效性提示</span><br>这是一篇发布于 {{publish}} 天前，最后一次更新在 {{updated}} 天前的文章，部分信息可能已经发生改变，请注意甄别。</p></div>`,
+    quiz: {
+        choice: `单选题`,
+        multiple: `多选题`,
+        true_false: `判断题`,
+        essay: `问答题`,
+        gap_fill: `填空题`,
+        mistake: `错题备注`
+    }
+};
+</script><script src="/js/siteInit.js?v=0.5.4" type="module" fetchpriority="high" defer></script></body></html>

@@ -8,7 +8,143 @@
     <author>
       <name>ZhIE</name>
     </author>
-    <updated>2026-05-04T16:00:00.000Z</updated>
+    <updated>2026-05-26T16:00:00.000Z</updated>
+    <entry>
+        <id>https://adm1n10086.github.io/2026/05/27/%E9%9A%90%E7%A7%81%E8%AE%A1%E7%AE%97%E8%AF%BE%E7%A8%8B%E5%A4%8D%E4%B9%A0/</id>
+        <title>隐私计算课程复习</title>
+        <link rel="alternate" href="https://adm1n10086.github.io/2026/05/27/%E9%9A%90%E7%A7%81%E8%AE%A1%E7%AE%97%E8%AF%BE%E7%A8%8B%E5%A4%8D%E4%B9%A0/"/>
+        <content type="html">&lt;h1 id=&#34;课程提问重点&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#课程提问重点&#34;&gt;#&lt;/a&gt; 课程提问重点&lt;/h1&gt;
+&lt;h2 id=&#34;第一章&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#第一章&#34;&gt;#&lt;/a&gt; 第一章&lt;/h2&gt;
+&lt;p&gt;数据采集、数据传输、数据存储、数据分析各个阶段有什么样的一个问题&lt;/p&gt;
+&lt;h1 id=&#34;作业&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#作业&#34;&gt;#&lt;/a&gt; 作业&lt;/h1&gt;
+&lt;h2 id=&#34;第一章-2&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#第一章-2&#34;&gt;#&lt;/a&gt; 第一章&lt;/h2&gt;
+&lt;p&gt;总结大数据生命周期存在的安全威胁以及对应的解决技术&lt;/p&gt;
+&lt;h1 id=&#34;第一章-绪论&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#第一章-绪论&#34;&gt;#&lt;/a&gt; 第一章 绪论&lt;/h1&gt;
+&lt;h2 id=&#34;什么是隐私&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#什么是隐私&#34;&gt;#&lt;/a&gt; 什么是隐私&lt;/h2&gt;
+&lt;p&gt;隐私是指可&lt;span class=&#34;red kbd&#34;&gt;识别&lt;/span&gt;特定自然人的、非公开的个人信息与私人状态，其核心是自然人对自身信息的收集、使用、披露与处理享有&lt;span class=&#34;red kbd&#34;&gt;自主控制权&lt;/span&gt;，不受他人非法侵扰。&lt;/p&gt;
+&lt;h2 id=&#34;如何保护隐私&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#如何保护隐私&#34;&gt;#&lt;/a&gt; 如何保护隐私&lt;/h2&gt;
+&lt;p&gt;法律法规：&lt;br /&gt;
+《中华人民共和国个人信息保护法》（2021 年 11 月 1 日施行）&lt;br /&gt;
+《中华人民共和国数据安全法》（2021 年 9 月 1 日施行）&lt;br /&gt;
+《中华人民共和国网络安全法》（2017 年 6 月 1 日施行）&lt;br /&gt;
+隐私计算&lt;/p&gt;
+&lt;h2 id=&#34;大数据环境下的安全与隐私保护技术广义&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#大数据环境下的安全与隐私保护技术广义&#34;&gt;#&lt;/a&gt; 大数据环境下的安全与隐私保护技术（广义）&lt;/h2&gt;
+&lt;p&gt;&lt;span class=&#34;red kbd&#34;&gt;大数据全生命周期&lt;/span&gt;&lt;br /&gt;
+产生 &lt;span class=&#34;red&#34;&gt;采集 传输 存储 分析&lt;/span&gt; 销毁&lt;br /&gt;
+采集过程中存在什么安全问题&lt;br /&gt;
+分析其中存在什么安全技术&lt;/p&gt;
+&lt;h2 id=&#34;隐私计算三大门派狭义&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#隐私计算三大门派狭义&#34;&gt;#&lt;/a&gt; 隐私计算三大门派（狭义）&lt;/h2&gt;
+&lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#34;/images/%E9%9A%90%E7%A7%81%E8%AE%A1%E7%AE%97/1.1.png&#34; alt=&#34;三大门派&#34; /&gt;&lt;/p&gt;
+&lt;h2 id=&#34;章节内容&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#章节内容&#34;&gt;#&lt;/a&gt; 章节内容&lt;/h2&gt;
+&lt;p&gt;1.1 大数据概述&lt;br /&gt;
+1.2 大数据安全与隐私保护需求&lt;br /&gt;
+1.3 大数据生命周期安全风险分析&lt;br /&gt;
+1.4 大数据安全与隐私保护技术框架&lt;br /&gt;
+1.5 大数据服务于信息安全&lt;br /&gt;
+1.6 基本密码学工具&lt;/p&gt;
+&lt;h2 id=&#34;&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#&#34;&gt;#&lt;/a&gt; &lt;/h2&gt;
+</content>
+        <category term="隐私计算" scheme="https://adm1n10086.github.io/tags/%E9%9A%90%E7%A7%81%E8%AE%A1%E7%AE%97/" />
+        <updated>2026-05-26T16:00:00.000Z</updated>
+    </entry>
+    <entry>
+        <id>https://adm1n10086.github.io/2026/05/13/%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8%E7%90%86%E8%AE%BA%E5%AD%A6%E4%B9%A0/</id>
+        <title>网络安全理论学习</title>
+        <link rel="alternate" href="https://adm1n10086.github.io/2026/05/13/%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8%E7%90%86%E8%AE%BA%E5%AD%A6%E4%B9%A0/"/>
+        <content type="html">&lt;h1 id=&#34;工具的安装与使用&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#工具的安装与使用&#34;&gt;#&lt;/a&gt; 工具的安装与使用&lt;/h1&gt;
+&lt;h2 id=&#34;fiddler下载&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#fiddler下载&#34;&gt;#&lt;/a&gt; Fiddler下载&lt;/h2&gt;
+&lt;p&gt;在以下网站下载，填写邮箱安装&lt;br /&gt;
+&lt;a href=&#34;https://www.telerik.com/download/fiddler&#34;&gt;https://www.telerik.com/download/fiddler&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&#34;fiddler配置&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#fiddler配置&#34;&gt;#&lt;/a&gt; Fiddler配置&lt;/h2&gt;
+&lt;p&gt;勾选以下选项，其中遇见证书安装全选yes&lt;br /&gt;
+&lt;img loading=&#34;lazy&#34; src=&#34;/images/%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8/1.png&#34; alt=&#34;alt text&#34; /&gt;&lt;br /&gt;
+&lt;img loading=&#34;lazy&#34; src=&#34;/images/%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8/2.png&#34; alt=&#34;alt text&#34; /&gt;&lt;br /&gt;
+过滤无用数据&lt;br /&gt;
+&lt;img loading=&#34;lazy&#34; src=&#34;/images/%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8/3.png&#34; alt=&#34;alt text&#34; /&gt;&lt;br /&gt;
+由于默认的证书不符合android和ios的证书要求，所以，需要下载certmaker插件，双击安装后，重启fiddler。注意这一步很重要，必须使用certmaker插件，不要使用默认的证书生成器，否则抓不到包。安装插件，fiddler certmaker，百度教程&lt;br /&gt;
+&lt;a href=&#34;https://telerik-fiddler.s3.amazonaws.com/fiddler/addons/fiddlercertmaker.exe&#34;&gt;https://telerik-fiddler.s3.amazonaws.com/fiddler/addons/fiddlercertmaker.exe&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;出现的问题，可能出现页面无法访问，你的连接不是专用连接&lt;br /&gt;
+需要action里面导出证书，然后浏览器管理证书导入证书，然后再在action中重设所有证书&lt;/p&gt;
+&lt;h2 id=&#34;fiddler操作&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#fiddler操作&#34;&gt;#&lt;/a&gt; Fiddler操作&lt;/h2&gt;
+&lt;p&gt;F2修改WebForms的数据，然后Replay重新发包&lt;br /&gt;
+Delete删除数据包&lt;br /&gt;
+这里箭头向上可以拦截数据包&lt;br /&gt;
+&lt;img loading=&#34;lazy&#34; src=&#34;/images/%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8/4.png&#34; alt=&#34;alt text&#34; /&gt;&lt;br /&gt;
+并发：什么是并发&lt;br /&gt;
+数据包中第一条数据可能不是我们要的，点击Go，第二条数据才是我们需要的&lt;br /&gt;
+&lt;img loading=&#34;lazy&#34; src=&#34;/images/%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8/5.png&#34; alt=&#34;alt text&#34; /&gt;&lt;br /&gt;
+绿色放行，白色中断&lt;br /&gt;
+&lt;img loading=&#34;lazy&#34; src=&#34;/images/%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8/6.png&#34; alt=&#34;alt text&#34; /&gt;&lt;br /&gt;
+多点几次加入购物车，只留加入购入车的数据包&lt;br /&gt;
+点Go的一瞬间，3条数据包可能同时发出，但一般购物车不允许同时有3个相同的订单，但是利用并发就可能有相同的订单&lt;br /&gt;
+并发可能会绕过购物限制检测，有可能前端做校验了，但是通过发包等可以绕过&lt;br /&gt;
+&lt;img loading=&#34;lazy&#34; src=&#34;/images/%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8/7.png&#34; alt=&#34;alt text&#34; /&gt;&lt;/p&gt;
+&lt;h1 id=&#34;关于数据&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#关于数据&#34;&gt;#&lt;/a&gt; 关于数据&lt;/h1&gt;
+&lt;h2 id=&#34;int类型&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#int类型&#34;&gt;#&lt;/a&gt; int类型&lt;/h2&gt;
+&lt;p&gt;取值范围（假设 4 字节）&lt;br /&gt;
+signed int：-2,147,483,648 到 2,147,483,647（-2^31 到 2^31-1）&lt;br /&gt;
+unsigned int：0 到 4,294,967,295（0 到 232-1）&lt;br /&gt;
+-2147483648-4294967295&lt;br /&gt;
+有符号和无符号型：测试支付（如微信，支付宝（有校验））、数量 0-2147483647（2&lt;span&gt;2147483649=1&lt;/span&gt;^31-1，是32位操作系统中最大的符号型整型常量，也是C++中int类型的上限。），2147483648=0，2147483649=？&lt;br /&gt;
+&lt;span class=&#34;red&#34;&gt;2147483649=1&lt;/span&gt;&lt;br /&gt;
+加入1个馒头2块钱，买1073741825个馒头，价格多少？&lt;br /&gt;
+1073741825X2=2,147,483,650=2&lt;br /&gt;
+有第三方支付工具的时候可以尝试这个漏洞&lt;/p&gt;
+&lt;h2 id=&#34;科学计数法&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#科学计数法&#34;&gt;#&lt;/a&gt; 科学计数法&lt;/h2&gt;
+&lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#34;/images/%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8/8.png&#34; alt=&#34;alt text&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;1e-1 = 0.1&lt;br /&gt;
+1e-2 = 0.01&lt;br /&gt;
+有些程序员会校验，不让使用小数，这时候可以采用科学计数法来绕过检测&lt;/p&gt;
+&lt;h2 id=&#34;四舍五入&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#四舍五入&#34;&gt;#&lt;/a&gt; 四舍五入&lt;/h2&gt;
+&lt;p&gt;重置0.016=到账0.02&lt;br /&gt;
+还有一种情况是充值0.014&lt;br /&gt;
+支付时显示0.01，到账还是0.014&lt;br /&gt;
+由于前端给后端发起的请求是0.014，但是第三方支付工具最小支付单位为分导致的&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;red&#34;&gt;注：学习的是一个思路，不是说一个场景下你能干嘛就只能干嘛，要灵活多变&lt;/span&gt;&lt;/p&gt;
+&lt;h1 id=&#34;参数&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#参数&#34;&gt;#&lt;/a&gt; 参数&lt;/h1&gt;
+&lt;h2 id=&#34;pirce&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#pirce&#34;&gt;#&lt;/a&gt; Pirce&lt;/h2&gt;
+&lt;p&gt;金额是比较常见的参数。&lt;br /&gt;
+购买物品时经常会遇到&lt;br /&gt;
+我们可以将金额改成-1,0.01,0.019这样的值&lt;br /&gt;
+很少能遇到，因为金额参数最好不要前端来发送给后端,我买一瓶水，不可能是我告诉老板这瓶水多少钱，而是老板根据这瓶水来判断多少钱&lt;/p&gt;
+&lt;h2 id=&#34;num&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#num&#34;&gt;#&lt;/a&gt; num&lt;/h2&gt;
+&lt;p&gt;数量&lt;br /&gt;
+这也是我们遇到最多的一个参数。&lt;br /&gt;
+思考一下数量如何修改？&lt;/p&gt;
+&lt;h2 id=&#34;id&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#id&#34;&gt;#&lt;/a&gt; id&lt;/h2&gt;
+&lt;p&gt;id也是我们经常遇到的，只不过分为了很多种类，比如&lt;br /&gt;
+product id（赠品是否可以直接购买，隐藏优惠券、会员等,可能是测试使用）&lt;br /&gt;
+user id（越权）&lt;br /&gt;
+address id（收货地址,下单一个别人的地址id，可能泄露别人用户地址）&lt;br /&gt;
+为什么要修改这些id，目的是什么？&lt;br /&gt;
+可以测试越权&lt;/p&gt;
+&lt;h1 id=&#34;最常见的三种漏洞&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#最常见的三种漏洞&#34;&gt;#&lt;/a&gt; 最常见的三种漏洞&lt;/h1&gt;
+&lt;h2 id=&#34;越权&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#越权&#34;&gt;#&lt;/a&gt; 越权&lt;/h2&gt;
+&lt;p&gt;做到自己权限之外的事情&lt;br /&gt;
+分为横向越权、纵向越权。&lt;br /&gt;
+案例1&lt;br /&gt;
+在登录账号时，我将UID改成了别人的UID，导致我登录上了别人的账号&lt;br /&gt;
+案例2&lt;br /&gt;
+别人填写的收货地址，我在查询我的收货地址时将地址ID改掉了，导致我查询到了别人的地址&lt;br /&gt;
+案例3&lt;br /&gt;
+我上传的身份证后，在查看我上传的信息时将查询该事件的id改成了别人的，导致我查询到了别人的身份证信息&lt;br /&gt;
+案例4&lt;br /&gt;
+我在直播间，使用用户身份抓包，修改直播间id进行了直播间禁言的操作&lt;br /&gt;
+针对越权漏洞，我们要做的就是找到我们认为修改后可以越权的参数，例如最常见的id参数，比如userid、couponid、address.针对不同的业务要做不同的修改，比如我们现在的直播课程，如果大家打字抓包后带有roomid的参数，那么修改了roomid会怎么样。&lt;/p&gt;
+&lt;h2 id=&#34;并发&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#并发&#34;&gt;#&lt;/a&gt; 并发&lt;/h2&gt;
+&lt;p&gt;正常的购买逻辑&lt;br /&gt;
+&lt;img loading=&#34;lazy&#34; src=&#34;/images/%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8/9.png&#34; alt=&#34;alt text&#34; /&gt;&lt;br /&gt;
+并发的购买逻辑&lt;br /&gt;
+&lt;img loading=&#34;lazy&#34; src=&#34;/images/%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8/10.png&#34; alt=&#34;alt text&#34; /&gt;&lt;br /&gt;
+假如我们有1块钱，商品3个分别1块钱，由于并发并未扣除余额，三个查询余额都显示余额足够，导致可以购买，扣除玩余额之后还有-2元（有的时候会最低扣到0），相当于我们用1块钱买了3个商品&lt;br /&gt;
+A用户像后端发起购买请求，后端收到请求后去数据库里面查询用户余额，然后后端认为用户余额够就下发商品。&lt;br /&gt;
+但是A用户如果用并发的方式发起请求，后端同时向数据库发起多次请求，返回都成功但是还没到扣费那一步，导致了用户可以购买超出自身余额的商品&lt;br /&gt;
+&lt;img loading=&#34;lazy&#34; src=&#34;/images/%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8/11.png&#34; alt=&#34;alt text&#34; /&gt;&lt;/p&gt;
+&lt;h2 id=&#34;支付&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#支付&#34;&gt;#&lt;/a&gt; 支付&lt;/h2&gt;
+</content>
+        <category term="网络安全" scheme="https://adm1n10086.github.io/tags/%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8/" />
+        <updated>2026-05-12T16:00:00.000Z</updated>
+    </entry>
     <entry>
         <id>https://adm1n10086.github.io/2026/05/05/%E8%BD%AF%E4%BB%B6%E5%AE%89%E5%85%A8%E7%90%86%E8%AE%BA%E8%AF%BE%E7%A8%8B%E5%A4%8D%E4%B9%A0/</id>
         <title>软件安全理论课程复习</title>
@@ -333,6 +469,18 @@ DLL 被加载执行&lt;br /&gt;
 &lt;p&gt;修改程序 IAT 表中保存的 API 函数地址，让程序调用 API 时，跳到你自己的函数执行，而不是系统原函数。&lt;/p&gt;
 &lt;h2 id=&#34;实验内容&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#实验内容&#34;&gt;#&lt;/a&gt; 实验内容&lt;/h2&gt;
 &lt;p&gt;IAT Hook核心思路是CrackMe.exe的IAT表中MessageBox的入口地址被修改。&lt;/p&gt;
+&lt;p&gt;IAT HOOKING是如何将函数地址由X转变为Y的，关键技术是什么&lt;br /&gt;
+IAT Hook 把函数地址 X 改成 Y 的原理 + 关键技术&lt;br /&gt;
+一、怎么把 X 改成 Y&lt;br /&gt;
+程序 PE 有导入地址表 IAT，表里每一项存的都是外部 API 真实地址 X。&lt;br /&gt;
+先解析 PE 结构，找到目标 API 在 IAT 里的表项内存地址。&lt;br /&gt;
+用内存写入，把 IAT 表里原本存的原函数地址 X，直接覆盖成自己自定义函数地址 Y。&lt;br /&gt;
+程序调用该 API 时，不再走原 X 地址，直接跳到 Y 地址执行自己的代码。&lt;br /&gt;
+二、关键技术&lt;br /&gt;
+PE 结构解析：定位 DOS 头、NT 头、导入表，精准找到目标 API 对应的 IAT 表项。&lt;br /&gt;
+内存权限修改：IAT 所在页面默认只读，需用VirtualProtect改成可写，才能修改数据。&lt;br /&gt;
+内存写入替换：覆盖 IAT 中原函数地址为自定义函数地址。&lt;br /&gt;
+原函数保存：备份原始地址 X，方便钩子执行完回调原 API，不破坏原程序功能。&lt;/p&gt;
 &lt;h1 id=&#34;pe总览知识&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#pe总览知识&#34;&gt;#&lt;/a&gt; PE总览知识&lt;/h1&gt;
 &lt;p&gt;e_ifanew-3c&lt;br /&gt;
 导入表78h&lt;br /&gt;
