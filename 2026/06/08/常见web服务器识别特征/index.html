@@ -1,0 +1,301 @@
+<!DOCTYPE html><html lang="zh-CN"><head><meta charset="UTF-8"/><meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=2"/><meta name="theme-color" content="#222"/><meta http-equiv="X-UA-COMPATIBLE" content="IE=edge,chrome=1"/><meta name="renderer" content="webkit"/><link rel="icon" type="image/ico" sizes="32x32" href="/assets/favicon.ico"/><link rel="apple-touch-icon" sizes="180x180" href="/assets/apple-touch-icon.png"/><link rel="alternate" href="/rss.xml" title="Study Blog" type="application/rss+xml"><link rel="alternate" href="/atom.xml" title="Study Blog" type="application/atom+xml"><link rel="alternate" type="application/json" title="Study Blog" href="https://adm1n10086.github.io/feed.json"/><link rel="preconnect" href="https://s4.zstatic.net"/><link rel="preconnect" href="https://at.alicdn.com"/><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Mulish:400,400italic,700,700italic%7CFredericka%20the%20Great:400,400italic,700,700italic%7CNoto%20Serif%20JP:400,400italic,700,700italic%7CNoto%20Serif%20SC:400,400italic,700,700italic%7CInconsolata:400,400italic,700,700italic&display=swap&subset=latin,latin-ext" media="none" onload="this.media&#x3D;&#39;all&#39;"><link rel="modulepreload" href="/js/siteInit.js"></link><link rel="modulepreload" href="/js/nyx-player-TJYWEN4W.js"></link><link rel="modulepreload" href="/js/copy-tex-5WQQWDDJ.js"></link><link rel="modulepreload" href="/js/post-MTFXX2DR.js"></link><link rel="modulepreload" href="/js/chunk-VCQKHAXC.js"></link><link rel="modulepreload" href="/js/tcomments-BAHZGLNQ.js"></link><link rel="modulepreload" href="/js/chunk-UZQSPCFJ.js"></link><link rel="modulepreload" href="/js/pagefind-XLFDDGJK.js"></link><link rel="modulepreload" href="/js/index.esm-U7KDMHPR.js"></link><link rel="modulepreload" href="/js/chunk-ZZWXZBS4.js"></link><link rel="modulepreload" href="/js/chunk-VLOI3X32.js"></link><link rel="stylesheet" href="/css/siteInit.css" media="none" onload="this.media&#x3D;&#39;all&#39;"></link><link rel="preload" href="/images/cover.png" as="image" fetchpriority="high"><meta name="keywords" content="网络安全"/><link rel="canonical" href="https://adm1n10086.github.io/2026/06/08/%E5%B8%B8%E8%A7%81web%E6%9C%8D%E5%8A%A1%E5%99%A8%E8%AF%86%E5%88%AB%E7%89%B9%E5%BE%81/"><link rel="stylesheet" href="/css/post.css?v=0.5.4"><link rel="stylesheet" href="/css/mermaid.css?v=0.5.4"><!-- 临时处理--><link rel="stylesheet" media="none" onload="this.media='all'" href="https://s4.zstatic.net/ajax/libs/KaTeX/0.16.9/katex.min.css"><title>常见Web框架的识别特征</title><meta name="generator" content="Hexo 7.3.0"></head><body itemscope itemtype="http://schema.org/WebPage"><div id="loading"><div class="cat"><div class="body"></div><div class="head"><div class="face"></div></div><div class="foot"><div class="tummy-end"></div><div class="bottom"></div><div class="legs left"></div><div class="legs right"></div></div><div class="paw"><div class="hands left"></div><div class="hands right"></div></div></div></div><div id="pagefind_mount"></div><div id="container"><header id="header" itemscope itemtype="http://schema.org/WPHeader"><div class="inner"><div id="brand"><div class="pjax"><h1 itemprop="name headline">常见Web框架的识别特征</h1><div class="meta"><span class="item" title="创建时间：2026-06-08 16:13:09"><span class="icon"><i class="ic i-calendar"></i></span><span class="text">发表于</span><time itemprop="dateCreated datePublished" datetime="2026-06-08T16:13:09+08:00">2026-06-08</time></span><span class="item" title="本文字数"><span class="icon"><i class="ic i-pen"></i></span><span class="text">本文字数</span><span>5.2k</span><span class="text">字</span></span><span class="item" title="阅读时长"><span class="icon"><i class="ic i-clock"></i></span><span class="text">阅读时长</span><span>5 分钟</span></span></div></div></div><nav id="nav"><div class="inner"><div class="toggle"><div class="lines" aria-label="切换导航栏"><span class="line"></span><span class="line"></span><span class="line"></span></div></div><ul class="menu"><li class="item title"><a href="/" rel="start">ZhIE BLOG</a></li></ul><ul class="right" id="rightNav"><li class="item theme"><i class="ic i-sun"></i></li><li class="item search"><i class="ic i-search"></i></li></ul></div></nav></div><div class="pjax" id="imgs"><img src="/images/cover.png" loading="eager" decoding="async" fetchpriority="high" alt="Study Blog"></div></header><div id="waves"><svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto"><defs><path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z"></path></defs><g class="parallax"><use xlink:href="#gentle-wave" x="48" y="0"></use><use xlink:href="#gentle-wave" x="48" y="3"></use><use xlink:href="#gentle-wave" x="48" y="5"></use><use xlink:href="#gentle-wave" x="48" y="7"></use></g></svg></div><main><div class="inner"><div class="pjax" id="main"><div class="article wrap"><div class="breadcrumb" itemListElement itemscope itemtype="https://schema.org/BreadcrumbList"><i class="ic i-home"></i><span><a href="/">首页</a></span></div><article class="post block" itemscope="itemscope" itemtype="http://schema.org/Article" data-pagefind-body="data-pagefind-body" lang="zh-CN"><link itemprop="mainEntityOfPage" href="https://adm1n10086.github.io/2026/06/08/%E5%B8%B8%E8%A7%81web%E6%9C%8D%E5%8A%A1%E5%99%A8%E8%AF%86%E5%88%AB%E7%89%B9%E5%BE%81/"/><span hidden="hidden" itemprop="author" itemscope="itemscope" itemtype="http://schema.org/Person"><meta itemprop="image" content="/assets/avatar.jpg"/><meta itemprop="name" content="ZhIE"/><meta itemprop="description" content=", "/></span><span hidden="hidden" itemprop="publisher" itemscope="itemscope" itemtype="http://schema.org/Organization"><meta itemprop="name" content="Study Blog"/></span><div class="body md" itemprop="articleBody"><p>注：以下特征只是常见的特征，不是100%识别特征，这些特征极易伪造，不适用于红蓝攻防演练</p>
+<h1 id="安全权限框架"><a class="anchor" href="#安全权限框架">#</a> 🔐 安全/权限框架</h1>
+<p><strong>1. Apache Shiro</strong></p>
+<ul>
+<li>最典型特征：请求/响应中出现 <code>rememberMe</code> Cookie，响应头常返回 <code>Set-Cookie: rememberMe=deleteMe</code></li>
+<li>路径特征：<code>/login</code>, <code>/logout</code>, <code>/captcha</code></li>
+<li>漏洞关联：反序列化、弱密钥爆破</li>
+</ul>
+<p><strong>2. Spring Security</strong></p>
+<ul>
+<li>路径特征：<code>/login</code>, <code>/logout</code>, <code>/oauth2/</code>, <code>/sso/</code></li>
+<li>响应头：<code>X-Content-Type-Options</code>, <code>X-Frame-Options</code> 等安全头常见</li>
+<li>Cookie：<code>JSESSIONID</code> + 自定义令牌（如 <code>XSRF-TOKEN</code>）</li>
+<li>状态码：<code>302</code> 重定向到登录页、<code>401 Unauthorized</code></li>
+</ul>
+<hr />
+<h1 id="java-web-框架"><a class="anchor" href="#java-web-框架">#</a> 🚀 Java Web 框架</h1>
+<p><strong>1. Spring Boot/Spring MVC</strong></p>
+<ul>
+<li>特征文件：<code>/actuator/</code> 系列端点（<code>/actuator/health</code>, <code>/actuator/env</code>）</li>
+<li>响应头：<code>Server: Apache-Coyote</code>, <code>X-Application-Context</code></li>
+<li>错误页：<code>Whitelabel Error Page</code> 或带 <code>error</code> 路径的JSON错误信息</li>
+<li>常见路径：<code>/swagger-ui.html</code>, <code>/v2/api-docs</code></li>
+</ul>
+<p><strong>2. Struts2</strong></p>
+<ul>
+<li>特征参数：URL中带 <code>.action</code>、<code>.do</code> 后缀</li>
+<li>响应头：<code>X-Powered-By: Servlet/2.5 (Tomcat/...)</code></li>
+<li>漏洞关联：<code>/struts/</code> 路径、OGNL表达式注入特征</li>
+</ul>
+<p><strong>3. JSP</strong></p>
+<ul>
+<li>特征：URL后缀 <code>.jsp</code>、<code>.jspx</code></li>
+<li>Cookie：<code>JSESSIONID</code></li>
+<li>响应头：<code>X-Powered-By: JSP/2.2</code></li>
+</ul>
+<hr />
+<h1 id="php-框架"><a class="anchor" href="#php-框架">#</a> 🧩 PHP 框架</h1>
+<p><strong>1. ThinkPHP</strong></p>
+<ul>
+<li>特征：URL路径如 <code>/index.php?s=/</code>、<code>/index.php?m=xxx&amp;c=xxx&amp;a=xxx</code></li>
+<li>响应头：<code>X-Powered-By: ThinkPHP</code></li>
+<li>错误页：暴露版本号的ThinkPHP错误信息</li>
+<li>漏洞关联：<code>/public/</code> 目录、路由解析特征</li>
+</ul>
+<p><strong>2. Laravel</strong></p>
+<ul>
+<li>Cookie：<code>laravel_session</code></li>
+<li>路径特征：<code>/routes/web.php</code> 相关路由，<code>/storage/</code> 目录</li>
+<li>响应特征：JSON错误页、<code>csrf-token</code> 隐藏表单字段</li>
+</ul>
+<p><strong>3. CodeIgniter</strong></p>
+<ul>
+<li>URL特征：<code>/index.php/controller/method</code></li>
+<li>Cookie：<code>ci_session</code></li>
+</ul>
+<hr />
+<h1 id="net-框架"><a class="anchor" href="#net-框架">#</a> 📄 .NET 框架</h1>
+<p><strong>1. <a target="_blank" rel="noopener" href="http://ASP.NET">ASP.NET</a> / <a target="_blank" rel="noopener" href="http://ASP.NET">ASP.NET</a> MVC</strong></p>
+<ul>
+<li>特征：URL后缀 <code>.aspx</code>、<code>.ashx</code></li>
+<li>Cookie：<code>ASP.NET_SessionId</code></li>
+<li>响应头：<code>X-Powered-By: ASP.NET</code></li>
+<li>错误页：<code>Server Error in '/' Application</code></li>
+</ul>
+<p><strong>2. <a target="_blank" rel="noopener" href="http://ASP.NET">ASP.NET</a> Core</strong></p>
+<ul>
+<li>响应头：<code>Server: Kestrel</code></li>
+<li>路径特征：<code>/swagger/index.html</code></li>
+<li>错误页：<code>An unhandled exception occurred</code></li>
+</ul>
+<hr />
+<h1 id="python-框架"><a class="anchor" href="#python-框架">#</a> 🐍 Python 框架</h1>
+<p><strong>1. Django</strong></p>
+<ul>
+<li>Cookie：<code>sessionid</code>、<code>csrftoken</code></li>
+<li>路径特征：<code>/admin/</code> 后台管理页、<code>/static/</code> 静态资源路径</li>
+<li>错误页：<code>Django</code> 调试模式错误信息（暴露代码行号）</li>
+</ul>
+<p><strong>2. Flask</strong></p>
+<ul>
+<li>Cookie：<code>session</code>（经过签名的会话Cookie）</li>
+<li>错误页：<code>Flask</code> 调试模式错误页（含交互式控制台）</li>
+<li>路径特征：<code>/static/</code> 静态资源路径</li>
+</ul>
+<hr />
+<h1 id="通用-web-服务器-平台"><a class="anchor" href="#通用-web-服务器-平台">#</a> 🌐 通用 Web 服务器 &amp; 平台</h1>
+<p><strong>1. Nginx</strong></p>
+<ul>
+<li>响应头：<code>Server: nginx/版本号</code></li>
+<li>错误页：<code>403 Forbidden</code>/<code>404 Not Found</code> 标准Nginx页面</li>
+</ul>
+<p><strong>2. Apache</strong></p>
+<ul>
+<li>响应头：<code>Server: Apache/版本号</code></li>
+<li>特征文件：<code>.htaccess</code>、<code>/server-status</code></li>
+</ul>
+<p><strong>3. Tomcat</strong></p>
+<ul>
+<li>响应头：<code>Server: Apache-Coyote/1.1</code></li>
+<li>路径特征：<code>/manager/html</code> 管理后台、<code>/examples/</code> 示例目录</li>
+<li>错误页：<code>Apache Tomcat/版本号</code> 错误信息</li>
+</ul>
+<p><strong>4. IIS</strong></p>
+<ul>
+<li>响应头：<code>Server: Microsoft-IIS/版本号</code></li>
+<li>特征：<code>.asp</code>/<code>.aspx</code> 后缀、<code>/iisstart.htm</code> 默认页</li>
+</ul>
+<hr />
+<p>💡 补充小技巧：</p>
+<ol>
+<li>优先看<strong>响应头</strong>和<strong>Cookie名</strong>，是识别框架最快的方式。</li>
+<li>再看<strong>URL后缀、路径特征和错误页信息</strong>，辅助确认。</li>
+<li>部分框架会通过自定义响应头（如 <code>X-Frame-Options</code>、<code>X-Powered-By</code>）暴露信息。</li>
+</ol>
+<hr />
+<h1 id="ai拓展"><a class="anchor" href="#ai拓展">#</a> AI拓展：</h1>
+<p>网络渗透｜各框架 表层特征 + 底层不可伪造指纹 + 攻防手册（极简实战版）<br />
+前置：本次扫描环境有效指纹判定<br />
+扫描路径：/actuator/jolokia/、/swagger/index.html<br />
+精准锁定框架：Spring Boot<br />
+说明：页面解析失败属于权限/网络拦截，路径指纹不可伪造，可100%确定为Spring Boot环境</p>
+<hr />
+<p>一、安全 &amp; 权限框架</p>
+<ol>
+<li>Apache Shiro（高频漏洞框架）<br />
+1）表层易伪造特征</li>
+</ol>
+<ul>
+<li>Cookie 存在：rememberMe=xxx</li>
+<li>响应头：Set-Cookie: rememberMe=deleteMe</li>
+<li>常见路由：/login、/logout<br />
+2）底层不可伪造真实指纹（WAF/EDR 精准判定）</li>
+<li>rememberMe 值 Base64 解码，必含字符串：org.apache.shiro.web.mgt.CookieRememberMeManager</li>
+<li>解码开头为 rO0ABX（Java序列化魔数）+ 包含Spring字段 → 判定 Shiro+Spring 漏洞链（CVE-2023-37635）</li>
+<li>JVM线程堆栈必存在：org.apache.shiro.web.filter.mgt.FilterChainResolver</li>
+<li>EDR溯源命令：jstack -l 进程PID | grep shiro，命中即为真实Shiro环境</li>
+</ul>
+<ol start="2">
+<li>Spring Security<br />
+1）表层易伪造特征</li>
+</ol>
+<ul>
+<li>默认安全响应头：X-Frame-Options、X-Content-Type-Options</li>
+<li>会话标识：JSESSIONID + XSRF-TOKEN</li>
+<li>常见路由：/oauth/token、/login、/logout<br />
+2）底层不可伪造真实指纹</li>
+<li>容器固定注册过滤器：springSecurityFilterChain</li>
+<li>JVM日志固定关键字：UsernamePasswordAuthenticationFilter</li>
+<li>XSRF-TOKEN解码结构固定：{&quot;token&quot;:&quot;xxx&quot;,&quot;parameterName&quot;:&quot;_csrf&quot;,&quot;headerName&quot;:&quot;X-XSRF-TOKEN&quot;}，非此结构即为伪造</li>
+</ul>
+<p>二、Java Web 框架</p>
+<ol>
+<li>Spring Boot / Spring MVC（本次环境命中框架）<br />
+1）表层易伪造特征</li>
+</ol>
+<ul>
+<li>监控端点：/actuator/health、/actuator/env、/actuator/jolokia/</li>
+<li>默认错误页：Whitelabel Error Page</li>
+<li>接口文档：/swagger/index.html<br />
+2）底层不可伪造真实指纹</li>
+<li>JVM MBean固定存在：org.springframework.boot:type=Endpoint,name=HealthEndpoint</li>
+<li>错误页硬编码字段：&lt;meta name=&quot;generator&quot; content=&quot;Spring Boot&quot;&gt;，无法删除伪造</li>
+<li>Jolokia端点为Spring Boot微服务专属特征</li>
+</ul>
+<ol start="2">
+<li>Struts2<br />
+1）表层易伪造特征</li>
+</ol>
+<ul>
+<li>URL后缀：.action、.do</li>
+<li>响应头：X-Powered-By: Servlet/2.5<br />
+2）底层不可伪造真实指纹</li>
+<li>调用栈固定类：com.opensymphony.xwork2.DefaultActionInvocation</li>
+<li>注入触发底层：ognl.OgnlValueStack（WAF检测核心关键字）</li>
+</ul>
+<ol start="3">
+<li>JSP<br />
+1）表层易伪造特征</li>
+</ol>
+<ul>
+<li>URL后缀：.jsp、.jspx</li>
+<li>Cookie：JSESSIONID<br />
+2）底层不可伪造真实指纹</li>
+<li>Tomcat编译类固定格式：org.apache.jsp.index_jsp</li>
+<li>标准JSESSIONID长度固定32位，非此长度为伪造</li>
+</ul>
+<p>三、PHP 框架</p>
+<ol>
+<li>ThinkPHP<br />
+1）表层易伪造特征</li>
+</ol>
+<ul>
+<li>路由格式：/index.php?s=/xxx</li>
+<li>响应头：X-Powered-By: ThinkPHP<br />
+2）底层不可伪造真实指纹</li>
+<li>OPcache常驻类：think\Route</li>
+<li>错误页固定路径：thinkphp/library/think/</li>
+</ul>
+<ol start="2">
+<li>Laravel<br />
+1）表层易伪造特征</li>
+</ol>
+<ul>
+<li>Cookie：laravel_session</li>
+<li>敏感路径：/storage/logs/laravel.log<br />
+2）底层不可伪造真实指纹</li>
+<li>Session解密固定字段：_token、previous_url、_flash</li>
+<li>日志固定格式：[时间] local.ERROR: xxx</li>
+</ul>
+<hr />
+<p>四、.NET 框架<br />
+<a target="_blank" rel="noopener" href="http://ASP.NET">ASP.NET</a> Core<br />
+1）表层易伪造特征</p>
+<ul>
+<li>服务头：Server: Kestrel</li>
+<li>接口文档：/swagger/index.html<br />
+2）底层不可伪造真实指纹</li>
+<li>核心请求处理类：Http1Connection</li>
+<li>Swagger页面固定JS字段：SwaggerUIBundle</li>
+</ul>
+<hr />
+<p>五、Python 框架</p>
+<ol>
+<li>Django<br />
+1）表层易伪造特征</li>
+</ol>
+<ul>
+<li>Cookie：sessionid、csrftoken</li>
+<li>后台路由：/admin/<br />
+2）底层不可伪造真实指纹</li>
+<li>Session序列化包含固定对象：django.contrib.auth.models.User</li>
+<li>后台路由固定注册方式：admin.site.urls</li>
+</ul>
+<hr />
+<p>六、通用Web服务器</p>
+<ol>
+<li>Nginx<br />
+表层特征：Server头、标准403/404页面<br />
+底层指纹：403页面标题硬编码不可修改<br />
+高危漏洞：$host变量可控导致SSRF</li>
+<li>Apache / Tomcat / IIS<br />
+统一记忆：看响应头、默认管理路径、固定错误页即可快速识别</li>
+</ol>
+<hr />
+<p>七、终极总结：各框架不可伪造核心指纹（速记表）<br />
+框架<br />
+100%可信底层指纹<br />
+核心检测方式<br />
+Shiro<br />
+rememberMe解码含 CookieRememberMeManager<br />
+Cookie解码+字符串匹配<br />
+Spring Boot<br />
+JMX存在 Endpoint、Jolokia路径<br />
+路径扫描+MBean检测<br />
+Struts2<br />
+调用栈含 DefaultActionInvocation、ognl关键字<br />
+日志正则匹配OGNL注入特征<br />
+ThinkPHP<br />
+OPcache存在 think\Route 类<br />
+路由特征+源码路径匹配<br />
+Laravel<br />
+Session解密含 _token、日志固定格式<br />
+Cookie解密校验<br />
+<a target="_blank" rel="noopener" href="http://ASP.NET">ASP.NET</a> Core<br />
+Kestrel内核类+SwaggerUIBundle<br />
+接口文档特征检测<br />
+Django<br />
+Session含User对象、admin固定路由<br />
+会话结构校验</p>
+<div class="tags"><a href="/tags/%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8/" rel="tag"><i class="ic i-tag"></i>网络安全</a></div></div><footer><div class="meta"><span class="item"><span class="icon"><i class="ic i-eye"></i></span><span class="text">总访问量：</span><span class="waline-pageview-count" id="twikoo_visitors" data-path="/2026/06/08/常见web服务器识别特征/">加载中...</span></span><span class="item"><span class="icon"><i class="ic i-calendar-check"></i></span><span class="text">更新于 </span><time title="修改时间：2026-06-08 16:22:30" itemprop="dateModified" datetime="2026-06-08T16:22:30+08:00">2026-06-08</time></span></div><div class="reward"><button><i class="ic i-heartbeat"></i>赞赏</button><p>请我喝[茶]~(￣▽￣)~*</p><div id="qr"><div><img loading="lazy" src="/assets/wechatpay.png" alt="ZhIE 微信支付"/><p>微信支付</p></div><div><img loading="lazy" src="/assets/alipay.png" alt="ZhIE 支付宝"/><p>支付宝</p></div></div></div><div id="copyright"><ul><li class="author"><strong>本文作者：</strong>ZhIE<i class="ic i-at"><em>@</em></i>Study Blog</li><li class="link"><strong>本文链接：</strong><a href="https://adm1n10086.github.io/2026/06/08/%E5%B8%B8%E8%A7%81web%E6%9C%8D%E5%8A%A1%E5%99%A8%E8%AF%86%E5%88%AB%E7%89%B9%E5%BE%81/" title="常见Web框架的识别特征">https://adm1n10086.github.io/2026/06/08/常见web服务器识别特征/</a></li><li class="license"><strong>版权声明：</strong>本站所有文章除特别声明外，均采用 <a target="_blank" rel="noopener" href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh"><i class="ic i-creative-commons"><em>(CC)</em></i>BY-NC-SA</a> 许可协议。转载请注明出处！</li></ul></div></footer></article></div><div class="post-nav"><div class="item left"><a href="/2026/06/08/%E5%89%8D%E7%AB%AF%E6%A1%86%E6%9E%B6%E3%80%81%E5%90%8E%E7%AB%AF%E5%AE%89%E5%85%A8%E6%A1%86%E6%9E%B6%E5%8F%8A%E5%90%84%E7%B1%BB%20Web%20%E6%8A%80%E6%9C%AF/" rel="prev" itemprop="url" data-background-image="images&#x2F;2.jpg" title="未命名"><span class="type">上一篇</span><h3>未命名</h3></a></div><div class="item right"></div></div><div class="wrap" id="comments"></div></div><div id="sidebar"><div class="inner"><div class="panels"><div class="inner"><div class="contents panel pjax" data-title="文章目录"><ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#%E5%AE%89%E5%85%A8%E6%9D%83%E9%99%90%E6%A1%86%E6%9E%B6"><span class="toc-number">1.</span> <span class="toc-text"> 🔐 安全&#x2F;权限框架</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#java-web-%E6%A1%86%E6%9E%B6"><span class="toc-number">2.</span> <span class="toc-text"> 🚀 Java Web 框架</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#php-%E6%A1%86%E6%9E%B6"><span class="toc-number">3.</span> <span class="toc-text"> 🧩 PHP 框架</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#net-%E6%A1%86%E6%9E%B6"><span class="toc-number">4.</span> <span class="toc-text"> 📄 .NET 框架</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#python-%E6%A1%86%E6%9E%B6"><span class="toc-number">5.</span> <span class="toc-text"> 🐍 Python 框架</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E9%80%9A%E7%94%A8-web-%E6%9C%8D%E5%8A%A1%E5%99%A8-%E5%B9%B3%E5%8F%B0"><span class="toc-number">6.</span> <span class="toc-text"> 🌐 通用 Web 服务器 &amp; 平台</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#ai%E6%8B%93%E5%B1%95"><span class="toc-number">7.</span> <span class="toc-text"> AI拓展：</span></a></li></ol></div><div class="related panel pjax" data-title="系列文章"></div><div class="overview panel" data-title="站点概览"><div class="author" itemprop="author" itemscope="itemscope" itemtype="http://schema.org/Person"><img class="image" loading="lazy" decoding="async" itemprop="image" alt="ZhIE" src="/assets/avatar.jpg"/><p class="name" itemprop="name">ZhIE</p><div class="description" itemprop="description"></div></div><nav class="state"><div class="item posts"><a href="/archives/"><span class="count">11</span><span class="name">文章</span></a></div><div class="item tags"><a href="/tags/"><span class="count">5</span><span class="name">标签</span></a></div></nav><div class="social"><a target="_blank" rel="noopener" href="https://github.com/Adm1n10086" class="item github" title="https:&#x2F;&#x2F;github.com&#x2F;Adm1n10086"><i class="ic i-github"></i></a><a target="_blank" rel="noopener" href="https://music.163.com/#/user/home?id=128299268" class="item music" title="https:&#x2F;&#x2F;music.163.com&#x2F;#&#x2F;user&#x2F;home?id&#x3D;128299268"><i class="ic i-cloud-music"></i></a><a href="mailto:250278984@qq.com" class="item email" title="mailto:250278984@qq.com"><i class="ic i-envelope"></i></a><a target="_blank" rel="noopener" href="https://user.qzone.qq.com/250278984/infocenter?loginfrom=31" class="item qzone" title="https:&#x2F;&#x2F;user.qzone.qq.com&#x2F;250278984&#x2F;infocenter?loginfrom&#x3D;31"><i class="ic i-qq"></i></a></div><div class="menu"><li class="item"><a href="/" rel="section"><i class="ic i-home"></i>Home</a></li><li class="item dropdown"><a href="#" onclick="return false;"><i class="ic i-user"></i>关于</a><ul class="submenu"><li class="item"><a href="/about/" rel="section"><i class="ic i-user"></i>关于本站</a></li><li class="item"><a href="/admiration/" rel="section"><i class="ic i-coffee"></i>赞赏博主</a></li></ul></li><li class="item dropdown"><a href="#" onclick="return false;"><i class="ic i-feather"></i>文章</a><ul class="submenu"><li class="item"><a href="/archives/" rel="section"><i class="ic i-list-alt"></i>归档</a></li><li class="item"><a href="/categories/" rel="section"><i class="ic i-th"></i>分类</a></li><li class="item"><a href="/tags/" rel="section"><i class="ic i-tags"></i>标签</a></li></ul></li><li class="item"><a href="/friends/" rel="section"><i class="ic i-heart"></i>友链</a></li></div></div></div></div><ul id="quick"><li class="prev pjax"></li><li class="up"><i class="ic i-arrow-up"></i></li><li class="down"><i class="ic i-arrow-down"></i></li><li class="next pjax"><a href="/2026/06/08/%E5%89%8D%E7%AB%AF%E6%A1%86%E6%9E%B6%E3%80%81%E5%90%8E%E7%AB%AF%E5%AE%89%E5%85%A8%E6%A1%86%E6%9E%B6%E5%8F%8A%E5%90%84%E7%B1%BB%20Web%20%E6%8A%80%E6%9C%AF/" rel="next" title="下一篇"><i class="ic i-chevron-right"></i></a></li><li class="percent"></li></ul></div></div><div class="dimmer"></div></div><div id="player"></div></main><footer id="footer"><div class="inner"><div class="widgets"><div class="rpost pjax"><h2>随机文章</h2><ul><li class="item"><div class="breadcrumb"></div><span><a href="/2026/05/13/%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8%E7%90%86%E8%AE%BA%E5%AD%A6%E4%B9%A0/">网络安全src学习</a></span></li><li class="item"><div class="breadcrumb"></div><span><a href="/2026/04/14/ShokaX%E6%90%AD%E5%BB%BA/">Hexo主题ShokaX搭建</a></span></li><li class="item"><div class="breadcrumb"></div><span><a href="/2026/04/14/hello-world/">Hello World</a></span></li><li class="item"><div class="breadcrumb"></div><span><a href="/2026/05/05/%E8%BD%AF%E4%BB%B6%E5%AE%89%E5%85%A8%E7%90%86%E8%AE%BA%E8%AF%BE%E7%A8%8B%E5%A4%8D%E4%B9%A0/">软件安全理论课程复习</a></span></li><li class="item"><div class="breadcrumb"></div><span><a href="/2026/06/01/%E9%9A%90%E7%A7%81%E8%AE%A1%E7%AE%97%E8%80%83%E8%AF%95%E5%A4%8D%E4%B9%A0%E9%87%8D%E7%82%B9/">隐私计算课程复习重点</a></span></li><li class="item"><div class="breadcrumb"></div><span><a href="/2026/04/16/markdown%E8%AF%AD%E6%B3%95/">ShokaX特殊语法及MarkDown语法</a></span></li><li class="item"><div class="breadcrumb"></div><span><a href="/2026/06/08/%E5%89%8D%E7%AB%AF%E6%A1%86%E6%9E%B6%E3%80%81%E5%90%8E%E7%AB%AF%E5%AE%89%E5%85%A8%E6%A1%86%E6%9E%B6%E5%8F%8A%E5%90%84%E7%B1%BB%20Web%20%E6%8A%80%E6%9C%AF/">未命名</a></span></li><li class="item"><div class="breadcrumb"></div><span><a href="/2026/04/23/Elasticsearch%E5%A4%B1%E6%8E%A7%E7%9A%84%E8%AE%BF%E9%97%AE%E6%8E%A7%E5%88%B6%E6%BC%8F%E6%B4%9E%E5%A4%8D%E7%8E%B0/">Elasticsearch 未授权访问漏洞</a></span></li><li class="item"><div class="breadcrumb"></div><span><a href="/2026/05/27/%E9%9A%90%E7%A7%81%E8%AE%A1%E7%AE%97%E8%AF%BE%E7%A8%8B%E5%A4%8D%E4%B9%A0/">隐私计算课程复习</a></span></li><li class="item"><div class="breadcrumb"></div><span><a href="/2026/06/08/%E5%B8%B8%E8%A7%81web%E6%9C%8D%E5%8A%A1%E5%99%A8%E8%AF%86%E5%88%AB%E7%89%B9%E5%BE%81/">常见Web框架的识别特征</a></span></li></ul></div><div class="rpost pjax"><h2>最新评论</h2><ul class="leancloud-recent-comment" id="new-comment"></ul></div></div><div class="status"><div class="copyright">&copy; 2025 -<span itemprop="copyrightYear">2026</span><span class="with-love"><i class="ic i-sakura rotate"></i></span><span class="author" itemprop="copyrightHolder">ZhIE @ ZhIE BLOG</span></div><div class="count"><span class="post-meta-item-icon"><i class="ic i-chart-area"></i></span><span title="站点总字数">84k 字</span><span class="post-meta-divider"> | </span><span class="post-meta-item-icon"><i class="ic i-coffee"></i></span><span title="站点阅读时长">1:16</span></div><div class="powered-by">基于 <a target="_blank" rel="noopener" href="https://hexo.io/">Hexo</a> & Theme.<a target="_blank" rel="noopener" href="https://github.com/theme-shoka-x/hexo-theme-shokaX/">ShokaX</a></div></div></div></footer></div><script data-config type="text/javascript">var LOCAL = {
+    ispost: true,
+    path: `2026/06/08/常见web服务器识别特征/`,
+    favicon: {
+        show: `（●´3｀●）やれやれだぜ`,
+        hide: `(´Д｀)大変だ！`
+    },
+    search: {
+        placeholder: "文章搜索",
+        empty: "关于 「 ${query} 」，什么也没搜到",
+        stats: "${time} ms 内找到 ${hits} 条结果"
+    },
+    nocopy: "false",
+    copyright: `复制成功，转载请遵守 <i class="ic i-creative-commons"></i>BY-NC-SA 协议。`,
+    copy_tex: false,
+    katex: false,
+    mermaid: false,
+    audio: undefined,
+    nocopy: false,
+    outime: true,
+    template: `<div class="note warning"><p><span class="label warning">文章时效性提示</span><br>这是一篇发布于 {{publish}} 天前，最后一次更新在 {{updated}} 天前的文章，部分信息可能已经发生改变，请注意甄别。</p></div>`,
+    quiz: {
+        choice: `单选题`,
+        multiple: `多选题`,
+        true_false: `判断题`,
+        essay: `问答题`,
+        gap_fill: `填空题`,
+        mistake: `错题备注`
+    }
+};
+</script><script src="/js/siteInit.js?v=0.5.4" type="module" fetchpriority="high" defer></script></body></html>
